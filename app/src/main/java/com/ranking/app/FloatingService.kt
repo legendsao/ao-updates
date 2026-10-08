@@ -93,6 +93,53 @@ class FloatingService : Service() {
         cornerRadius = dp(radius).toFloat()
     }
 
+    private lateinit var scroll: ScrollView
+    private lateinit var addForm: LinearLayout
+    private lateinit var nameInput: EditText
+    private lateinit var numberInput: EditText
+    private var editFields: List<EditText> = emptyList()
+
+    private fun imm() = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
+
+    private fun field(hintText: String, type: Int, weight: Float = 1f) = EditText(this).apply {
+        hint = hintText
+        inputType = type
+        imeOptions = EditorInfo.IME_ACTION_DONE
+        setSingleLine()
+        setTextColor(Color.BLACK)
+        setHintTextColor(Color.GRAY)
+        layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
+        setOnFocusChangeListener { v, hasFocus ->
+            v.post { syncFocusable(v, hasFocus) }
+        }
+        setOnEditorActionListener { v, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) { v.clearFocus(); true } else false
+        }
+    }
+
+    /** Quita FLAG_NOT_FOCUSABLE solo mientras algún campo tenga foco. */
+    private fun syncFocusable(v: View, hasFocus: Boolean) {
+        val any = editFields.any { it.hasFocus() }
+        val notFocusable = params.flags and WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE != 0
+        if (any && notFocusable) {
+            params.flags = params.flags and WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE.inv()
+            wm.updateViewLayout(root, params)
+        } else if (!any && !notFocusable) {
+            params.flags = params.flags or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
+            wm.updateViewLayout(root, params)
+            imm().hideSoftInputFromWindow(v.windowToken, 0)
+        }
+        if (hasFocus) v.post { imm().showSoftInput(v, InputMethodManager.SHOW_IMPLICIT) }
+    }
+
+    private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
+        text = label
+        textSize = 12f
+        minWidth = 0; minimumWidth = 0
+        setPadding(dp(6), 0, dp(6), 0)
+        setOnClickListener { onClick() }
+    }
+
     private fun buildViews() {
         root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
@@ -108,60 +155,56 @@ class FloatingService : Service() {
         }
         root.addView(bubble)
 
+        val dm = resources.displayMetrics
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            background = bg(Color.parseColor("#F2FFFFFF"), 12)
+            background = bg(Color.parseColor("#F5FFFFFF"), 12)
             setPadding(dp(8), dp(8), dp(8), dp(8))
             visibility = View.GONE
-            layoutParams = LinearLayout.LayoutParams(dp(300), LinearLayout.LayoutParams.WRAP_CONTENT)
-                .apply { topMargin = dp(6) }
+            layoutParams = LinearLayout.LayoutParams(
+                minOf(dm.widthPixels - dp(16), dp(380)), LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(6) }
         }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
-        val scroll = ScrollView(this).apply {
+        scroll = ScrollView(this).apply {
             addView(list)
-            layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, dp(260))
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.38f).toInt()
+            )
         }
         panel.addView(scroll)
 
+        // Cantidad libre sobre el jugador seleccionado
         val bottom = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
         }
-        amount = EditText(this).apply {
-            hint = "Cantidad"
-            inputType = InputType.TYPE_CLASS_NUMBER
-            imeOptions = EditorInfo.IME_ACTION_DONE
-            setTextColor(Color.BLACK)
-            setHintTextColor(Color.GRAY)
-            layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
-            setOnFocusChangeListener { v, hasFocus ->
-                if (hasFocus) {
-                    params.flags = params.flags and WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE.inv()
-                    wm.updateViewLayout(root, params)
-                    v.post {
-                        (getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager)
-                            .showSoftInput(v, InputMethodManager.SHOW_IMPLICIT)
-                    }
-                } else {
-                    params.flags = params.flags or WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE
-                    wm.updateViewLayout(root, params)
-                    (getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager)
-                        .hideSoftInputFromWindow(v.windowToken, 0)
-                }
-            }
-            setOnEditorActionListener { v, actionId, _ ->
-                if (actionId == EditorInfo.IME_ACTION_DONE) { v.clearFocus(); true } else false
-            }
-        }
-        sumBtn = Button(this).apply {
-            text = "Sumar"
-            setOnClickListener { addCustom() }
-        }
+        amount = field("Cantidad", InputType.TYPE_CLASS_NUMBER)
+        sumBtn = btn("Sumar") { applyCustom(1) }
         bottom.addView(amount)
+        bottom.addView(btn("Restar") { applyCustom(-1) })
         bottom.addView(sumBtn)
         panel.addView(bottom)
-        root.addView(panel)
 
+        // Alta rápida de jugador
+        val addToggle = btn("+ Jugador") {
+            addForm.visibility = if (addForm.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+        }
+        panel.addView(addToggle)
+        addForm = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+            visibility = View.GONE
+        }
+        nameInput = field("Nombre", InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_FLAG_CAP_WORDS, 1f)
+        numberInput = field("Número", InputType.TYPE_CLASS_PHONE, 1f)
+        addForm.addView(nameInput)
+        addForm.addView(numberInput)
+        addForm.addView(btn("Guardar") { saveNewPlayer() })
+        panel.addView(addForm)
+        editFields = listOf(amount, nameInput, numberInput)
+
+        root.addView(panel)
         setupDrag(bubble)
     }
 
@@ -189,7 +232,7 @@ class FloatingService : Service() {
 
     private fun toggle() {
         if (panel.visibility == View.VISIBLE) {
-            amount.clearFocus()
+            editFields.forEach { it.clearFocus() }
             panel.visibility = View.GONE
         } else {
             refresh()
@@ -229,18 +272,12 @@ class FloatingService : Service() {
             }
         }
         row.addView(label)
-        listOf(1, 5, 10).forEach { n ->
-            row.addView(Button(this).apply {
-                text = "+$n"
-                textSize = 12f
-                minWidth = 0; minimumWidth = 0
-                setPadding(dp(6), 0, dp(6), 0)
-                layoutParams = LinearLayout.LayoutParams(dp(46), dp(40))
-                setOnClickListener {
-                    players = Store.addPoints(this@FloatingService, p.id, n)
-                    refresh()
-                }
-            })
+        listOf(-1, 1, 5, 10).forEach { n ->
+            row.addView(btn(if (n > 0) "+$n" else "$n") {
+                players = Store.addPoints(this@FloatingService, p.id, n)
+                selectedId = p.id
+                refresh()
+            }.apply { layoutParams = LinearLayout.LayoutParams(dp(44), dp(40)) })
         }
         return row
     }
@@ -248,20 +285,37 @@ class FloatingService : Service() {
     private fun updateSumLabel() {
         val sel = players.firstOrNull { it.id == selectedId }
         sumBtn.text = if (sel != null) "Sumar a ${sel.name.take(8)}" else "Sumar"
+        amount.hint = if (sel != null) "Cantidad p/ ${sel.name.take(10)}" else "Cantidad"
     }
 
-    private fun addCustom() {
+    private fun applyCustom(sign: Int) {
         val id = selectedId
         val n = amount.text.toString().toIntOrNull()
         when {
             id == null -> Toast.makeText(this, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
             n == null || n <= 0 -> Toast.makeText(this, "Escribí una cantidad", Toast.LENGTH_SHORT).show()
             else -> {
-                players = Store.addPoints(this, id, n)
+                players = Store.addPoints(this, id, n * sign)
                 amount.setText("")
                 amount.clearFocus()
                 refresh()
             }
         }
+    }
+
+    private fun saveNewPlayer() {
+        val name = nameInput.text.toString().trim()
+        if (name.isEmpty()) {
+            Toast.makeText(this, "Falta el nombre", Toast.LENGTH_SHORT).show()
+            return
+        }
+        val p = Player(name = name, number = cleanNumber(numberInput.text.toString()))
+        Store.save(this, Store.load(this) + p)
+        nameInput.setText("")
+        numberInput.setText("")
+        editFields.forEach { it.clearFocus() }
+        selectedId = p.id
+        refresh()
+        scroll.post { scroll.fullScroll(View.FOCUS_DOWN) }
     }
 }

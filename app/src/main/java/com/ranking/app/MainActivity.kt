@@ -87,7 +87,7 @@ class MainActivity : ComponentActivity() {
         val text = buildString {
             append("🏆 Ranking")
             sortPlayers(players).forEachIndexed { i, p ->
-                append("\n${i + 1}. @${p.number} — ${p.points} pts")
+                append("\n${i + 1}. @${p.number.ifEmpty { p.name }} — ${p.points} pts")
             }
         }
         val cm = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
@@ -183,7 +183,7 @@ class MainActivity : ComponentActivity() {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     OutlinedTextField(name, { name = it }, label = { Text("Nombre") }, singleLine = true)
                     OutlinedTextField(
-                        number, { number = it }, label = { Text("Número (ej. 549...)") },
+                        number, { number = it }, label = { Text("Número (ej. 549..., opcional)") },
                         singleLine = true,
                         keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Phone),
                     )
@@ -198,7 +198,7 @@ class MainActivity : ComponentActivity() {
             confirmButton = {
                 TextButton(onClick = {
                     val n = cleanNumber(number)
-                    if (name.isNotBlank() && n.isNotEmpty()) {
+                    if (name.isNotBlank()) {
                         onSave(name.trim(), n, points.toIntOrNull() ?: player?.points ?: 0)
                     }
                 }) { Text("Guardar") }
