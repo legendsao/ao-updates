@@ -12,6 +12,7 @@ import android.provider.Settings
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -42,6 +43,32 @@ class MainActivity : ComponentActivity() {
 
     private var players by mutableStateOf<List<Player>>(emptyList())
     private var floating by mutableStateOf(false)
+
+    /** Respaldo en un archivo fuera de la app: sobrevive a una desinstalación o a una reinstalación con otra firma. */
+    private val exportBackup = registerForActivityResult(ActivityResultContracts.CreateDocument("application/json")) { uri ->
+        if (uri == null) return@registerForActivityResult
+        runCatching {
+            contentResolver.openOutputStream(uri)?.use { it.write(Store.exportJson(this).toByteArray()) }
+        }.onSuccess {
+            Toast.makeText(this, "Respaldo guardado", Toast.LENGTH_SHORT).show()
+        }.onFailure {
+            Toast.makeText(this, "No se pudo guardar el respaldo", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    private val importBackup = registerForActivityResult(ActivityResultContracts.OpenDocument()) { uri ->
+        if (uri == null) return@registerForActivityResult
+        val text = runCatching {
+            contentResolver.openInputStream(uri)?.bufferedReader()?.use { it.readText() }
+        }.getOrNull()
+        val restored = text?.let { Store.importJson(this, it) }
+        if (restored != null) {
+            players = restored
+            Toast.makeText(this, "Se restauraron ${restored.size} jugadores", Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "El archivo no es un respaldo válido", Toast.LENGTH_SHORT).show()
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -156,6 +183,7 @@ class MainActivity : ComponentActivity() {
         }
         if (settings) {
             var quick by remember { mutableStateOf(Store.quickRaw(this@MainActivity)) }
+            var confirmImport by remember { mutableStateOf(false) }
             AlertDialog(
                 onDismissRequest = { Store.setQuick(this@MainActivity, quick); settings = false },
                 title = { Text("Ajustes") },
@@ -163,12 +191,36 @@ class MainActivity : ComponentActivity() {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedTextField(quick, { quick = it }, singleLine = true,
                             label = { Text("Atajos de la flotante (ej. -1,1,5,10,15,30,100)") })
+                        Text(
+                            "Respaldo: un archivo fuera de la app que sobrevive a una desinstalación.",
+                            style = MaterialTheme.typography.bodySmall,
+                        )
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            OutlinedButton(onClick = { exportBackup.launch("ranking-backup.json") }) {
+                                Text("Exportar")
+                            }
+                            OutlinedButton(onClick = { confirmImport = true }) { Text("Importar") }
+                        }
                     }
                 },
                 confirmButton = {
                     TextButton(onClick = { Store.setQuick(this@MainActivity, quick); settings = false }) { Text("Listo") }
                 },
             )
+            if (confirmImport) {
+                AlertDialog(
+                    onDismissRequest = { confirmImport = false },
+                    title = { Text("Importar respaldo") },
+                    text = { Text("Reemplaza todos los jugadores actuales por los del archivo. ¿Seguro?") },
+                    confirmButton = {
+                        TextButton(onClick = {
+                            confirmImport = false
+                            importBackup.launch(arrayOf("application/json", "text/plain", "*/*"))
+                        }) { Text("Elegir archivo") }
+                    },
+                    dismissButton = { TextButton(onClick = { confirmImport = false }) { Text("Cancelar") } },
+                )
+            }
         }
         if (confirmReset) {
             AlertDialog(

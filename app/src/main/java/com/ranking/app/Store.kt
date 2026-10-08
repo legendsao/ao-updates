@@ -70,6 +70,37 @@ object Store {
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putString("quick", raw).apply()
     }
 
+    /** Texto JSON con los jugadores actuales, para guardar fuera de la app (respaldo que sobrevive a una desinstalación). */
+    fun exportJson(context: Context): String {
+        val arr = JSONArray()
+        load(context).forEach {
+            arr.put(
+                JSONObject().put("name", it.name).put("number", it.number).put("points", it.points)
+            )
+        }
+        return arr.toString(2)
+    }
+
+    /** Reemplaza los jugadores guardados por los de un respaldo. Devuelve null si el texto no es válido. */
+    @Synchronized
+    fun importJson(context: Context, raw: String): List<Player>? {
+        val players = try {
+            val arr = JSONArray(raw)
+            (0 until arr.length()).map {
+                val o = arr.getJSONObject(it)
+                Player(
+                    name = o.getString("name"),
+                    number = o.optString("number", ""),
+                    points = o.optInt("points", 0),
+                )
+            }
+        } catch (e: Exception) {
+            return null
+        }
+        save(context, players)
+        return players
+    }
+
     private fun write(context: Context, players: List<Player>) {
         val arr = JSONArray()
         players.forEach {
