@@ -97,6 +97,9 @@ class FloatingService : Service() {
         cornerRadius = dp(radius).toFloat()
     }
 
+    /** Agrega 60% de opacidad (alpha ~153) a un color sólido "#RRGGBB". */
+    private fun translucent(hex: String) = Color.parseColor(hex) and 0x00FFFFFF or (153 shl 24)
+
     private lateinit var scroll: ScrollView
     private lateinit var bubbleView: TextView
     private lateinit var sugBox: LinearLayout
@@ -113,8 +116,11 @@ class FloatingService : Service() {
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
+        textSize = 11f
         setTextColor(Color.BLACK)
-        setHintTextColor(Color.GRAY)
+        setHintTextColor(Color.DKGRAY)
+        background = bg(translucent("#FFFFFF"), 6)
+        setPadding(dp(6), dp(2), dp(6), dp(2))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
             v.post { syncFocusable(v, hasFocus) }
@@ -141,9 +147,13 @@ class FloatingService : Service() {
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
         text = label
-        textSize = 12f
+        textSize = 10f
         minWidth = 0; minimumWidth = 0
-        setPadding(dp(6), 0, dp(6), 0)
+        minHeight = 0; minimumHeight = dp(28)
+        setPadding(dp(5), 0, dp(5), 0)
+        setTextColor(Color.BLACK)
+        background = bg(translucent("#FFFFFF"), 6)
+        stateListAnimator = null
         setOnClickListener { onClick() }
     }
 
@@ -159,25 +169,25 @@ class FloatingService : Service() {
                 shape = GradientDrawable.OVAL
                 setColor(Color.parseColor("#6A1B9A"))
             }
-            layoutParams = LinearLayout.LayoutParams(dp(52), dp(52))
+            layoutParams = LinearLayout.LayoutParams(dp(40), dp(40))
         }
         root.addView(bubble)
 
         val dm = resources.displayMetrics
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            background = bg(Color.parseColor("#F5FFFFFF"), 12)
-            setPadding(dp(8), dp(8), dp(8), dp(8))
+            background = null // fondo full transparente
+            setPadding(dp(4), dp(4), dp(4), dp(4))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
-                minOf(dm.widthPixels - dp(16), dp(380)), LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { topMargin = dp(6) }
+                minOf(dm.widthPixels - dp(16), dp(260)), LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(4) }
         }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         scroll = ScrollView(this).apply {
             addView(list)
             layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.38f).toInt()
+                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.28f).toInt()
             )
         }
         val top = LinearLayout(this).apply {
@@ -196,7 +206,7 @@ class FloatingService : Service() {
         panel.addView(top)
         sugBox = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            background = bg(Color.parseColor("#FFF3E0"), 8)
+            background = bg(translucent("#FFE0B2"), 6)
             setPadding(dp(4), dp(4), dp(4), dp(4))
             visibility = View.GONE
         }
@@ -276,6 +286,7 @@ class FloatingService : Service() {
         if (players.isEmpty()) {
             list.addView(TextView(this).apply {
                 text = "Sin jugadores. Agregalos en la app."
+                textSize = 11f
                 setTextColor(Color.DKGRAY)
             })
         }
@@ -289,13 +300,13 @@ class FloatingService : Service() {
         val row = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(4), dp(2), dp(4), dp(2))
-            background = if (p.id == selectedId) bg(Color.parseColor("#E1BEE7"), 8) else null
+            setPadding(dp(3), dp(1), dp(3), dp(1))
+            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF"), 6)
         }
         val label = TextView(this).apply {
             text = "${p.name}\n${p.points} pts"
             setTextColor(Color.BLACK)
-            textSize = 14f
+            textSize = 11f
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             setOnClickListener {
                 selectedId = p.id
@@ -308,7 +319,7 @@ class FloatingService : Service() {
                 players = Store.addPoints(this@FloatingService, p.id, n)
                 selectedId = p.id
                 refresh()
-            }.apply { layoutParams = LinearLayout.LayoutParams(dp(44), dp(40)) })
+            }.apply { layoutParams = LinearLayout.LayoutParams(dp(34), dp(28)) })
         }
         return row
     }
@@ -343,7 +354,7 @@ class FloatingService : Service() {
             r.addView(TextView(this).apply {
                 text = "${s.name}${if (exists) "" else " (nuevo)"} +${s.points}" +
                     if (s.reply.isNotBlank()) "\n“${s.reply.take(30)}”" else ""
-                setTextColor(Color.BLACK); textSize = 13f
+                setTextColor(Color.BLACK); textSize = 10f
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             })
             r.addView(btn("Sumar") { applySuggestion(s) })
