@@ -113,8 +113,8 @@ class FloatingService : Service() {
         cornerRadius = dp(radius).toFloat()
     }
 
-    /** Agrega 80% de opacidad (20% transparente, alpha ~204) a un color sólido "#RRGGBB". */
-    private fun translucent(hex: String) = Color.parseColor(hex) and 0x00FFFFFF or (204 shl 24)
+    /** Agrega ~40% de opacidad (alpha ~100) a un color sólido "#RRGGBB", para que se note el fondo. */
+    private fun translucent(hex: String) = Color.parseColor(hex) and 0x00FFFFFF or (100 shl 24)
 
     private lateinit var scroll: ScrollView
     private lateinit var chips: LinearLayout
