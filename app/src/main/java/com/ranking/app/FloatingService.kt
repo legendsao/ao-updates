@@ -56,8 +56,7 @@ class FloatingService : Service() {
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
             WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or
-                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or
-                WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
+                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL,
             PixelFormat.TRANSLUCENT,
         ).apply {
             gravity = Gravity.TOP or Gravity.START
@@ -66,12 +65,6 @@ class FloatingService : Service() {
             softInputMode = WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN
         }
         wm.addView(root, params)
-        root.setOnTouchListener { _, e ->
-            if (e.action == MotionEvent.ACTION_OUTSIDE && panel.visibility == View.VISIBLE &&
-                editFields.none { it.hasFocus() }
-            ) collapse()
-            false
-        }
     }
 
     /** Posición guardada de la burbuja, o el borde derecho por defecto. */
@@ -132,11 +125,11 @@ class FloatingService : Service() {
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
-        textSize = 9f
+        textSize = 12f
         setTextColor(Color.BLACK)
         setHintTextColor(Color.DKGRAY)
-        background = bg(translucent("#FFFFFF", 235), 5)
-        setPadding(dp(5), dp(1), dp(5), dp(1))
+        background = bg(translucent("#FFFFFF", 235), 7)
+        setPadding(dp(7), dp(2), dp(7), dp(2))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
             v.post { syncFocusable(v, hasFocus) }
@@ -163,12 +156,12 @@ class FloatingService : Service() {
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
         text = label
-        textSize = 9f
+        textSize = 12f
         minWidth = 0; minimumWidth = 0
-        minHeight = 0; minimumHeight = dp(22)
-        setPadding(dp(4), 0, dp(4), 0)
+        minHeight = 0; minimumHeight = dp(29)
+        setPadding(dp(6), 0, dp(6), 0)
         setTextColor(Color.BLACK)
-        background = bg(translucent("#FFFFFF", 235), 5)
+        background = bg(translucent("#FFFFFF", 235), 7)
         stateListAnimator = null
         setOnClickListener { onClick() }
     }
@@ -178,13 +171,13 @@ class FloatingService : Service() {
 
         val bubble = TextView(this).apply {
             text = "🏆"
-            textSize = 22f
+            textSize = 28f
             gravity = Gravity.CENTER
             background = GradientDrawable().apply {
                 shape = GradientDrawable.OVAL
                 setColor(Color.parseColor("#6A1B9A"))
             }
-            layoutParams = LinearLayout.LayoutParams(dp(34), dp(34))
+            layoutParams = LinearLayout.LayoutParams(dp(44), dp(44))
         }
         root.addView(bubble)
 
@@ -192,18 +185,18 @@ class FloatingService : Service() {
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             // Pestaña blanca semi-transparente que contiene todos los botones.
-            background = bg(translucent("#FFFFFF", 215), 10)
-            setPadding(dp(5), dp(5), dp(5), dp(5))
+            background = bg(translucent("#FFFFFF", 215), 13)
+            setPadding(dp(7), dp(7), dp(7), dp(7))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
-                minOf(dm.widthPixels - dp(16), dp(200)), LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { topMargin = dp(3) }
+                minOf(dm.widthPixels - dp(16), dp(260)), LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(4) }
         }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         scroll = ScrollView(this).apply {
             addView(list)
             layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.22f).toInt()
+                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.29f).toInt()
             )
         }
         val top = LinearLayout(this).apply {
@@ -298,7 +291,7 @@ class FloatingService : Service() {
         if (players.isEmpty()) {
             list.addView(TextView(this).apply {
                 text = "Sin jugadores. Agregalos en la app."
-                textSize = 11f
+                textSize = 13f
                 setTextColor(Color.DKGRAY)
             })
         }
@@ -311,13 +304,13 @@ class FloatingService : Service() {
         val row = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(2), dp(1), dp(2), dp(1))
-            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF", 235), 5)
+            setPadding(dp(3), dp(2), dp(3), dp(2))
+            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF", 235), 7)
         }
         val label = TextView(this).apply {
             text = "${p.name}\n${p.points} pts"
             setTextColor(Color.BLACK)
-            textSize = 9f
+            textSize = 12f
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             setOnClickListener {
                 selectedId = p.id
@@ -330,7 +323,7 @@ class FloatingService : Service() {
                 players = Store.addPoints(this@FloatingService, p.id, n)
                 selectedId = p.id
                 refresh()
-            }.apply { layoutParams = LinearLayout.LayoutParams(dp(26), dp(22)) })
+            }.apply { layoutParams = LinearLayout.LayoutParams(dp(34), dp(29)) })
         }
         return row
     }
