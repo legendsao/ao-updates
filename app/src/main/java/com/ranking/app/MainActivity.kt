@@ -86,7 +86,7 @@ class MainActivity : ComponentActivity() {
     private fun generateMessage() {
         val text = buildString {
             append("🏆 Ranking")
-            sortPlayers(players).forEachIndexed { i, p ->
+            sortPlayers(players.filter { it.points != 0 }).forEachIndexed { i, p ->
                 append("\n${i + 1}. @${p.number.ifEmpty { p.name }} — ${p.points} pts")
             }
         }
