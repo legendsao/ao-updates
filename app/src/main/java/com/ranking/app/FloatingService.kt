@@ -133,7 +133,7 @@ class FloatingService : Service() {
         textSize = 9f
         setTextColor(Color.BLACK)
         setHintTextColor(Color.DKGRAY)
-        background = bg(translucent("#FFFFFF", 190), 5)
+        background = bg(translucent("#FFFFFF", 235), 5)
         setPadding(dp(5), dp(1), dp(5), dp(1))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
@@ -166,7 +166,7 @@ class FloatingService : Service() {
         minHeight = 0; minimumHeight = dp(22)
         setPadding(dp(4), 0, dp(4), 0)
         setTextColor(Color.BLACK)
-        background = bg(translucent("#FFFFFF", 190), 5)
+        background = bg(translucent("#FFFFFF", 235), 5)
         stateListAnimator = null
         setOnClickListener { onClick() }
     }
@@ -190,7 +190,7 @@ class FloatingService : Service() {
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             // Pestaña blanca semi-transparente que contiene todos los botones.
-            background = bg(translucent("#FFFFFF", 150), 10)
+            background = bg(translucent("#FFFFFF", 215), 10)
             setPadding(dp(5), dp(5), dp(5), dp(5))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
@@ -310,7 +310,7 @@ class FloatingService : Service() {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
             setPadding(dp(2), dp(1), dp(2), dp(1))
-            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF", 190), 5)
+            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF", 235), 5)
         }
         val label = TextView(this).apply {
             text = "${p.name}\n${p.points} pts"
