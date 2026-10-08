@@ -327,10 +327,10 @@ class FloatingService : Service() {
         amount.hint = if (sel != null) "Cantidad p/ ${sel.name.take(10)}" else "Cantidad"
     }
 
-    /** Un solo lugar con todos los atajos de puntos: -1/+1/+5/+10 fijos y los configurables en Ajustes. */
+    /** Un solo lugar con los atajos de puntos, todos editables desde Ajustes en la app (incluso negativos). */
     private fun refreshChips() {
         chips.removeAllViews()
-        (listOf(-1, 1, 5, 10) + Store.quick(this)).forEach { n ->
+        Store.quick(this).forEach { n ->
             chips.addView(btn(if (n > 0) "+$n" else "$n") {
                 val id = selectedId
                 if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()

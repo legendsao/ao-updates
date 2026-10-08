@@ -162,7 +162,7 @@ class MainActivity : ComponentActivity() {
                 text = {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedTextField(quick, { quick = it }, singleLine = true,
-                            label = { Text("Atajos de puntos (ej. 15,30,100)") })
+                            label = { Text("Atajos de la flotante (ej. -1,1,5,10,15,30,100)") })
                     }
                 },
                 confirmButton = {
