@@ -67,7 +67,9 @@ class FloatingService : Service() {
         }
         wm.addView(root, params)
         root.setOnTouchListener { _, e ->
-            if (e.action == MotionEvent.ACTION_OUTSIDE && panel.visibility == View.VISIBLE) collapse()
+            if (e.action == MotionEvent.ACTION_OUTSIDE && panel.visibility == View.VISIBLE &&
+                editFields.none { it.hasFocus() }
+            ) collapse()
             false
         }
     }
