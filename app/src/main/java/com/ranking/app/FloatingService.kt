@@ -50,19 +50,38 @@ class FloatingService : Service() {
         startForegroundNotification()
         wm = getSystemService(WINDOW_SERVICE) as WindowManager
         buildViews()
+        val (savedX, savedY) = loadPos()
         params = WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY,
-            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE or
+                WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL or
+                WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH,
             PixelFormat.TRANSLUCENT,
         ).apply {
             gravity = Gravity.TOP or Gravity.START
-            x = 0
-            y = dp(120)
+            x = savedX
+            y = savedY
             softInputMode = WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN
         }
         wm.addView(root, params)
+        root.setOnTouchListener { _, e ->
+            if (e.action == MotionEvent.ACTION_OUTSIDE && panel.visibility == View.VISIBLE) collapse()
+            false
+        }
+    }
+
+    /** Posición guardada de la burbuja, o el borde derecho por defecto. */
+    private fun loadPos(): Pair<Int, Int> {
+        val prefs = getSharedPreferences("ranking_ui", MODE_PRIVATE)
+        val defX = resources.displayMetrics.widthPixels - dp(34)
+        return prefs.getInt("bx", defX) to prefs.getInt("by", dp(120))
+    }
+
+    private fun savePos() {
+        getSharedPreferences("ranking_ui", MODE_PRIVATE).edit()
+            .putInt("bx", params.x).putInt("by", params.y).apply()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int) = START_STICKY
@@ -94,8 +113,8 @@ class FloatingService : Service() {
         cornerRadius = dp(radius).toFloat()
     }
 
-    /** Agrega 60% de opacidad (alpha ~153) a un color sólido "#RRGGBB". */
-    private fun translucent(hex: String) = Color.parseColor(hex) and 0x00FFFFFF or (153 shl 24)
+    /** Agrega 80% de opacidad (20% transparente, alpha ~204) a un color sólido "#RRGGBB". */
+    private fun translucent(hex: String) = Color.parseColor(hex) and 0x00FFFFFF or (204 shl 24)
 
     private lateinit var scroll: ScrollView
     private lateinit var chips: LinearLayout
@@ -111,11 +130,11 @@ class FloatingService : Service() {
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
-        textSize = 11f
+        textSize = 9f
         setTextColor(Color.BLACK)
         setHintTextColor(Color.DKGRAY)
-        background = bg(translucent("#FFFFFF"), 6)
-        setPadding(dp(6), dp(2), dp(6), dp(2))
+        background = bg(translucent("#FFFFFF"), 5)
+        setPadding(dp(5), dp(1), dp(5), dp(1))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
             v.post { syncFocusable(v, hasFocus) }
@@ -142,12 +161,12 @@ class FloatingService : Service() {
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
         text = label
-        textSize = 10f
+        textSize = 9f
         minWidth = 0; minimumWidth = 0
-        minHeight = 0; minimumHeight = dp(28)
-        setPadding(dp(5), 0, dp(5), 0)
+        minHeight = 0; minimumHeight = dp(22)
+        setPadding(dp(4), 0, dp(4), 0)
         setTextColor(Color.BLACK)
-        background = bg(translucent("#FFFFFF"), 6)
+        background = bg(translucent("#FFFFFF"), 5)
         stateListAnimator = null
         setOnClickListener { onClick() }
     }
@@ -163,7 +182,7 @@ class FloatingService : Service() {
                 shape = GradientDrawable.OVAL
                 setColor(Color.parseColor("#6A1B9A"))
             }
-            layoutParams = LinearLayout.LayoutParams(dp(40), dp(40))
+            layoutParams = LinearLayout.LayoutParams(dp(34), dp(34))
         }
         root.addView(bubble)
 
@@ -171,17 +190,17 @@ class FloatingService : Service() {
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             background = null // fondo full transparente
-            setPadding(dp(4), dp(4), dp(4), dp(4))
+            setPadding(dp(3), dp(3), dp(3), dp(3))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
-                minOf(dm.widthPixels - dp(16), dp(260)), LinearLayout.LayoutParams.WRAP_CONTENT
-            ).apply { topMargin = dp(4) }
+                minOf(dm.widthPixels - dp(16), dp(200)), LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(3) }
         }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
         scroll = ScrollView(this).apply {
             addView(list)
             layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.28f).toInt()
+                LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.22f).toInt()
             )
         }
         val top = LinearLayout(this).apply {
@@ -250,20 +269,23 @@ class FloatingService : Service() {
                         wm.updateViewLayout(root, params)
                     }
                 }
-                MotionEvent.ACTION_UP -> if (!moved) toggle()
+                MotionEvent.ACTION_UP -> if (moved) savePos() else toggle()
             }
             true
         }
     }
 
     private fun toggle() {
-        if (panel.visibility == View.VISIBLE) {
-            editFields.forEach { it.clearFocus() }
-            panel.visibility = View.GONE
-        } else {
+        if (panel.visibility == View.VISIBLE) collapse() else {
             refresh()
             panel.visibility = View.VISIBLE
         }
+    }
+
+    /** Cierra el panel y le devuelve el uso del resto de la pantalla (teclado, WhatsApp, etc). */
+    private fun collapse() {
+        editFields.forEach { it.clearFocus() }
+        panel.visibility = View.GONE
     }
 
     private fun refresh() {
@@ -286,13 +308,13 @@ class FloatingService : Service() {
         val row = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(3), dp(1), dp(3), dp(1))
-            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF"), 6)
+            setPadding(dp(2), dp(1), dp(2), dp(1))
+            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF"), 5)
         }
         val label = TextView(this).apply {
             text = "${p.name}\n${p.points} pts"
             setTextColor(Color.BLACK)
-            textSize = 11f
+            textSize = 9f
             layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
             setOnClickListener {
                 selectedId = p.id
@@ -305,7 +327,7 @@ class FloatingService : Service() {
                 players = Store.addPoints(this@FloatingService, p.id, n)
                 selectedId = p.id
                 refresh()
-            }.apply { layoutParams = LinearLayout.LayoutParams(dp(34), dp(28)) })
+            }.apply { layoutParams = LinearLayout.LayoutParams(dp(26), dp(22)) })
         }
         return row
     }
