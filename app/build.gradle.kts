@@ -12,8 +12,8 @@ android {
         applicationId = "com.ranking.app"
         minSdk = 26
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 4
+        versionName = "1.3"
     }
 
     buildTypes {
@@ -25,6 +25,13 @@ android {
     }
     kotlinOptions { jvmTarget = "17" }
     buildFeatures { compose = true }
+
+    applicationVariants.all {
+        outputs.all {
+            val output = this as com.android.build.gradle.internal.api.BaseVariantOutputImpl
+            output.outputFileName = "ranking-v${versionName}.apk"
+        }
+    }
 }
 
 dependencies {
