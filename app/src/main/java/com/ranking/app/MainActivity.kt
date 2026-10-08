@@ -117,7 +117,7 @@ class MainActivity : ComponentActivity() {
                 OutlinedButton(onClick = { confirmReset = true }) { Text("Reiniciar puntos") }
             }
             OutlinedButton(onClick = { settings = true }, modifier = Modifier.fillMaxWidth()) {
-                Text("Ajustes y lector de chat")
+                Text(if (BuildConfig.READER) "Ajustes y lector de chat" else "Ajustes")
             }
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 items(players, key = { it.id }) { p ->
@@ -164,12 +164,14 @@ class MainActivity : ComponentActivity() {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedTextField(quick, { quick = it }, singleLine = true,
                             label = { Text("Atajos de puntos (ej. 15,30,100)") })
-                        Button(onClick = {
-                            startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
-                        }, modifier = Modifier.fillMaxWidth()) { Text("Activar lector de chat") }
-                        OutlinedButton(onClick = {
-                            Store.setQuick(this@MainActivity, quick); settings = false; diag = true
-                        }, modifier = Modifier.fillMaxWidth()) { Text("Ver lectura de WhatsApp") }
+                        if (BuildConfig.READER) {
+                            Button(onClick = {
+                                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
+                            }, modifier = Modifier.fillMaxWidth()) { Text("Activar lector de chat") }
+                            OutlinedButton(onClick = {
+                                Store.setQuick(this@MainActivity, quick); settings = false; diag = true
+                            }, modifier = Modifier.fillMaxWidth()) { Text("Ver lectura de WhatsApp") }
+                        }
                     }
                 },
                 confirmButton = {
