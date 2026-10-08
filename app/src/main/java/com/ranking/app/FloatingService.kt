@@ -203,19 +203,20 @@ class FloatingService : Service() {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
         }
+        top.addView(btn("✕ Cerrar") { stopSelf() })
         top.addView(btn("↩ Deshacer") {
             if (Store.undo(this@FloatingService)) refresh()
             else Toast.makeText(this@FloatingService, "Nada para deshacer", Toast.LENGTH_SHORT).show()
         })
-        top.addView(HorizontalScrollView(this).apply {
+        panel.addView(top)
+        panel.addView(scroll)
+
+        // Único lugar para sumar o restar: actúa siempre sobre el jugador seleccionado arriba.
+        panel.addView(HorizontalScrollView(this).apply {
             isHorizontalScrollBarEnabled = false
             chips = LinearLayout(this@FloatingService).apply { orientation = LinearLayout.HORIZONTAL }
             addView(chips)
         })
-        panel.addView(top)
-        panel.addView(scroll)
-
-        // Cantidad libre sobre el jugador seleccionado
         val bottom = LinearLayout(this).apply {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
@@ -300,32 +301,24 @@ class FloatingService : Service() {
         refreshChips()
     }
 
+    /** Fila de solo selección: tocar un jugador lo marca como destino de los botones de abajo. */
     private fun row(p: Player): View {
-        val row = LinearLayout(this).apply {
-            orientation = LinearLayout.HORIZONTAL
-            gravity = Gravity.CENTER_VERTICAL
-            setPadding(dp(3), dp(2), dp(3), dp(2))
-            background = bg(translucent(if (p.id == selectedId) "#CE93D8" else "#FFFFFF", 235), 7)
-        }
-        val label = TextView(this).apply {
-            text = "${p.name}\n${p.points} pts"
+        val selected = p.id == selectedId
+        return TextView(this).apply {
+            text = "${if (selected) "▸ " else ""}${p.name} — ${p.points} pts"
             setTextColor(Color.BLACK)
-            textSize = 12f
-            layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            textSize = 13f
+            setPadding(dp(6), dp(5), dp(6), dp(5))
+            background = bg(translucent(if (selected) "#CE93D8" else "#FFFFFF", 235), 7)
+            val margin = dp(2)
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { setMargins(0, margin, 0, margin) }
             setOnClickListener {
                 selectedId = p.id
                 refresh()
             }
         }
-        row.addView(label)
-        listOf(-1, 1, 5, 10).forEach { n ->
-            row.addView(btn(if (n > 0) "+$n" else "$n") {
-                players = Store.addPoints(this@FloatingService, p.id, n)
-                selectedId = p.id
-                refresh()
-            }.apply { layoutParams = LinearLayout.LayoutParams(dp(34), dp(29)) })
-        }
-        return row
     }
 
     private fun updateSumLabel() {
@@ -334,13 +327,14 @@ class FloatingService : Service() {
         amount.hint = if (sel != null) "Cantidad p/ ${sel.name.take(10)}" else "Cantidad"
     }
 
+    /** Un solo lugar con todos los atajos de puntos: -1/+1/+5/+10 fijos y los configurables en Ajustes. */
     private fun refreshChips() {
         chips.removeAllViews()
-        Store.quick(this).forEach { n ->
-            chips.addView(btn("+$n") {
+        (listOf(-1, 1, 5, 10) + Store.quick(this)).forEach { n ->
+            chips.addView(btn(if (n > 0) "+$n" else "$n") {
                 val id = selectedId
                 if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
-                else { Store.addPoints(this@FloatingService, id, n); refresh() }
+                else { players = Store.addPoints(this@FloatingService, id, n); refresh() }
             })
         }
     }
