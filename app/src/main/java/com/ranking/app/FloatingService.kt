@@ -113,6 +113,8 @@ class FloatingService : Service() {
 
     private lateinit var scroll: ScrollView
     private lateinit var chips: LinearLayout
+    private lateinit var editToggle: Button
+    private var editMode = false
     private lateinit var addForm: LinearLayout
     private lateinit var nameInput: EditText
     private lateinit var numberInput: EditText
@@ -208,6 +210,11 @@ class FloatingService : Service() {
             if (Store.undo(this@FloatingService)) refresh()
             else Toast.makeText(this@FloatingService, "Nada para deshacer", Toast.LENGTH_SHORT).show()
         })
+        editToggle = btn("✎ Editar") {
+            editMode = !editMode
+            refreshChips()
+        }
+        top.addView(editToggle)
         panel.addView(top)
         panel.addView(scroll)
 
@@ -327,16 +334,66 @@ class FloatingService : Service() {
         amount.hint = if (sel != null) "Cantidad p/ ${sel.name.take(10)}" else "Cantidad"
     }
 
-    /** Un solo lugar con los atajos de puntos, todos editables desde Ajustes en la app (incluso negativos). */
+    /** Un solo lugar con los atajos de puntos. En modo edición se pueden mover (◀▶), borrar (✕) o agregar uno. */
     private fun refreshChips() {
         chips.removeAllViews()
-        Store.quick(this).forEach { n ->
-            chips.addView(btn(if (n > 0) "+$n" else "$n") {
-                val id = selectedId
-                if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
-                else { players = Store.addPoints(this@FloatingService, id, n); refresh() }
-            })
+        editToggle.text = if (editMode) "✓ Listo" else "✎ Editar"
+        val values = Store.quick(this)
+        if (!editMode) {
+            values.forEach { n ->
+                chips.addView(btn(if (n > 0) "+$n" else "$n") {
+                    val id = selectedId
+                    if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
+                    else { players = Store.addPoints(this@FloatingService, id, n); refresh() }
+                })
+            }
+            return
         }
+        values.forEachIndexed { i, n ->
+            val cell = LinearLayout(this).apply {
+                orientation = LinearLayout.HORIZONTAL
+                gravity = Gravity.CENTER_VERTICAL
+            }
+            cell.addView(btn("◀") { moveQuick(i, i - 1) }.apply { isEnabled = i > 0; alpha = if (i > 0) 1f else 0.3f })
+            cell.addView(TextView(this).apply {
+                text = if (n > 0) "+$n" else "$n"
+                setTextColor(Color.BLACK)
+                textSize = 12f
+                gravity = Gravity.CENTER
+                setPadding(dp(4), 0, dp(4), 0)
+            })
+            cell.addView(btn("▶") { moveQuick(i, i + 1) }.apply { isEnabled = i < values.lastIndex; alpha = if (i < values.lastIndex) 1f else 0.3f })
+            cell.addView(btn("✕") { deleteQuick(i) })
+            chips.addView(cell)
+        }
+        chips.addView(btn("+ agregar") { addQuickFromAmount() })
+    }
+
+    private fun moveQuick(from: Int, to: Int) {
+        val list = Store.quick(this).toMutableList()
+        if (to !in list.indices) return
+        list.add(to, list.removeAt(from))
+        Store.setQuick(this, list.joinToString(","))
+        refreshChips()
+    }
+
+    private fun deleteQuick(index: Int) {
+        val list = Store.quick(this).toMutableList()
+        list.removeAt(index)
+        Store.setQuick(this, list.joinToString(","))
+        refreshChips()
+    }
+
+    /** Toma lo que esté escrito en "Cantidad" y lo agrega como atajo nuevo (admite negativos). */
+    private fun addQuickFromAmount() {
+        val n = amount.text.toString().toIntOrNull()
+        if (n == null || n == 0) {
+            Toast.makeText(this, "Escribí un número en Cantidad primero", Toast.LENGTH_SHORT).show()
+            return
+        }
+        Store.setQuick(this, (Store.quick(this) + n).joinToString(","))
+        amount.setText("")
+        refreshChips()
     }
 
     private fun applyCustom(sign: Int) {
