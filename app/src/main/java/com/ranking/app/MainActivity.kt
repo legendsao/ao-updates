@@ -13,31 +13,50 @@ import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Slider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.runtime.toMutableStateList
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+
+/** Paleta fija para elegir color con un toque; además se puede escribir cualquier hex a mano. */
+private val PALETTE = listOf(
+    "#FFFFFF", "#000000", "#6A1B9A", "#1976D2", "#2E7D32",
+    "#F9A825", "#D32F2F", "#CE93D8", "#90CAF9", "#A5D6A7", "#FFCC80", "#EF9A9A",
+)
 
 class MainActivity : ComponentActivity() {
 
@@ -182,17 +201,78 @@ class MainActivity : ComponentActivity() {
             })
         }
         if (settings) {
-            var quick by remember { mutableStateOf(Store.quickRaw(this@MainActivity)) }
+            val atajos = remember { Store.quick(this@MainActivity).map { it.toString() }.toMutableStateList() }
+            var panelOp by remember { mutableStateOf(Store.panelOpacity(this@MainActivity).toFloat()) }
+            var btnOp by remember { mutableStateOf(Store.buttonOpacity(this@MainActivity).toFloat()) }
+            var scale by remember { mutableStateOf(Store.scalePercent(this@MainActivity).toFloat()) }
+            var bubbleColor by remember { mutableStateOf(Store.bubbleColor(this@MainActivity)) }
+            var panelColor by remember { mutableStateOf(Store.panelColor(this@MainActivity)) }
+            var buttonColor by remember { mutableStateOf(Store.buttonColor(this@MainActivity)) }
+            var selectedColor by remember { mutableStateOf(Store.selectedColor(this@MainActivity)) }
+            var side by remember { mutableStateOf(Store.bubbleSide(this@MainActivity)) }
             var confirmImport by remember { mutableStateOf(false) }
+
+            fun persist() {
+                Store.setQuick(this@MainActivity, atajos.mapNotNull { it.trim().toIntOrNull() }.filter { it != 0 }.joinToString(","))
+                Store.setPanelOpacity(this@MainActivity, panelOp.toInt())
+                Store.setButtonOpacity(this@MainActivity, btnOp.toInt())
+                Store.setScalePercent(this@MainActivity, scale.toInt())
+                Store.setColor(this@MainActivity, "colorBubble", bubbleColor)
+                Store.setColor(this@MainActivity, "colorPanel", panelColor)
+                Store.setColor(this@MainActivity, "colorButton", buttonColor)
+                Store.setColor(this@MainActivity, "colorSelected", selectedColor)
+                Store.setBubbleSide(this@MainActivity, side)
+            }
+
             AlertDialog(
-                onDismissRequest = { Store.setQuick(this@MainActivity, quick); settings = false },
+                onDismissRequest = { persist(); settings = false },
                 title = { Text("Ajustes") },
                 text = {
-                    Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                        OutlinedTextField(quick, { quick = it }, singleLine = true,
-                            label = { Text("Atajos de la flotante (ej. -1,1,5,10,15,30,100)") })
+                    Column(
+                        Modifier.verticalScroll(rememberScrollState()),
+                        verticalArrangement = Arrangement.spacedBy(10.dp),
+                    ) {
+                        Text("Atajos de puntos de la flotante", style = MaterialTheme.typography.titleSmall)
+                        atajos.forEachIndexed { i, v ->
+                            Row(verticalAlignment = Alignment.CenterVertically) {
+                                OutlinedTextField(
+                                    v, { atajos[i] = it }, singleLine = true, modifier = Modifier.weight(1f),
+                                    label = { Text("Botón ${i + 1}") },
+                                    keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                                )
+                                TextButton(onClick = { atajos.removeAt(i) }) { Text("✕") }
+                            }
+                        }
+                        OutlinedButton(onClick = { atajos.add("0") }) { Text("+ Agregar botón") }
+
+                        Text("Apariencia de la flotante", style = MaterialTheme.typography.titleSmall)
+                        Text("Opacidad del panel: ${panelOp.toInt()}%")
+                        Slider(panelOp, { panelOp = it }, valueRange = 10f..100f)
+                        Text("Opacidad de los botones: ${btnOp.toInt()}%")
+                        Slider(btnOp, { btnOp = it }, valueRange = 10f..100f)
+                        Text("Tamaño: ${scale.toInt()}%")
+                        Slider(scale, { scale = it }, valueRange = 60f..200f)
+
+                        ColorPicker("Burbuja", bubbleColor) { bubbleColor = it }
+                        ColorPicker("Panel", panelColor) { panelColor = it }
+                        ColorPicker("Botones", buttonColor) { buttonColor = it }
+                        ColorPicker("Jugador seleccionado", selectedColor) { selectedColor = it }
+
+                        Text("Lado por defecto de la burbuja", style = MaterialTheme.typography.titleSmall)
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            listOf("left" to "Izquierda", "right" to "Derecha").forEach { (value, label) ->
+                                if (side == value) Button(onClick = {}) { Text(label) }
+                                else OutlinedButton(onClick = { side = value }) { Text(label) }
+                            }
+                        }
+                        OutlinedButton(onClick = {
+                            Store.resetBubblePosition(this@MainActivity)
+                            Toast.makeText(this@MainActivity, "Se reinicia la próxima vez que abras la flotante", Toast.LENGTH_SHORT).show()
+                        }) { Text("Reiniciar posición de la burbuja") }
+
+                        Text("Respaldo", style = MaterialTheme.typography.titleSmall)
                         Text(
-                            "Respaldo: un archivo fuera de la app que sobrevive a una desinstalación.",
+                            "Un archivo fuera de la app que sobrevive a una desinstalación.",
                             style = MaterialTheme.typography.bodySmall,
                         )
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -204,7 +284,7 @@ class MainActivity : ComponentActivity() {
                     }
                 },
                 confirmButton = {
-                    TextButton(onClick = { Store.setQuick(this@MainActivity, quick); settings = false }) { Text("Listo") }
+                    TextButton(onClick = { persist(); settings = false }) { Text("Listo") }
                 },
             )
             if (confirmImport) {
@@ -234,6 +314,41 @@ class MainActivity : ComponentActivity() {
                     }) { Text("Reiniciar") }
                 },
                 dismissButton = { TextButton(onClick = { confirmReset = false }) { Text("Cancelar") } },
+            )
+        }
+    }
+
+    /** Fila de color: paleta de toques rápidos + campo para escribir cualquier hex. */
+    @Composable
+    private fun ColorPicker(label: String, hex: String, onPick: (String) -> Unit) {
+        var text by remember(hex) { mutableStateOf(hex) }
+        Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
+            Text(label, style = MaterialTheme.typography.bodyMedium)
+            Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                PALETTE.forEach { swatch ->
+                    val selected = swatch.equals(hex, ignoreCase = true)
+                    Column(
+                        Modifier
+                            .size(28.dp)
+                            .clip(CircleShape)
+                            .background(runCatching { Color(android.graphics.Color.parseColor(swatch)) }.getOrDefault(Color.Gray))
+                            .border(
+                                if (selected) 2.dp else 1.dp,
+                                if (selected) MaterialTheme.colorScheme.primary else Color.Gray,
+                                CircleShape,
+                            )
+                            .clickable { onPick(swatch); text = swatch }
+                    ) {}
+                }
+            }
+            OutlinedTextField(
+                text,
+                {
+                    text = it
+                    if (Regex("^#[0-9A-Fa-f]{6}$").matches(it)) onPick(it)
+                },
+                singleLine = true,
+                label = { Text("o un hex (#RRGGBB)") },
             )
         }
     }

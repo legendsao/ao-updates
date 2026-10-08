@@ -70,6 +70,33 @@ object Store {
         context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putString("quick", raw).apply()
     }
 
+    // --- Apariencia de la ventana flotante, configurable solo desde la app ---
+
+    private fun ui(context: Context) = context.getSharedPreferences("ranking_ui", Context.MODE_PRIVATE)
+
+    fun panelOpacity(context: Context) = ui(context).getInt("panelOpacity", 84)
+    fun setPanelOpacity(context: Context, pct: Int) = ui(context).edit().putInt("panelOpacity", pct).apply()
+
+    fun buttonOpacity(context: Context) = ui(context).getInt("buttonOpacity", 92)
+    fun setButtonOpacity(context: Context, pct: Int) = ui(context).edit().putInt("buttonOpacity", pct).apply()
+
+    /** Multiplicador de tamaño sobre las medidas base (100 = tamaño normal de fábrica). */
+    fun scalePercent(context: Context) = ui(context).getInt("scale", 100)
+    fun setScalePercent(context: Context, pct: Int) = ui(context).edit().putInt("scale", pct).apply()
+
+    fun bubbleColor(context: Context) = ui(context).getString("colorBubble", "#6A1B9A")!!
+    fun panelColor(context: Context) = ui(context).getString("colorPanel", "#FFFFFF")!!
+    fun buttonColor(context: Context) = ui(context).getString("colorButton", "#FFFFFF")!!
+    fun selectedColor(context: Context) = ui(context).getString("colorSelected", "#CE93D8")!!
+
+    fun setColor(context: Context, key: String, hex: String) = ui(context).edit().putString(key, hex).apply()
+
+    /** Lado por defecto de la burbuja la primera vez, o tras "reiniciar posición". */
+    fun bubbleSide(context: Context) = ui(context).getString("side", "right")!!
+    fun setBubbleSide(context: Context, side: String) = ui(context).edit().putString("side", side).apply()
+
+    fun resetBubblePosition(context: Context) = ui(context).edit().remove("bx").remove("by").apply()
+
     /** Texto JSON con los jugadores actuales, para guardar fuera de la app (respaldo que sobrevive a una desinstalación). */
     fun exportJson(context: Context): String {
         val arr = JSONArray()

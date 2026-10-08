@@ -67,10 +67,10 @@ class FloatingService : Service() {
         wm.addView(root, params)
     }
 
-    /** Posición guardada de la burbuja, o el borde derecho por defecto. */
+    /** Posición guardada de la burbuja, o el lado elegido en Ajustes por defecto. */
     private fun loadPos(): Pair<Int, Int> {
         val prefs = getSharedPreferences("ranking_ui", MODE_PRIVATE)
-        val defX = resources.displayMetrics.widthPixels - dp(34)
+        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(34)
         return prefs.getInt("bx", defX) to prefs.getInt("by", dp(120))
     }
 
@@ -101,15 +101,21 @@ class FloatingService : Service() {
         startForeground(1, n, ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE)
     }
 
-    private fun dp(v: Int) = (v * resources.displayMetrics.density).toInt()
+    /** dp aplicando el "Tamaño" elegido en Ajustes (100% = medidas de fábrica). */
+    private fun dp(v: Int) = (v * resources.displayMetrics.density * (Store.scalePercent(this) / 100f)).toInt()
 
     private fun bg(color: Int, radius: Int) = GradientDrawable().apply {
         setColor(color)
         cornerRadius = dp(radius).toFloat()
     }
 
-    /** Agrega opacidad a un color sólido "#RRGGBB" (0..255). Semi-transparente, nunca 100% invisible. */
-    private fun translucent(hex: String, alpha: Int = 150) = Color.parseColor(hex) and 0x00FFFFFF or (alpha shl 24)
+    /** Agrega opacidad (0..100%) a un color sólido "#RRGGBB". Semi-transparente, nunca 100% invisible. */
+    private fun translucent(hex: String, pct: Int) =
+        runCatching { Color.parseColor(hex) }.getOrDefault(Color.WHITE) and 0x00FFFFFF or
+            ((pct.coerceIn(0, 100) * 255 / 100) shl 24)
+
+    private fun panelBg() = bg(translucent(Store.panelColor(this), Store.panelOpacity(this)), 13)
+    private fun elementBg(hex: String) = bg(translucent(hex, Store.buttonOpacity(this)), 7)
 
     private lateinit var scroll: ScrollView
     private lateinit var chips: LinearLayout
@@ -130,7 +136,7 @@ class FloatingService : Service() {
         textSize = 12f
         setTextColor(Color.BLACK)
         setHintTextColor(Color.DKGRAY)
-        background = bg(translucent("#FFFFFF", 235), 7)
+        background = elementBg(Store.buttonColor(this@FloatingService))
         setPadding(dp(7), dp(2), dp(7), dp(2))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
@@ -163,7 +169,7 @@ class FloatingService : Service() {
         minHeight = 0; minimumHeight = dp(29)
         setPadding(dp(6), 0, dp(6), 0)
         setTextColor(Color.BLACK)
-        background = bg(translucent("#FFFFFF", 235), 7)
+        background = elementBg(Store.buttonColor(this@FloatingService))
         stateListAnimator = null
         setOnClickListener { onClick() }
     }
@@ -177,7 +183,7 @@ class FloatingService : Service() {
             gravity = Gravity.CENTER
             background = GradientDrawable().apply {
                 shape = GradientDrawable.OVAL
-                setColor(Color.parseColor("#6A1B9A"))
+                setColor(runCatching { Color.parseColor(Store.bubbleColor(this@FloatingService)) }.getOrDefault(Color.parseColor("#6A1B9A")))
             }
             layoutParams = LinearLayout.LayoutParams(dp(44), dp(44))
         }
@@ -187,7 +193,7 @@ class FloatingService : Service() {
         panel = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             // Pestaña blanca semi-transparente que contiene todos los botones.
-            background = bg(translucent("#FFFFFF", 215), 13)
+            background = panelBg()
             setPadding(dp(7), dp(7), dp(7), dp(7))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
@@ -316,7 +322,7 @@ class FloatingService : Service() {
             setTextColor(Color.BLACK)
             textSize = 13f
             setPadding(dp(6), dp(5), dp(6), dp(5))
-            background = bg(translucent(if (selected) "#CE93D8" else "#FFFFFF", 235), 7)
+            background = elementBg(if (selected) Store.selectedColor(this@FloatingService) else Store.buttonColor(this@FloatingService))
             val margin = dp(2)
             layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
