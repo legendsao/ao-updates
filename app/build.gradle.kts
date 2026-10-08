@@ -16,18 +16,6 @@ android {
         versionName = "1.0"
     }
 
-    flavorDimensions += "mode"
-    productFlavors {
-        create("lite") {
-            dimension = "mode"
-            buildConfigField("boolean", "READER", "false")
-        }
-        create("full") {
-            dimension = "mode"
-            buildConfigField("boolean", "READER", "true")
-        }
-    }
-
     buildTypes {
         release { isMinifyEnabled = false }
     }
@@ -36,10 +24,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions { jvmTarget = "17" }
-    buildFeatures {
-        compose = true
-        buildConfig = true
-    }
+    buildFeatures { compose = true }
 }
 
 dependencies {

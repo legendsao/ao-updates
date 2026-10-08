@@ -101,7 +101,6 @@ class MainActivity : ComponentActivity() {
         var adding by remember { mutableStateOf(false) }
         var confirmReset by remember { mutableStateOf(false) }
         var settings by remember { mutableStateOf(false) }
-        var diag by remember { mutableStateOf(false) }
 
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             Text("Ranking", style = MaterialTheme.typography.headlineMedium)
@@ -117,7 +116,7 @@ class MainActivity : ComponentActivity() {
                 OutlinedButton(onClick = { confirmReset = true }) { Text("Reiniciar puntos") }
             }
             OutlinedButton(onClick = { settings = true }, modifier = Modifier.fillMaxWidth()) {
-                Text(if (BuildConfig.READER) "Ajustes y lector de chat" else "Ajustes")
+                Text("Ajustes")
             }
             LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                 items(players, key = { it.id }) { p ->
@@ -164,39 +163,11 @@ class MainActivity : ComponentActivity() {
                     Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                         OutlinedTextField(quick, { quick = it }, singleLine = true,
                             label = { Text("Atajos de puntos (ej. 15,30,100)") })
-                        if (BuildConfig.READER) {
-                            Button(onClick = {
-                                startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
-                            }, modifier = Modifier.fillMaxWidth()) { Text("Activar lector de chat") }
-                            OutlinedButton(onClick = {
-                                Store.setQuick(this@MainActivity, quick); settings = false; diag = true
-                            }, modifier = Modifier.fillMaxWidth()) { Text("Ver lectura de WhatsApp") }
-                        }
                     }
                 },
                 confirmButton = {
                     TextButton(onClick = { Store.setQuick(this@MainActivity, quick); settings = false }) { Text("Listo") }
                 },
-            )
-        }
-        if (diag) {
-            val dump = ChatBridge.lastDump
-            AlertDialog(
-                onDismissRequest = { diag = false },
-                title = { Text("Lectura de WhatsApp") },
-                text = {
-                    androidx.compose.foundation.lazy.LazyColumn {
-                        item { Text(dump, style = MaterialTheme.typography.bodySmall) }
-                    }
-                },
-                confirmButton = {
-                    TextButton(onClick = {
-                        val cm = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
-                        cm.setPrimaryClip(ClipData.newPlainText("Lectura", dump))
-                        Toast.makeText(this@MainActivity, "Copiado", Toast.LENGTH_SHORT).show()
-                    }) { Text("Copiar") }
-                },
-                dismissButton = { TextButton(onClick = { diag = false }) { Text("Cerrar") } },
             )
         }
         if (confirmReset) {
