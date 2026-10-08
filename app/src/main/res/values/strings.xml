@@ -1,0 +1,3 @@
+<resources>
+    <string name="chat_reader_desc">Lee el texto del chat de WhatsApp en pantalla para sugerir puntos. No envía nada ni suma sin tu confirmación.</string>
+</resources>

@@ -19,6 +19,7 @@ import android.view.inputmethod.EditorInfo
 import android.view.inputmethod.InputMethodManager
 import android.widget.Button
 import android.widget.EditText
+import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
@@ -62,12 +63,15 @@ class FloatingService : Service() {
             softInputMode = WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN
         }
         wm.addView(root, params)
+        ChatBridge.listener = { refreshSuggestions() }
+        refreshSuggestions()
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int) = START_STICKY
 
     override fun onDestroy() {
         running = false
+        ChatBridge.listener = null
         if (::root.isInitialized) runCatching { wm.removeView(root) }
         super.onDestroy()
     }
@@ -94,6 +98,9 @@ class FloatingService : Service() {
     }
 
     private lateinit var scroll: ScrollView
+    private lateinit var bubbleView: TextView
+    private lateinit var sugBox: LinearLayout
+    private lateinit var chips: LinearLayout
     private lateinit var addForm: LinearLayout
     private lateinit var nameInput: EditText
     private lateinit var numberInput: EditText
@@ -144,6 +151,7 @@ class FloatingService : Service() {
         root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
         val bubble = TextView(this).apply {
+            bubbleView = this
             text = "🏆"
             textSize = 22f
             gravity = Gravity.CENTER
@@ -172,6 +180,27 @@ class FloatingService : Service() {
                 LinearLayout.LayoutParams.MATCH_PARENT, (dm.heightPixels * 0.38f).toInt()
             )
         }
+        val top = LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+        }
+        top.addView(btn("↩ Deshacer") {
+            if (Store.undo(this@FloatingService)) refresh()
+            else Toast.makeText(this@FloatingService, "Nada para deshacer", Toast.LENGTH_SHORT).show()
+        })
+        top.addView(HorizontalScrollView(this).apply {
+            isHorizontalScrollBarEnabled = false
+            chips = LinearLayout(this@FloatingService).apply { orientation = LinearLayout.HORIZONTAL }
+            addView(chips)
+        })
+        panel.addView(top)
+        sugBox = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            background = bg(Color.parseColor("#FFF3E0"), 8)
+            setPadding(dp(4), dp(4), dp(4), dp(4))
+            visibility = View.GONE
+        }
+        panel.addView(sugBox)
         panel.addView(scroll)
 
         // Cantidad libre sobre el jugador seleccionado
@@ -252,6 +281,8 @@ class FloatingService : Service() {
         }
         players.forEach { p -> list.addView(row(p)) }
         updateSumLabel()
+        refreshChips()
+        refreshSuggestions()
     }
 
     private fun row(p: Player): View {
@@ -286,6 +317,53 @@ class FloatingService : Service() {
         val sel = players.firstOrNull { it.id == selectedId }
         sumBtn.text = if (sel != null) "Sumar a ${sel.name.take(8)}" else "Sumar"
         amount.hint = if (sel != null) "Cantidad p/ ${sel.name.take(10)}" else "Cantidad"
+    }
+
+    private fun refreshChips() {
+        chips.removeAllViews()
+        Store.quick(this).forEach { n ->
+            chips.addView(btn("+$n") {
+                val id = selectedId
+                if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
+                else { Store.addPoints(this@FloatingService, id, n); refresh() }
+            })
+        }
+    }
+
+    private fun refreshSuggestions() {
+        if (!::sugBox.isInitialized) return
+        val sugs = ChatBridge.pending()
+        bubbleView.text = if (sugs.isEmpty()) "🏆" else "🏆${sugs.size}"
+        sugBox.removeAllViews()
+        sugBox.visibility = if (sugs.isEmpty()) View.GONE else View.VISIBLE
+        val all = Store.load(this)
+        sugs.take(4).forEach { s ->
+            val exists = all.any { ChatParser.norm(it.name) == ChatParser.norm(s.name) }
+            val r = LinearLayout(this).apply { orientation = LinearLayout.HORIZONTAL; gravity = Gravity.CENTER_VERTICAL }
+            r.addView(TextView(this).apply {
+                text = "${s.name}${if (exists) "" else " (nuevo)"} +${s.points}" +
+                    if (s.reply.isNotBlank()) "\n“${s.reply.take(30)}”" else ""
+                setTextColor(Color.BLACK); textSize = 13f
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            })
+            r.addView(btn("Sumar") { applySuggestion(s) })
+            r.addView(btn("✕") { ChatBridge.markHandled(this@FloatingService, s.id) })
+            sugBox.addView(r)
+        }
+    }
+
+    private fun applySuggestion(s: Suggestion) {
+        var all = Store.load(this)
+        var p = all.firstOrNull { ChatParser.norm(it.name) == ChatParser.norm(s.name) }
+        if (p == null) {
+            p = Player(name = s.name, number = "")
+            all = all + p
+            Store.save(this, all)
+        }
+        Store.addPoints(this, p.id, s.points)
+        selectedId = p.id
+        ChatBridge.markHandled(this, s.id)
+        refresh()
     }
 
     private fun applyCustom(sign: Int) {

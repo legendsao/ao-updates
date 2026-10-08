@@ -36,8 +36,38 @@ object Store {
         }
     }
 
+    private val history = ArrayDeque<List<Player>>()
+
     @Synchronized
     fun save(context: Context, players: List<Player>) {
+        val cur = load(context)
+        if (cur != players) {
+            history.addLast(cur)
+            if (history.size > 30) history.removeFirst()
+        }
+        write(context, players)
+    }
+
+    /** Revierte el último cambio guardado (en esta sesión del proceso). */
+    @Synchronized
+    fun undo(context: Context): Boolean {
+        if (history.isEmpty()) return false
+        write(context, history.removeLast())
+        return true
+    }
+
+    fun quick(context: Context): List<Int> =
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString("quick", "15,30,100")!!
+            .split(",", " ").mapNotNull { it.trim().toIntOrNull() }.filter { it > 0 }.take(8)
+
+    fun quickRaw(context: Context): String =
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).getString("quick", "15,30,100")!!
+
+    fun setQuick(context: Context, raw: String) {
+        context.getSharedPreferences(PREFS, Context.MODE_PRIVATE).edit().putString("quick", raw).apply()
+    }
+
+    private fun write(context: Context, players: List<Player>) {
         val arr = JSONArray()
         players.forEach {
             arr.put(
