@@ -84,10 +84,11 @@ object Store {
     fun scalePercent(context: Context) = ui(context).getInt("scale", 100)
     fun setScalePercent(context: Context, pct: Int) = ui(context).edit().putInt("scale", pct).apply()
 
-    fun bubbleColor(context: Context) = ui(context).getString("colorBubble", "#6A1B9A")!!
-    fun panelColor(context: Context) = ui(context).getString("colorPanel", "#FFFFFF")!!
-    fun buttonColor(context: Context) = ui(context).getString("colorButton", "#FFFFFF")!!
-    fun selectedColor(context: Context) = ui(context).getString("colorSelected", "#CE93D8")!!
+    // Tema oscuro violeta por defecto: se nota mucho más sobre un chat con fondo negro/oscuro.
+    fun bubbleColor(context: Context) = ui(context).getString("colorBubble", "#9C4DCC")!!
+    fun panelColor(context: Context) = ui(context).getString("colorPanel", "#1A1025")!!
+    fun buttonColor(context: Context) = ui(context).getString("colorButton", "#2D1B3D")!!
+    fun selectedColor(context: Context) = ui(context).getString("colorSelected", "#9C4DCC")!!
 
     fun setColor(context: Context, key: String, hex: String) = ui(context).edit().putString(key, hex).apply()
 

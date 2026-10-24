@@ -402,6 +402,18 @@ class MainActivity : ComponentActivity() {
                         Text("Tamaño: ${scale.toInt()}%")
                         Slider(scale, { scale = it }, valueRange = 60f..200f)
 
+                        Text("Modo: usa un juego de colores de una vez", style = MaterialTheme.typography.bodySmall)
+                        Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            OutlinedButton(onClick = {
+                                bubbleColor = "#9C4DCC"; panelColor = "#1A1025"
+                                buttonColor = "#2D1B3D"; selectedColor = "#9C4DCC"
+                            }) { Text("🌙 Oscuro violeta") }
+                            OutlinedButton(onClick = {
+                                bubbleColor = "#6A1B9A"; panelColor = "#FFFFFF"
+                                buttonColor = "#FFFFFF"; selectedColor = "#CE93D8"
+                            }) { Text("☀ Claro") }
+                        }
+
                         ColorPicker("Burbuja", bubbleColor) { bubbleColor = it }
                         ColorPicker("Panel", panelColor) { panelColor = it }
                         ColorPicker("Botones", buttonColor) { buttonColor = it }

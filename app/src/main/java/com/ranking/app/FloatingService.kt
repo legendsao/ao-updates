@@ -118,6 +118,17 @@ class FloatingService : Service() {
     private fun panelBg() = bg(translucent(Store.panelColor(this), Store.panelOpacity(this)), 13)
     private fun elementBg(hex: String) = bg(translucent(hex, Store.buttonOpacity(this)), 7)
 
+    /** Blanco o negro según qué se lea mejor sobre ese color de fondo (así el texto nunca
+     * desaparece, elijas el color que elijas, claro u oscuro). */
+    private fun autoText(hex: String): Int {
+        val c = runCatching { Color.parseColor(hex) }.getOrDefault(Color.WHITE)
+        val luminance = (0.299 * Color.red(c) + 0.587 * Color.green(c) + 0.114 * Color.blue(c)) / 255
+        return if (luminance > 0.55) Color.BLACK else Color.WHITE
+    }
+
+    private fun textOnButton() = autoText(Store.buttonColor(this))
+    private fun textOnPanel() = autoText(Store.panelColor(this))
+
     private lateinit var scroll: ScrollView
     private lateinit var feedback: TextView
     private val uiHandler = Handler(Looper.getMainLooper())
@@ -150,8 +161,8 @@ class FloatingService : Service() {
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
         textSize = 12f
-        setTextColor(Color.BLACK)
-        setHintTextColor(Color.DKGRAY)
+        setTextColor(textOnButton())
+        setHintTextColor((textOnButton() and 0x00FFFFFF) or (0x99 shl 24))
         background = elementBg(Store.buttonColor(this@FloatingService))
         setPadding(dp(7), dp(2), dp(7), dp(2))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
@@ -184,7 +195,7 @@ class FloatingService : Service() {
         minWidth = 0; minimumWidth = 0
         minHeight = 0; minimumHeight = dp(29)
         setPadding(dp(6), 0, dp(6), 0)
-        setTextColor(Color.BLACK)
+        setTextColor(textOnButton())
         background = elementBg(Store.buttonColor(this@FloatingService))
         stateListAnimator = null
         setOnClickListener { onClick() }
@@ -240,7 +251,7 @@ class FloatingService : Service() {
         panel.addView(top)
         feedback = TextView(this).apply {
             textSize = 11f
-            setTextColor(Color.BLACK)
+            setTextColor(textOnPanel())
             setPadding(dp(2), dp(1), dp(2), dp(1))
             visibility = View.GONE
         }
@@ -350,7 +361,7 @@ class FloatingService : Service() {
             list.addView(TextView(this).apply {
                 text = "Sin jugadores. Agregalos en la app."
                 textSize = 13f
-                setTextColor(Color.DKGRAY)
+                setTextColor(textOnPanel())
             })
         }
         players.forEach { p -> list.addView(row(p)) }
@@ -365,7 +376,7 @@ class FloatingService : Service() {
         val selected = p.id == selectedId
         return TextView(this).apply {
             text = "${if (selected) "✓ " else ""}${p.name} — ${p.points} pts"
-            setTextColor(Color.BLACK)
+            setTextColor(autoText(if (selected) Store.selectedColor(this@FloatingService) else Store.buttonColor(this@FloatingService)))
             textSize = 13f
             setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
             setPadding(dp(6), dp(5), dp(6), dp(5))
@@ -407,7 +418,7 @@ class FloatingService : Service() {
             cell.addView(btn("◀") { moveQuick(i, i - 1) }.apply { isEnabled = i > 0; alpha = if (i > 0) 1f else 0.3f })
             cell.addView(TextView(this).apply {
                 text = if (n > 0) "+$n" else "$n"
-                setTextColor(Color.BLACK)
+                setTextColor(textOnPanel())
                 textSize = 12f
                 gravity = Gravity.CENTER
                 setPadding(dp(4), 0, dp(4), 0)
