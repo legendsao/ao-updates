@@ -71,7 +71,7 @@ class FloatingService : Service() {
     /** Posición guardada de la burbuja, o el lado elegido en Ajustes por defecto. */
     private fun loadPos(): Pair<Int, Int> {
         val prefs = getSharedPreferences("ranking_ui", MODE_PRIVATE)
-        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(34)
+        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(44)
         return prefs.getInt("bx", defX) to prefs.getInt("by", dp(120))
     }
 
@@ -302,10 +302,31 @@ class FloatingService : Service() {
                         wm.updateViewLayout(root, params)
                     }
                 }
-                MotionEvent.ACTION_UP -> if (moved) savePos() else toggle()
+                MotionEvent.ACTION_UP -> if (moved) snapToEdge() else toggle()
             }
             true
         }
+    }
+
+    /** Al soltar, la burbuja va sola al borde más cercano (izquierda o derecha), como el chat head de Messenger. */
+    private fun snapToEdge() {
+        val dm = resources.displayMetrics
+        val size = dp(44)
+        val maxY = (dm.heightPixels - size).coerceAtLeast(0)
+        params.y = params.y.coerceIn(0, maxY)
+        val goLeft = params.x + size / 2 < dm.widthPixels / 2
+        val targetX = if (goLeft) 0 else dm.widthPixels - size
+        val startX = params.x
+        android.animation.ValueAnimator.ofFloat(0f, 1f).apply {
+            duration = 180
+            addUpdateListener {
+                params.x = (startX + (targetX - startX) * it.animatedValue as Float).toInt()
+                runCatching { wm.updateViewLayout(root, params) }
+            }
+            start()
+        }
+        savePos()
+        getSharedPreferences("ranking_ui", MODE_PRIVATE).edit().putInt("bx", targetX).apply()
     }
 
     private fun toggle() {
