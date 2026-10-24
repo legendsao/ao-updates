@@ -134,9 +134,18 @@ class FloatingService : Service() {
         return if (luminance > 0.55) Color.BLACK else Color.WHITE
     }
 
-    /** Relieve negro suave alrededor del texto, para que no se mezcle con fondos variados. */
-    private fun TextView.relief() {
-        setShadowLayer(dp(2).toFloat().coerceAtLeast(2f), 0f, dp(1).toFloat(), Color.argb(170, 0, 0, 0))
+    /** Contorno (no relleno) alrededor del texto, para que no se mezcle con el fondo. Se adapta:
+     * negro si el texto es claro, blanco si el texto es oscuro (así nunca queda "manchado",
+     * como pasaba en el botón Sumar con texto oscuro sobre dorado). Android no permite un
+     * stroke real en un TextView; un halo parejo (offset 0,0) es lo más cercano a un contorno. */
+    private fun TextView.relief(textColorArgb: Int) {
+        val outline = if (isLight(textColorArgb)) Color.argb(190, 0, 0, 0) else Color.argb(190, 255, 255, 255)
+        setShadowLayer(2.2f.coerceAtLeast(dp(2).toFloat()), 0f, 0f, outline)
+    }
+
+    private fun isLight(argb: Int): Boolean {
+        val luminance = (0.299 * Color.red(argb) + 0.587 * Color.green(argb) + 0.114 * Color.blue(argb)) / 255
+        return luminance > 0.6
     }
 
     private fun textOnButton() = autoText(Store.buttonColor(this))
@@ -164,11 +173,11 @@ class FloatingService : Service() {
 
     /** Botón circular de ícono (✕ ↩ ✎), con tinte propio según qué hace. */
     private fun iconButton(symbol: String, tintHex: String, tintPct: Int, onClick: () -> Unit) = TextView(this).apply {
-        relief()
         text = symbol
         textSize = 15f
         gravity = Gravity.CENTER
         setTextColor(translucent(tintHex, 230))
+        relief(translucent(tintHex, 230))
         background = GradientDrawable().apply {
             shape = GradientDrawable.OVAL
             setColor(translucent(tintHex, tintPct))
@@ -183,11 +192,11 @@ class FloatingService : Service() {
     private val AVATAR_COLORS = listOf("#6A1B9A", "#1976D2", "#2E7D32", "#D32F2F", "#F9A825", "#00838F", "#AD1457", "#4E342E")
     private fun avatarColor(name: String) = AVATAR_COLORS[(name.hashCode() and 0x7fffffff) % AVATAR_COLORS.size]
     private fun avatar(name: String) = TextView(this).apply {
-        relief()
         text = name.trim().take(1).uppercase().ifEmpty { "?" }
         textSize = 13f
         gravity = Gravity.CENTER
         setTextColor(Color.WHITE)
+        relief(Color.WHITE)
         setTypeface(typeface, android.graphics.Typeface.BOLD)
         background = GradientDrawable().apply {
             shape = GradientDrawable.OVAL
@@ -223,13 +232,13 @@ class FloatingService : Service() {
     private fun imm() = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
 
     private fun field(hintText: String, type: Int, weight: Float = 1f) = EditText(this).apply {
-        relief()
         hint = hintText
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
         textSize = 14f
         setTextColor(textOnButton())
+        relief(textOnButton())
         setHintTextColor((textOnButton() and 0x00FFFFFF) or (0x99 shl 24))
         background = elementBg(Store.buttonColor(this@FloatingService))
         setPadding(dp(9), dp(4), dp(9), dp(4))
@@ -258,13 +267,13 @@ class FloatingService : Service() {
     }
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
-        relief()
         text = label
         textSize = 14f
         minWidth = 0; minimumWidth = 0
         minHeight = 0; minimumHeight = dp(36)
         setPadding(dp(8), 0, dp(8), 0)
         setTextColor(textOnButton())
+        relief(textOnButton())
         background = elementBg(Store.buttonColor(this@FloatingService))
         stateListAnimator = null
         setOnClickListener { onClick() }
@@ -274,7 +283,6 @@ class FloatingService : Service() {
         root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
         val bubble = TextView(this).apply {
-            relief()
             text = "🏆"
             textSize = 28f
             gravity = Gravity.CENTER
@@ -320,9 +328,9 @@ class FloatingService : Service() {
         top.addView(editToggle)
         panel.addView(top)
         feedback = TextView(this).apply {
-            relief()
             textSize = 12f
             setTextColor(Color.parseColor("#8BE28B"))
+            relief(Color.parseColor("#8BE28B"))
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             background = bg(translucent("#2E7D32", 45), 20)
             setPadding(dp(8), dp(4), dp(8), dp(4))
@@ -346,12 +354,12 @@ class FloatingService : Service() {
         }
         amount = field("Cantidad", InputType.TYPE_CLASS_NUMBER)
         val restarBtn = TextView(this).apply {
-            relief()
             text = "Restar"
             textSize = 13f
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             gravity = Gravity.CENTER
             setTextColor(textOnPanel())
+            relief(textOnPanel())
             background = strokeBg(Store.panelColor(this@FloatingService), 0, textOnPanelHex(), 45, 12)
             setPadding(dp(12), 0, dp(12), 0)
             layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
@@ -359,7 +367,6 @@ class FloatingService : Service() {
             setOnClickListener { applyCustom(-1) }
         }
         sumBtn = Button(this).apply {
-            relief()
             text = "Sumar"
             textSize = 13f
             minWidth = 0; minimumWidth = 0
@@ -367,6 +374,7 @@ class FloatingService : Service() {
             setPadding(dp(14), 0, dp(14), 0)
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             setTextColor(autoText(GOLD()))
+            relief(autoText(GOLD()))
             background = bg(translucent(GOLD(), 235), 12)
             stateListAnimator = null
             layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
@@ -380,12 +388,12 @@ class FloatingService : Service() {
 
         // Alta rápida de jugador: borde punteado, es "agregar algo nuevo", no sumar puntos.
         val addToggle = TextView(this).apply {
-            relief()
             text = "+ Jugador"
             textSize = 13f
             gravity = Gravity.CENTER
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             setTextColor(translucent(accent(), 235))
+            relief(translucent(accent(), 235))
             background = dashedBg(accent(), 60, 12)
             setPadding(dp(8), dp(8), dp(8), dp(8))
             layoutParams = LinearLayout.LayoutParams(
@@ -475,10 +483,10 @@ class FloatingService : Service() {
         list.removeAllViews()
         if (players.isEmpty()) {
             list.addView(TextView(this).apply {
-                relief()
                 text = "Sin jugadores. Agregalos en la app."
                 textSize = 14f
                 setTextColor(textOnPanel())
+                relief(textOnPanel())
             })
         }
         players.forEach { p -> list.addView(row(p)) }
@@ -505,7 +513,9 @@ class FloatingService : Service() {
             addView(avatar(p.name))
             addView(TextView(this@FloatingService).apply {
                 text = "${if (selected) "✓ " else ""}${p.name}"
-                setTextColor(if (selected) textOnPanel() else autoText(Store.buttonColor(this@FloatingService)))
+                val nameColor = if (selected) textOnPanel() else autoText(Store.buttonColor(this@FloatingService))
+                setTextColor(nameColor)
+                relief(nameColor)
                 textSize = 14f
                 setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
@@ -515,6 +525,7 @@ class FloatingService : Service() {
                 textSize = 12f
                 setTypeface(typeface, android.graphics.Typeface.BOLD)
                 setTextColor(Color.parseColor(GOLD()))
+                relief(Color.parseColor(GOLD()))
                 setPadding(dp(7), dp(3), dp(7), dp(3))
                 background = bg(translucent(GOLD(), 35), 10)
             })
@@ -552,11 +563,11 @@ class FloatingService : Service() {
                 val padH = 8 + tier * 3
                 val padV = 5 + tier * 2
                 chips.addView(TextView(this).apply {
-                    relief()
                     text = if (n > 0) "+$n" else "$n"
                     textSize = fSize
                     setTypeface(typeface, android.graphics.Typeface.BOLD)
                     setTextColor(translucent(tint, 235))
+                    relief(translucent(tint, 235))
                     setPadding(dp(padH), dp(padV), dp(padH), dp(padV))
                     background = strokeBg(tint, 30, tint, 70, 20)
                     val m = dp(3)
@@ -575,9 +586,9 @@ class FloatingService : Service() {
             }
             cell.addView(btn("◀") { moveQuick(i, i - 1) }.apply { isEnabled = i > 0; alpha = if (i > 0) 1f else 0.3f })
             cell.addView(TextView(this).apply {
-                relief()
                 text = if (n > 0) "+$n" else "$n"
                 setTextColor(textOnPanel())
+                relief(textOnPanel())
                 textSize = 14f
                 gravity = Gravity.CENTER
                 setPadding(dp(4), 0, dp(4), 0)
