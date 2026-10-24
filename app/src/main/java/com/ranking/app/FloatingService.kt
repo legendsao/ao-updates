@@ -134,20 +134,6 @@ class FloatingService : Service() {
         return if (luminance > 0.55) Color.BLACK else Color.WHITE
     }
 
-    /** Contorno (no relleno) alrededor del texto, para que no se mezcle con el fondo. Se adapta:
-     * negro si el texto es claro, blanco si el texto es oscuro (así nunca queda "manchado",
-     * como pasaba en el botón Sumar con texto oscuro sobre dorado). Android no permite un
-     * stroke real en un TextView; un halo parejo (offset 0,0) es lo más cercano a un contorno. */
-    private fun TextView.relief(textColorArgb: Int) {
-        val outline = if (isLight(textColorArgb)) Color.argb(190, 0, 0, 0) else Color.argb(190, 255, 255, 255)
-        setShadowLayer(2.2f.coerceAtLeast(dp(2).toFloat()), 0f, 0f, outline)
-    }
-
-    private fun isLight(argb: Int): Boolean {
-        val luminance = (0.299 * Color.red(argb) + 0.587 * Color.green(argb) + 0.114 * Color.blue(argb)) / 255
-        return luminance > 0.6
-    }
-
     private fun textOnButton() = autoText(Store.buttonColor(this))
     private fun textOnPanel() = autoText(Store.panelColor(this))
     private fun textOnPanelHex() = if (textOnPanel() == Color.WHITE) "#FFFFFF" else "#000000"
@@ -177,7 +163,6 @@ class FloatingService : Service() {
         textSize = 15f
         gravity = Gravity.CENTER
         setTextColor(translucent(tintHex, 230))
-        relief(translucent(tintHex, 230))
         background = GradientDrawable().apply {
             shape = GradientDrawable.OVAL
             setColor(translucent(tintHex, tintPct))
@@ -196,7 +181,6 @@ class FloatingService : Service() {
         textSize = 13f
         gravity = Gravity.CENTER
         setTextColor(Color.WHITE)
-        relief(Color.WHITE)
         setTypeface(typeface, android.graphics.Typeface.BOLD)
         background = GradientDrawable().apply {
             shape = GradientDrawable.OVAL
@@ -238,7 +222,6 @@ class FloatingService : Service() {
         setSingleLine()
         textSize = 14f
         setTextColor(textOnButton())
-        relief(textOnButton())
         setHintTextColor((textOnButton() and 0x00FFFFFF) or (0x99 shl 24))
         background = elementBg(Store.buttonColor(this@FloatingService))
         setPadding(dp(9), dp(4), dp(9), dp(4))
@@ -273,7 +256,6 @@ class FloatingService : Service() {
         minHeight = 0; minimumHeight = dp(36)
         setPadding(dp(8), 0, dp(8), 0)
         setTextColor(textOnButton())
-        relief(textOnButton())
         background = elementBg(Store.buttonColor(this@FloatingService))
         stateListAnimator = null
         setOnClickListener { onClick() }
@@ -330,7 +312,6 @@ class FloatingService : Service() {
         feedback = TextView(this).apply {
             textSize = 12f
             setTextColor(Color.parseColor("#8BE28B"))
-            relief(Color.parseColor("#8BE28B"))
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             background = bg(translucent("#2E7D32", 45), 20)
             setPadding(dp(8), dp(4), dp(8), dp(4))
@@ -359,7 +340,6 @@ class FloatingService : Service() {
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             gravity = Gravity.CENTER
             setTextColor(textOnPanel())
-            relief(textOnPanel())
             background = strokeBg(Store.panelColor(this@FloatingService), 0, textOnPanelHex(), 45, 12)
             setPadding(dp(12), 0, dp(12), 0)
             layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
@@ -374,7 +354,6 @@ class FloatingService : Service() {
             setPadding(dp(14), 0, dp(14), 0)
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             setTextColor(autoText(GOLD()))
-            relief(autoText(GOLD()))
             background = bg(translucent(GOLD(), 235), 12)
             stateListAnimator = null
             layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
@@ -393,7 +372,6 @@ class FloatingService : Service() {
             gravity = Gravity.CENTER
             setTypeface(typeface, android.graphics.Typeface.BOLD)
             setTextColor(translucent(accent(), 235))
-            relief(translucent(accent(), 235))
             background = dashedBg(accent(), 60, 12)
             setPadding(dp(8), dp(8), dp(8), dp(8))
             layoutParams = LinearLayout.LayoutParams(
@@ -486,7 +464,6 @@ class FloatingService : Service() {
                 text = "Sin jugadores. Agregalos en la app."
                 textSize = 14f
                 setTextColor(textOnPanel())
-                relief(textOnPanel())
             })
         }
         players.forEach { p -> list.addView(row(p)) }
@@ -515,7 +492,6 @@ class FloatingService : Service() {
                 text = "${if (selected) "✓ " else ""}${p.name}"
                 val nameColor = if (selected) textOnPanel() else autoText(Store.buttonColor(this@FloatingService))
                 setTextColor(nameColor)
-                relief(nameColor)
                 textSize = 14f
                 setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
                 layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
@@ -525,7 +501,6 @@ class FloatingService : Service() {
                 textSize = 12f
                 setTypeface(typeface, android.graphics.Typeface.BOLD)
                 setTextColor(Color.parseColor(GOLD()))
-                relief(Color.parseColor(GOLD()))
                 setPadding(dp(7), dp(3), dp(7), dp(3))
                 background = bg(translucent(GOLD(), 35), 10)
             })
@@ -567,7 +542,6 @@ class FloatingService : Service() {
                     textSize = fSize
                     setTypeface(typeface, android.graphics.Typeface.BOLD)
                     setTextColor(translucent(tint, 235))
-                    relief(translucent(tint, 235))
                     setPadding(dp(padH), dp(padV), dp(padH), dp(padV))
                     background = strokeBg(tint, 30, tint, 70, 20)
                     val m = dp(3)
@@ -588,7 +562,6 @@ class FloatingService : Service() {
             cell.addView(TextView(this).apply {
                 text = if (n > 0) "+$n" else "$n"
                 setTextColor(textOnPanel())
-                relief(textOnPanel())
                 textSize = 14f
                 gravity = Gravity.CENTER
                 setPadding(dp(4), 0, dp(4), 0)

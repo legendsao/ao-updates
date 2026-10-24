@@ -56,7 +56,7 @@ object Store {
         return true
     }
 
-    private const val DEFAULT_QUICK = "-1,1,5,10,15,30,100"
+    private const val DEFAULT_QUICK = "-1,5,15,30,100"
 
     /** Todos los atajos de puntos de la flotante, en el orden que el usuario los escribió. Admite negativos. */
     fun quick(context: Context): List<Int> =
