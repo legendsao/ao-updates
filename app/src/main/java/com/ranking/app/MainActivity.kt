@@ -348,6 +348,8 @@ class MainActivity : ComponentActivity() {
             var panelColor by remember { mutableStateOf(Store.panelColor(this@MainActivity)) }
             var buttonColor by remember { mutableStateOf(Store.buttonColor(this@MainActivity)) }
             var selectedColor by remember { mutableStateOf(Store.selectedColor(this@MainActivity)) }
+            var goldColor by remember { mutableStateOf(Store.goldColor(this@MainActivity)) }
+            var dangerColor by remember { mutableStateOf(Store.dangerColor(this@MainActivity)) }
             var side by remember { mutableStateOf(Store.bubbleSide(this@MainActivity)) }
             var confirmImport by remember { mutableStateOf(false) }
             var rkTitle by remember { mutableStateOf(Store.rankingTitle(this@MainActivity)) }
@@ -366,6 +368,8 @@ class MainActivity : ComponentActivity() {
                 Store.setColor(this@MainActivity, "colorPanel", panelColor)
                 Store.setColor(this@MainActivity, "colorButton", buttonColor)
                 Store.setColor(this@MainActivity, "colorSelected", selectedColor)
+                Store.setColor(this@MainActivity, "colorGold", goldColor)
+                Store.setColor(this@MainActivity, "colorDanger", dangerColor)
                 Store.setBubbleSide(this@MainActivity, side)
                 Store.setRankingHeader(
                     this@MainActivity, rkTitle, rkDeadline, rkPrizeT, rkPrize1, rkPrize2,
@@ -407,10 +411,12 @@ class MainActivity : ComponentActivity() {
                             OutlinedButton(onClick = {
                                 bubbleColor = "#9C4DCC"; panelColor = "#1A1025"
                                 buttonColor = "#2D1B3D"; selectedColor = "#9C4DCC"
+                                goldColor = "#F9A825"; dangerColor = "#D32F2F"
                             }) { Text("🌙 Oscuro violeta") }
                             OutlinedButton(onClick = {
                                 bubbleColor = "#6A1B9A"; panelColor = "#FFFFFF"
                                 buttonColor = "#FFFFFF"; selectedColor = "#CE93D8"
+                                goldColor = "#F9A825"; dangerColor = "#D32F2F"
                             }) { Text("☀ Claro") }
                         }
 
@@ -418,6 +424,8 @@ class MainActivity : ComponentActivity() {
                         ColorPicker("Panel", panelColor) { panelColor = it }
                         ColorPicker("Botones", buttonColor) { buttonColor = it }
                         ColorPicker("Jugador seleccionado", selectedColor) { selectedColor = it }
+                        ColorPicker("Dorado (Sumar / montos grandes)", goldColor) { goldColor = it }
+                        ColorPicker("Rojo (Cerrar / montos negativos)", dangerColor) { dangerColor = it }
 
                         Text("Lado por defecto de la burbuja", style = MaterialTheme.typography.titleSmall)
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

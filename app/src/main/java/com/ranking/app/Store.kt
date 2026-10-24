@@ -89,6 +89,8 @@ object Store {
     fun panelColor(context: Context) = ui(context).getString("colorPanel", "#1A1025")!!
     fun buttonColor(context: Context) = ui(context).getString("colorButton", "#2D1B3D")!!
     fun selectedColor(context: Context) = ui(context).getString("colorSelected", "#9C4DCC")!!
+    fun goldColor(context: Context) = ui(context).getString("colorGold", "#F9A825")!!
+    fun dangerColor(context: Context) = ui(context).getString("colorDanger", "#D32F2F")!!
 
     fun setColor(context: Context, key: String, hex: String) = ui(context).edit().putString(key, hex).apply()
 

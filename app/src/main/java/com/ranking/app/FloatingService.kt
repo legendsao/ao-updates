@@ -145,8 +145,8 @@ class FloatingService : Service() {
 
     // Colores de significado fijo (no dependen del tema elegido): rojo = "cerrar/borrar",
     // dorado = la acción principal "Sumar". El violeta de acento sí usa el color elegido en Ajustes.
-    private val DANGER = "#D32F2F"
-    private val GOLD = "#F9A825"
+    private fun DANGER() = Store.dangerColor(this)
+    private fun GOLD() = Store.goldColor(this)
     private fun accent() = Store.selectedColor(this)
 
     private fun strokeBg(fillHex: String, fillPct: Int, strokeHex: String, strokePct: Int, radius: Int) =
@@ -308,7 +308,7 @@ class FloatingService : Service() {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
         }
-        top.addView(iconButton("✕", DANGER, 55) { stopSelf() }.apply { (layoutParams as LinearLayout.LayoutParams).marginEnd = dp(8) })
+        top.addView(iconButton("✕", DANGER(), 55) { stopSelf() }.apply { (layoutParams as LinearLayout.LayoutParams).marginEnd = dp(8) })
         top.addView(iconButton("↩", "#FFFFFF", 20) {
             if (Store.undo(this@FloatingService)) refresh()
             else notify("Nada para deshacer")
@@ -366,8 +366,8 @@ class FloatingService : Service() {
             minHeight = 0; minimumHeight = dp(36)
             setPadding(dp(14), 0, dp(14), 0)
             setTypeface(typeface, android.graphics.Typeface.BOLD)
-            setTextColor(autoText(GOLD))
-            background = bg(translucent(GOLD, 235), 12)
+            setTextColor(autoText(GOLD()))
+            background = bg(translucent(GOLD(), 235), 12)
             stateListAnimator = null
             layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
                 .apply { marginStart = dp(6) }
@@ -514,9 +514,9 @@ class FloatingService : Service() {
                 text = "${p.points} pts"
                 textSize = 12f
                 setTypeface(typeface, android.graphics.Typeface.BOLD)
-                setTextColor(Color.parseColor(GOLD))
+                setTextColor(Color.parseColor(GOLD()))
                 setPadding(dp(7), dp(3), dp(7), dp(3))
-                background = bg(translucent(GOLD, 35), 10)
+                background = bg(translucent(GOLD(), 35), 10)
             })
 
             setOnClickListener {
@@ -540,8 +540,8 @@ class FloatingService : Service() {
         if (!editMode) {
             values.forEach { n ->
                 val tint = when {
-                    n < 0 -> DANGER
-                    kotlin.math.abs(n) > 10 -> GOLD
+                    n < 0 -> DANGER()
+                    kotlin.math.abs(n) > 10 -> GOLD()
                     else -> accent()
                 }
                 // Tamaño progresivo según el monto: así, dentro del mismo color, un +100 no
