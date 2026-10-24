@@ -314,15 +314,19 @@ class FloatingService : Service() {
         refreshChips()
     }
 
-    /** Fila de solo selección: tocar un jugador lo marca como destino de los botones de abajo. */
+    /** Fila de solo selección: tocar un jugador lo marca como destino de los botones de abajo.
+     * La marca del seleccionado queda siempre bien visible (opacidad fija), sin importar
+     * el slider de opacidad general, para que se note claro el "rastro" de a quién le sumaste. */
     private fun row(p: Player): View {
         val selected = p.id == selectedId
         return TextView(this).apply {
-            text = "${if (selected) "▸ " else ""}${p.name} — ${p.points} pts"
+            text = "${if (selected) "✓ " else ""}${p.name} — ${p.points} pts"
             setTextColor(Color.BLACK)
             textSize = 13f
+            setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
             setPadding(dp(6), dp(5), dp(6), dp(5))
-            background = elementBg(if (selected) Store.selectedColor(this@FloatingService) else Store.buttonColor(this@FloatingService))
+            background = if (selected) bg(translucent(Store.selectedColor(this@FloatingService), 100), 7)
+                else elementBg(Store.buttonColor(this@FloatingService))
             val margin = dp(2)
             layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
@@ -347,11 +351,7 @@ class FloatingService : Service() {
         val values = Store.quick(this)
         if (!editMode) {
             values.forEach { n ->
-                chips.addView(btn(if (n > 0) "+$n" else "$n") {
-                    val id = selectedId
-                    if (id == null) Toast.makeText(this@FloatingService, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
-                    else { players = Store.addPoints(this@FloatingService, id, n); refresh() }
-                })
+                chips.addView(btn(if (n > 0) "+$n" else "$n") { applyToSelected(n) })
             }
             return
         }
@@ -403,18 +403,28 @@ class FloatingService : Service() {
     }
 
     private fun applyCustom(sign: Int) {
-        val id = selectedId
         val n = amount.text.toString().toIntOrNull()
-        when {
-            id == null -> Toast.makeText(this, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
-            n == null || n <= 0 -> Toast.makeText(this, "Escribí una cantidad", Toast.LENGTH_SHORT).show()
-            else -> {
-                players = Store.addPoints(this, id, n * sign)
-                amount.setText("")
-                amount.clearFocus()
-                refresh()
-            }
+        if (n == null || n <= 0) {
+            Toast.makeText(this, "Escribí una cantidad", Toast.LENGTH_SHORT).show()
+            return
         }
+        applyToSelected(n * sign)
+        amount.setText("")
+        amount.clearFocus()
+    }
+
+    /** Suma/resta sobre el jugador marcado, deja la marca bien visible y avisa a quién se le aplicó. */
+    private fun applyToSelected(delta: Int) {
+        val id = selectedId
+        val target = players.firstOrNull { it.id == id }
+        if (id == null || target == null) {
+            Toast.makeText(this, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
+            return
+        }
+        players = Store.addPoints(this, id, delta)
+        refresh()
+        val sign = if (delta > 0) "+" else ""
+        Toast.makeText(this, "✓ $sign$delta a ${target.name}", Toast.LENGTH_SHORT).show()
     }
 
     private fun saveNewPlayer() {
