@@ -128,6 +128,58 @@ class FloatingService : Service() {
 
     private fun textOnButton() = autoText(Store.buttonColor(this))
     private fun textOnPanel() = autoText(Store.panelColor(this))
+    private fun textOnPanelHex() = if (textOnPanel() == Color.WHITE) "#FFFFFF" else "#000000"
+
+    // Colores de significado fijo (no dependen del tema elegido): rojo = "cerrar/borrar",
+    // dorado = la acción principal "Sumar". El violeta de acento sí usa el color elegido en Ajustes.
+    private val DANGER = "#D32F2F"
+    private val GOLD = "#F9A825"
+    private fun accent() = Store.selectedColor(this)
+
+    private fun strokeBg(fillHex: String, fillPct: Int, strokeHex: String, strokePct: Int, radius: Int) =
+        GradientDrawable().apply {
+            setColor(translucent(fillHex, fillPct))
+            setStroke(dp(1).coerceAtLeast(2), translucent(strokeHex, strokePct))
+            cornerRadius = dp(radius).toFloat()
+        }
+
+    private fun dashedBg(strokeHex: String, strokePct: Int, radius: Int) = GradientDrawable().apply {
+        setColor(Color.TRANSPARENT)
+        setStroke(dp(1).coerceAtLeast(2), translucent(strokeHex, strokePct), dp(4).toFloat(), dp(3).toFloat())
+        cornerRadius = dp(radius).toFloat()
+    }
+
+    /** Botón circular de ícono (✕ ↩ ✎), con tinte propio según qué hace. */
+    private fun iconButton(symbol: String, tintHex: String, tintPct: Int, onClick: () -> Unit) = TextView(this).apply {
+        text = symbol
+        textSize = 15f
+        gravity = Gravity.CENTER
+        setTextColor(translucent(tintHex, 230))
+        background = GradientDrawable().apply {
+            shape = GradientDrawable.OVAL
+            setColor(translucent(tintHex, tintPct))
+        }
+        layoutParams = LinearLayout.LayoutParams(dp(34), dp(34))
+        isClickable = true
+        isFocusable = true
+        setOnClickListener { onClick() }
+    }
+
+    /** Avatar circular con la inicial, de un color estable por nombre (mismo criterio que la app). */
+    private val AVATAR_COLORS = listOf("#6A1B9A", "#1976D2", "#2E7D32", "#D32F2F", "#F9A825", "#00838F", "#AD1457", "#4E342E")
+    private fun avatarColor(name: String) = AVATAR_COLORS[(name.hashCode() and 0x7fffffff) % AVATAR_COLORS.size]
+    private fun avatar(name: String) = TextView(this).apply {
+        text = name.trim().take(1).uppercase().ifEmpty { "?" }
+        textSize = 13f
+        gravity = Gravity.CENTER
+        setTextColor(Color.WHITE)
+        setTypeface(typeface, android.graphics.Typeface.BOLD)
+        background = GradientDrawable().apply {
+            shape = GradientDrawable.OVAL
+            setColor(Color.parseColor(avatarColor(name)))
+        }
+        layoutParams = LinearLayout.LayoutParams(dp(28), dp(28)).apply { marginEnd = dp(8) }
+    }
 
     private lateinit var scroll: ScrollView
     private lateinit var feedback: TextView
@@ -146,7 +198,7 @@ class FloatingService : Service() {
         uiHandler.postDelayed(r, 1800)
     }
     private lateinit var chips: LinearLayout
-    private lateinit var editToggle: Button
+    private lateinit var editToggle: TextView
     private var editMode = false
     private lateinit var addForm: LinearLayout
     private lateinit var nameInput: EditText
@@ -238,12 +290,12 @@ class FloatingService : Service() {
             orientation = LinearLayout.HORIZONTAL
             gravity = Gravity.CENTER_VERTICAL
         }
-        top.addView(btn("✕ Cerrar") { stopSelf() })
-        top.addView(btn("↩ Deshacer") {
+        top.addView(iconButton("✕", DANGER, 55) { stopSelf() }.apply { (layoutParams as LinearLayout.LayoutParams).marginEnd = dp(8) })
+        top.addView(iconButton("↩", "#FFFFFF", 20) {
             if (Store.undo(this@FloatingService)) refresh()
             else notify("Nada para deshacer")
-        })
-        editToggle = btn("✎ Editar") {
+        }.apply { (layoutParams as LinearLayout.LayoutParams).marginEnd = dp(8) })
+        editToggle = iconButton("✎", accent(), 55) {
             editMode = !editMode
             refreshChips()
         }
@@ -251,9 +303,14 @@ class FloatingService : Service() {
         panel.addView(top)
         feedback = TextView(this).apply {
             textSize = 12f
-            setTextColor(textOnPanel())
-            setPadding(dp(2), dp(1), dp(2), dp(1))
+            setTextColor(Color.parseColor("#8BE28B"))
+            setTypeface(typeface, android.graphics.Typeface.BOLD)
+            background = bg(translucent("#2E7D32", 45), 20)
+            setPadding(dp(8), dp(4), dp(8), dp(4))
             visibility = View.GONE
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(6) }
         }
         panel.addView(feedback)
         panel.addView(scroll)
@@ -269,15 +326,52 @@ class FloatingService : Service() {
             gravity = Gravity.CENTER_VERTICAL
         }
         amount = field("Cantidad", InputType.TYPE_CLASS_NUMBER)
-        sumBtn = btn("Sumar") { applyCustom(1) }
+        val restarBtn = TextView(this).apply {
+            text = "Restar"
+            textSize = 13f
+            setTypeface(typeface, android.graphics.Typeface.BOLD)
+            gravity = Gravity.CENTER
+            setTextColor(textOnPanel())
+            background = strokeBg(Store.panelColor(this@FloatingService), 0, textOnPanelHex(), 45, 12)
+            setPadding(dp(12), 0, dp(12), 0)
+            layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
+                .apply { marginStart = dp(6) }
+            setOnClickListener { applyCustom(-1) }
+        }
+        sumBtn = Button(this).apply {
+            text = "Sumar"
+            textSize = 13f
+            minWidth = 0; minimumWidth = 0
+            minHeight = 0; minimumHeight = dp(36)
+            setPadding(dp(14), 0, dp(14), 0)
+            setTypeface(typeface, android.graphics.Typeface.BOLD)
+            setTextColor(autoText(GOLD))
+            background = bg(translucent(GOLD, 235), 12)
+            stateListAnimator = null
+            layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, dp(36))
+                .apply { marginStart = dp(6) }
+            setOnClickListener { applyCustom(1) }
+        }
         bottom.addView(amount)
-        bottom.addView(btn("Restar") { applyCustom(-1) })
+        bottom.addView(restarBtn)
         bottom.addView(sumBtn)
         panel.addView(bottom)
 
-        // Alta rápida de jugador
-        val addToggle = btn("+ Jugador") {
-            addForm.visibility = if (addForm.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+        // Alta rápida de jugador: borde punteado, es "agregar algo nuevo", no sumar puntos.
+        val addToggle = TextView(this).apply {
+            text = "+ Jugador"
+            textSize = 13f
+            gravity = Gravity.CENTER
+            setTypeface(typeface, android.graphics.Typeface.BOLD)
+            setTextColor(translucent(accent(), 235))
+            background = dashedBg(accent(), 60, 12)
+            setPadding(dp(8), dp(8), dp(8), dp(8))
+            layoutParams = LinearLayout.LayoutParams(
+                LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
+            ).apply { topMargin = dp(6) }
+            setOnClickListener {
+                addForm.visibility = if (addForm.visibility == View.VISIBLE) View.GONE else View.VISIBLE
+            }
         }
         panel.addView(addToggle)
         addForm = LinearLayout(this).apply {
@@ -370,22 +464,38 @@ class FloatingService : Service() {
     }
 
     /** Fila de solo selección: tocar un jugador lo marca como destino de los botones de abajo.
-     * La marca del seleccionado queda siempre bien visible (opacidad fija), sin importar
-     * el slider de opacidad general, para que se note claro el "rastro" de a quién le sumaste. */
+     * El seleccionado se marca con un borde que resalta (no un bloque sólido), para que se
+     * note el "rastro" de a quién le sumaste sin tapar todo de color. */
     private fun row(p: Player): View {
         val selected = p.id == selectedId
-        return TextView(this).apply {
-            text = "${if (selected) "✓ " else ""}${p.name} — ${p.points} pts"
-            setTextColor(autoText(if (selected) Store.selectedColor(this@FloatingService) else Store.buttonColor(this@FloatingService)))
-            textSize = 15f
-            setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
-            setPadding(dp(8), dp(7), dp(8), dp(7))
-            background = if (selected) bg(translucent(Store.selectedColor(this@FloatingService), 100), 7)
+        return LinearLayout(this).apply {
+            orientation = LinearLayout.HORIZONTAL
+            gravity = Gravity.CENTER_VERTICAL
+            setPadding(dp(7), dp(6), dp(7), dp(6))
+            background = if (selected) strokeBg(Store.selectedColor(this@FloatingService), 28, Store.selectedColor(this@FloatingService), 100, 10)
                 else elementBg(Store.buttonColor(this@FloatingService))
             val margin = dp(2)
             layoutParams = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT
             ).apply { setMargins(0, margin, 0, margin) }
+
+            addView(avatar(p.name))
+            addView(TextView(this@FloatingService).apply {
+                text = "${if (selected) "✓ " else ""}${p.name}"
+                setTextColor(if (selected) textOnPanel() else autoText(Store.buttonColor(this@FloatingService)))
+                textSize = 14f
+                setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
+                layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, 1f)
+            })
+            addView(TextView(this@FloatingService).apply {
+                text = "${p.points} pts"
+                textSize = 12f
+                setTypeface(typeface, android.graphics.Typeface.BOLD)
+                setTextColor(Color.parseColor(GOLD))
+                setPadding(dp(7), dp(3), dp(7), dp(3))
+                background = bg(translucent(GOLD, 35), 10)
+            })
+
             setOnClickListener {
                 selectedId = p.id
                 refresh()
@@ -402,11 +512,28 @@ class FloatingService : Service() {
     /** Un solo lugar con los atajos de puntos. En modo edición se pueden mover (◀▶), borrar (✕) o agregar uno. */
     private fun refreshChips() {
         chips.removeAllViews()
-        editToggle.text = if (editMode) "✓ Listo" else "✎ Editar"
+        editToggle.text = if (editMode) "✓" else "✎"
         val values = Store.quick(this)
         if (!editMode) {
             values.forEach { n ->
-                chips.addView(btn(if (n > 0) "+$n" else "$n") { applyToSelected(n) })
+                val tint = when {
+                    n < 0 -> DANGER
+                    kotlin.math.abs(n) > 10 -> GOLD
+                    else -> accent()
+                }
+                chips.addView(TextView(this).apply {
+                    text = if (n > 0) "+$n" else "$n"
+                    textSize = 13f
+                    setTypeface(typeface, android.graphics.Typeface.BOLD)
+                    setTextColor(translucent(tint, 235))
+                    setPadding(dp(10), dp(6), dp(10), dp(6))
+                    background = strokeBg(tint, 30, tint, 70, 20)
+                    val m = dp(3)
+                    layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT
+                    ).apply { setMargins(m, 0, m, 0) }
+                    setOnClickListener { applyToSelected(n) }
+                })
             }
             return
         }
