@@ -71,7 +71,7 @@ class FloatingService : Service() {
     /** Posición guardada de la burbuja, o el lado elegido en Ajustes por defecto. */
     private fun loadPos(): Pair<Int, Int> {
         val prefs = getSharedPreferences("ranking_ui", MODE_PRIVATE)
-        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(44)
+        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(52)
         return prefs.getInt("bx", defX) to prefs.getInt("by", dp(120))
     }
 
@@ -160,11 +160,11 @@ class FloatingService : Service() {
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
         setSingleLine()
-        textSize = 12f
+        textSize = 14f
         setTextColor(textOnButton())
         setHintTextColor((textOnButton() and 0x00FFFFFF) or (0x99 shl 24))
         background = elementBg(Store.buttonColor(this@FloatingService))
-        setPadding(dp(7), dp(2), dp(7), dp(2))
+        setPadding(dp(9), dp(4), dp(9), dp(4))
         layoutParams = LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.WRAP_CONTENT, weight)
         setOnFocusChangeListener { v, hasFocus ->
             v.post { syncFocusable(v, hasFocus) }
@@ -191,10 +191,10 @@ class FloatingService : Service() {
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
         text = label
-        textSize = 12f
+        textSize = 14f
         minWidth = 0; minimumWidth = 0
-        minHeight = 0; minimumHeight = dp(29)
-        setPadding(dp(6), 0, dp(6), 0)
+        minHeight = 0; minimumHeight = dp(36)
+        setPadding(dp(8), 0, dp(8), 0)
         setTextColor(textOnButton())
         background = elementBg(Store.buttonColor(this@FloatingService))
         stateListAnimator = null
@@ -212,7 +212,7 @@ class FloatingService : Service() {
                 shape = GradientDrawable.OVAL
                 setColor(runCatching { Color.parseColor(Store.bubbleColor(this@FloatingService)) }.getOrDefault(Color.parseColor("#6A1B9A")))
             }
-            layoutParams = LinearLayout.LayoutParams(dp(44), dp(44))
+            layoutParams = LinearLayout.LayoutParams(dp(52), dp(52))
         }
         root.addView(bubble)
 
@@ -221,10 +221,10 @@ class FloatingService : Service() {
             orientation = LinearLayout.VERTICAL
             // Pestaña blanca semi-transparente que contiene todos los botones.
             background = panelBg()
-            setPadding(dp(7), dp(7), dp(7), dp(7))
+            setPadding(dp(9), dp(9), dp(9), dp(9))
             visibility = View.GONE
             layoutParams = LinearLayout.LayoutParams(
-                minOf(dm.widthPixels - dp(16), dp(260)), LinearLayout.LayoutParams.WRAP_CONTENT
+                minOf(dm.widthPixels - dp(16), dp(300)), LinearLayout.LayoutParams.WRAP_CONTENT
             ).apply { topMargin = dp(4) }
         }
         list = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
@@ -250,7 +250,7 @@ class FloatingService : Service() {
         top.addView(editToggle)
         panel.addView(top)
         feedback = TextView(this).apply {
-            textSize = 11f
+            textSize = 12f
             setTextColor(textOnPanel())
             setPadding(dp(2), dp(1), dp(2), dp(1))
             visibility = View.GONE
@@ -322,7 +322,7 @@ class FloatingService : Service() {
     /** Al soltar, la burbuja va sola al borde más cercano (izquierda o derecha), como el chat head de Messenger. */
     private fun snapToEdge() {
         val dm = resources.displayMetrics
-        val size = dp(44)
+        val size = dp(52)
         val maxY = (dm.heightPixels - size).coerceAtLeast(0)
         params.y = params.y.coerceIn(0, maxY)
         val goLeft = params.x + size / 2 < dm.widthPixels / 2
@@ -360,7 +360,7 @@ class FloatingService : Service() {
         if (players.isEmpty()) {
             list.addView(TextView(this).apply {
                 text = "Sin jugadores. Agregalos en la app."
-                textSize = 13f
+                textSize = 14f
                 setTextColor(textOnPanel())
             })
         }
@@ -377,9 +377,9 @@ class FloatingService : Service() {
         return TextView(this).apply {
             text = "${if (selected) "✓ " else ""}${p.name} — ${p.points} pts"
             setTextColor(autoText(if (selected) Store.selectedColor(this@FloatingService) else Store.buttonColor(this@FloatingService)))
-            textSize = 13f
+            textSize = 15f
             setTypeface(typeface, if (selected) android.graphics.Typeface.BOLD else android.graphics.Typeface.NORMAL)
-            setPadding(dp(6), dp(5), dp(6), dp(5))
+            setPadding(dp(8), dp(7), dp(8), dp(7))
             background = if (selected) bg(translucent(Store.selectedColor(this@FloatingService), 100), 7)
                 else elementBg(Store.buttonColor(this@FloatingService))
             val margin = dp(2)
@@ -419,7 +419,7 @@ class FloatingService : Service() {
             cell.addView(TextView(this).apply {
                 text = if (n > 0) "+$n" else "$n"
                 setTextColor(textOnPanel())
-                textSize = 12f
+                textSize = 14f
                 gravity = Gravity.CENTER
                 setPadding(dp(4), 0, dp(4), 0)
             })
