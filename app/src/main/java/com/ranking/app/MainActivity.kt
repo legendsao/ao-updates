@@ -17,27 +17,54 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ContentCopy
+import androidx.compose.material.icons.filled.Delete
+import androidx.compose.material.icons.filled.Edit
+import androidx.compose.material.icons.filled.EmojiEvents
+import androidx.compose.material.icons.filled.PersonAdd
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.material.icons.filled.RemoveCircleOutline
+import androidx.compose.material.icons.filled.RestartAlt
+import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.filled.Sort
+import androidx.compose.material.icons.filled.Stop
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CenterAlignedTopAppBar
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FilledTonalButton
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Slider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.material3.TopAppBarDefaults
+import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
@@ -49,14 +76,41 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 /** Paleta fija para elegir color con un toque; además se puede escribir cualquier hex a mano. */
 private val PALETTE = listOf(
     "#FFFFFF", "#000000", "#6A1B9A", "#1976D2", "#2E7D32",
     "#F9A825", "#D32F2F", "#CE93D8", "#90CAF9", "#A5D6A7", "#FFCC80", "#EF9A9A",
 )
+
+private val BrandPurple = Color(0xFF6A1B9A)
+private val BrandGold = Color(0xFFF9A825)
+
+private val AppColors = lightColorScheme(
+    primary = BrandPurple,
+    onPrimary = Color.White,
+    primaryContainer = Color(0xFFEFD9FF),
+    onPrimaryContainer = Color(0xFF3A0A5C),
+    secondary = BrandGold,
+    onSecondary = Color.Black,
+    secondaryContainer = Color(0xFFFFE9B0),
+    tertiary = Color(0xFF2E7D32),
+    background = Color(0xFFFAF7FC),
+    surface = Color(0xFFFAF7FC),
+    surfaceVariant = Color(0xFFEFE6F5),
+    error = Color(0xFFD32F2F),
+)
+
+/** Un color de avatar estable por nombre, para distinguir jugadores de un vistazo. */
+private val AVATAR_COLORS = listOf(
+    Color(0xFF6A1B9A), Color(0xFF1976D2), Color(0xFF2E7D32), Color(0xFFD32F2F),
+    Color(0xFFF9A825), Color(0xFF00838F), Color(0xFFAD1457), Color(0xFF4E342E),
+)
+private fun avatarColor(name: String) = AVATAR_COLORS[(name.hashCode().and(0x7fffffff)) % AVATAR_COLORS.size]
 
 class MainActivity : ComponentActivity() {
 
@@ -95,8 +149,8 @@ class MainActivity : ComponentActivity() {
             requestPermissions(arrayOf(Manifest.permission.POST_NOTIFICATIONS), 1)
         }
         setContent {
-            MaterialTheme {
-                Surface { Screen() }
+            MaterialTheme(colorScheme = AppColors) {
+                Surface(color = MaterialTheme.colorScheme.background) { Screen() }
             }
         }
     }
@@ -172,6 +226,7 @@ class MainActivity : ComponentActivity() {
         Toast.makeText(this, "Mensaje copiado", Toast.LENGTH_SHORT).show()
     }
 
+    @OptIn(ExperimentalMaterial3Api::class)
     @Composable
     private fun Screen() {
         var editing by remember { mutableStateOf<Player?>(null) }
@@ -179,38 +234,91 @@ class MainActivity : ComponentActivity() {
         var confirmReset by remember { mutableStateOf(false) }
         var settings by remember { mutableStateOf(false) }
 
-        Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-            Text("Ranking", style = MaterialTheme.typography.headlineMedium)
-            Button(onClick = { toggleFloating() }, modifier = Modifier.fillMaxWidth()) {
-                Text(if (floating) "Detener ventana flotante" else "Iniciar ventana flotante")
-            }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                Button(onClick = { adding = true }) { Text("Agregar") }
-                Button(onClick = { update(sortPlayers(players)) }) { Text("Ordenar de mayor a menor") }
-            }
-            Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                Button(onClick = { generateMessage() }) { Text("Generar mensaje") }
-                OutlinedButton(onClick = { confirmReset = true }) { Text("Reiniciar puntos") }
-            }
-            OutlinedButton(onClick = { settings = true }, modifier = Modifier.fillMaxWidth()) {
-                Text("Ajustes")
-            }
-            LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                items(players, key = { it.id }) { p ->
-                    Card(Modifier.fillMaxWidth()) {
-                        Row(
-                            Modifier.padding(12.dp).fillMaxWidth(),
-                            horizontalArrangement = Arrangement.SpaceBetween,
-                        ) {
-                            Column(Modifier.weight(1f)) {
-                                Text(p.name, style = MaterialTheme.typography.titleMedium)
-                                Text("${p.number} · ${p.points} pts")
-                            }
-                            TextButton(onClick = {
-                                update(players.map { if (it.id == p.id) it.copy(points = it.points - 1) else it })
-                            }) { Text("-1") }
-                            TextButton(onClick = { editing = p }) { Text("Editar") }
+        Scaffold(
+            topBar = {
+                CenterAlignedTopAppBar(
+                    title = {
+                        Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Icon(Icons.Filled.EmojiEvents, null, tint = MaterialTheme.colorScheme.secondary)
+                            Text("Ranking", fontWeight = FontWeight.Bold)
                         }
+                    },
+                    actions = {
+                        IconButton(onClick = { settings = true }) {
+                            Icon(Icons.Filled.Settings, "Ajustes")
+                        }
+                    },
+                    colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
+                        containerColor = MaterialTheme.colorScheme.primary,
+                        titleContentColor = Color.White,
+                        actionIconContentColor = Color.White,
+                    ),
+                )
+            },
+        ) { padding ->
+            Column(
+                Modifier.padding(padding).padding(16.dp).fillMaxSize(),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Button(
+                    onClick = { toggleFloating() },
+                    modifier = Modifier.fillMaxWidth().height(52.dp),
+                    shape = RoundedCornerShape(14.dp),
+                    colors = if (floating) {
+                        androidx.compose.material3.ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.error)
+                    } else {
+                        androidx.compose.material3.ButtonDefaults.buttonColors()
+                    },
+                ) {
+                    Icon(if (floating) Icons.Filled.Stop else Icons.Filled.PlayArrow, null)
+                    Spacer(Modifier.size(6.dp))
+                    Text(if (floating) "Detener ventana flotante" else "Iniciar ventana flotante")
+                }
+
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+                    FilledTonalButton(onClick = { adding = true }, modifier = Modifier.weight(1f)) {
+                        Icon(Icons.Filled.PersonAdd, null, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.size(4.dp))
+                        Text("Agregar")
+                    }
+                    FilledTonalButton(onClick = { update(sortPlayers(players)) }, modifier = Modifier.weight(1f)) {
+                        Icon(Icons.Filled.Sort, null, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.size(4.dp))
+                        Text("Ordenar")
+                    }
+                }
+                Row(horizontalArrangement = Arrangement.spacedBy(8.dp), modifier = Modifier.fillMaxWidth()) {
+                    FilledTonalButton(onClick = { generateMessage() }, modifier = Modifier.weight(1f)) {
+                        Icon(Icons.Filled.ContentCopy, null, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.size(4.dp))
+                        Text("Mensaje")
+                    }
+                    OutlinedButton(onClick = { confirmReset = true }, modifier = Modifier.weight(1f)) {
+                        Icon(Icons.Filled.RestartAlt, null, modifier = Modifier.size(18.dp))
+                        Spacer(Modifier.size(4.dp))
+                        Text("Reiniciar")
+                    }
+                }
+
+                HorizontalDivider(Modifier.padding(vertical = 4.dp))
+
+                if (players.isEmpty()) {
+                    Box(Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+                        Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                            Icon(
+                                Icons.Filled.PersonAdd, null, modifier = Modifier.size(48.dp),
+                                tint = MaterialTheme.colorScheme.primary.copy(alpha = 0.4f),
+                            )
+                            Text(
+                                "Sin jugadores todavía.\nTocá \"Agregar\" para sumar al primero.",
+                                textAlign = androidx.compose.ui.text.style.TextAlign.Center,
+                                color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                            )
+                        }
+                    }
+                } else {
+                    LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp)) {
+                        items(players, key = { it.id }) { p -> PlayerRow(p, editing = { editing = p }, update = ::update, players = players) }
                     }
                 }
             }
@@ -377,6 +485,51 @@ class MainActivity : ComponentActivity() {
                 },
                 dismissButton = { TextButton(onClick = { confirmReset = false }) { Text("Cancelar") } },
             )
+        }
+    }
+
+    /** Tarjeta de un jugador: avatar con inicial, nombre, puntos como chip y acciones rápidas. */
+    @Composable
+    private fun PlayerRow(p: Player, editing: () -> Unit, update: (List<Player>) -> Unit, players: List<Player>) {
+        Card(
+            Modifier.fillMaxWidth(),
+            shape = RoundedCornerShape(14.dp),
+            colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surfaceVariant),
+        ) {
+            Row(
+                Modifier.padding(10.dp).fillMaxWidth(),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(10.dp),
+            ) {
+                Box(
+                    Modifier.size(40.dp).clip(CircleShape).background(avatarColor(p.name)),
+                    contentAlignment = Alignment.Center,
+                ) {
+                    Text(
+                        p.name.trim().take(1).uppercase().ifEmpty { "?" },
+                        color = Color.White, fontWeight = FontWeight.Bold, fontSize = 16.sp,
+                    )
+                }
+                Column(Modifier.weight(1f)) {
+                    Text(p.name, style = MaterialTheme.typography.titleMedium, fontWeight = FontWeight.SemiBold)
+                    if (p.number.isNotBlank()) {
+                        Text(
+                            p.number, style = MaterialTheme.typography.bodySmall,
+                            color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f),
+                        )
+                    }
+                }
+                Box(
+                    Modifier.clip(RoundedCornerShape(10.dp)).background(MaterialTheme.colorScheme.secondaryContainer)
+                        .padding(horizontal = 10.dp, vertical = 4.dp),
+                ) {
+                    Text("${p.points} pts", fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                }
+                IconButton(onClick = {
+                    update(players.map { if (it.id == p.id) it.copy(points = it.points - 1) else it })
+                }) { Icon(Icons.Filled.RemoveCircleOutline, "-1", tint = MaterialTheme.colorScheme.error) }
+                IconButton(onClick = editing) { Icon(Icons.Filled.Edit, "Editar") }
+            }
         }
     }
 
