@@ -68,11 +68,19 @@ class FloatingService : Service() {
         wm.addView(root, params)
     }
 
-    /** Posición guardada de la burbuja, o el lado elegido en Ajustes por defecto. */
+    /** Posición de la burbuja: la "x" SIEMPRE se recalcula al borde más cercano (nunca queda a
+     * mitad de pantalla, ni con posiciones viejas guardadas de antes de tener el snap). Solo la
+     * "y" se recuerda tal cual. */
     private fun loadPos(): Pair<Int, Int> {
         val prefs = getSharedPreferences("ranking_ui", MODE_PRIVATE)
-        val defX = if (Store.bubbleSide(this) == "left") 0 else resources.displayMetrics.widthPixels - dp(52)
-        return prefs.getInt("bx", defX) to prefs.getInt("by", dp(120))
+        val dm = resources.displayMetrics
+        val size = dp(52)
+        val defX = if (Store.bubbleSide(this) == "left") 0 else dm.widthPixels - size
+        val storedX = prefs.getInt("bx", defX)
+        val x = if (storedX + size / 2 < dm.widthPixels / 2) 0 else dm.widthPixels - size
+        val maxY = (dm.heightPixels - size).coerceAtLeast(0)
+        val y = prefs.getInt("by", dp(120)).coerceIn(0, maxY)
+        return x to y
     }
 
     private fun savePos() {
@@ -126,6 +134,11 @@ class FloatingService : Service() {
         return if (luminance > 0.55) Color.BLACK else Color.WHITE
     }
 
+    /** Relieve negro suave alrededor del texto, para que no se mezcle con fondos variados. */
+    private fun TextView.relief() {
+        setShadowLayer(dp(2).toFloat().coerceAtLeast(2f), 0f, dp(1).toFloat(), Color.argb(170, 0, 0, 0))
+    }
+
     private fun textOnButton() = autoText(Store.buttonColor(this))
     private fun textOnPanel() = autoText(Store.panelColor(this))
     private fun textOnPanelHex() = if (textOnPanel() == Color.WHITE) "#FFFFFF" else "#000000"
@@ -151,6 +164,7 @@ class FloatingService : Service() {
 
     /** Botón circular de ícono (✕ ↩ ✎), con tinte propio según qué hace. */
     private fun iconButton(symbol: String, tintHex: String, tintPct: Int, onClick: () -> Unit) = TextView(this).apply {
+        relief()
         text = symbol
         textSize = 15f
         gravity = Gravity.CENTER
@@ -169,6 +183,7 @@ class FloatingService : Service() {
     private val AVATAR_COLORS = listOf("#6A1B9A", "#1976D2", "#2E7D32", "#D32F2F", "#F9A825", "#00838F", "#AD1457", "#4E342E")
     private fun avatarColor(name: String) = AVATAR_COLORS[(name.hashCode() and 0x7fffffff) % AVATAR_COLORS.size]
     private fun avatar(name: String) = TextView(this).apply {
+        relief()
         text = name.trim().take(1).uppercase().ifEmpty { "?" }
         textSize = 13f
         gravity = Gravity.CENTER
@@ -208,6 +223,7 @@ class FloatingService : Service() {
     private fun imm() = getSystemService(INPUT_METHOD_SERVICE) as InputMethodManager
 
     private fun field(hintText: String, type: Int, weight: Float = 1f) = EditText(this).apply {
+        relief()
         hint = hintText
         inputType = type
         imeOptions = EditorInfo.IME_ACTION_DONE
@@ -242,6 +258,7 @@ class FloatingService : Service() {
     }
 
     private fun btn(label: String, onClick: () -> Unit) = Button(this).apply {
+        relief()
         text = label
         textSize = 14f
         minWidth = 0; minimumWidth = 0
@@ -257,6 +274,7 @@ class FloatingService : Service() {
         root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
 
         val bubble = TextView(this).apply {
+            relief()
             text = "🏆"
             textSize = 28f
             gravity = Gravity.CENTER
@@ -302,6 +320,7 @@ class FloatingService : Service() {
         top.addView(editToggle)
         panel.addView(top)
         feedback = TextView(this).apply {
+            relief()
             textSize = 12f
             setTextColor(Color.parseColor("#8BE28B"))
             setTypeface(typeface, android.graphics.Typeface.BOLD)
@@ -327,6 +346,7 @@ class FloatingService : Service() {
         }
         amount = field("Cantidad", InputType.TYPE_CLASS_NUMBER)
         val restarBtn = TextView(this).apply {
+            relief()
             text = "Restar"
             textSize = 13f
             setTypeface(typeface, android.graphics.Typeface.BOLD)
@@ -339,6 +359,7 @@ class FloatingService : Service() {
             setOnClickListener { applyCustom(-1) }
         }
         sumBtn = Button(this).apply {
+            relief()
             text = "Sumar"
             textSize = 13f
             minWidth = 0; minimumWidth = 0
@@ -359,6 +380,7 @@ class FloatingService : Service() {
 
         // Alta rápida de jugador: borde punteado, es "agregar algo nuevo", no sumar puntos.
         val addToggle = TextView(this).apply {
+            relief()
             text = "+ Jugador"
             textSize = 13f
             gravity = Gravity.CENTER
@@ -453,6 +475,7 @@ class FloatingService : Service() {
         list.removeAllViews()
         if (players.isEmpty()) {
             list.addView(TextView(this).apply {
+                relief()
                 text = "Sin jugadores. Agregalos en la app."
                 textSize = 14f
                 setTextColor(textOnPanel())
@@ -521,12 +544,20 @@ class FloatingService : Service() {
                     kotlin.math.abs(n) > 10 -> GOLD
                     else -> accent()
                 }
+                // Tamaño progresivo según el monto: así, dentro del mismo color, un +100 no
+                // se ve igual que un +1 (no son "todos el mismo botón").
+                val mag = kotlin.math.abs(n)
+                val tier = when { mag <= 1 -> 0; mag <= 10 -> 1; mag <= 30 -> 2; else -> 3 }
+                val fSize = 12f + tier * 1.3f
+                val padH = 8 + tier * 3
+                val padV = 5 + tier * 2
                 chips.addView(TextView(this).apply {
+                    relief()
                     text = if (n > 0) "+$n" else "$n"
-                    textSize = 13f
+                    textSize = fSize
                     setTypeface(typeface, android.graphics.Typeface.BOLD)
                     setTextColor(translucent(tint, 235))
-                    setPadding(dp(10), dp(6), dp(10), dp(6))
+                    setPadding(dp(padH), dp(padV), dp(padH), dp(padV))
                     background = strokeBg(tint, 30, tint, 70, 20)
                     val m = dp(3)
                     layoutParams = LinearLayout.LayoutParams(
@@ -544,6 +575,7 @@ class FloatingService : Service() {
             }
             cell.addView(btn("◀") { moveQuick(i, i - 1) }.apply { isEnabled = i > 0; alpha = if (i > 0) 1f else 0.3f })
             cell.addView(TextView(this).apply {
+                relief()
                 text = if (n > 0) "+$n" else "$n"
                 setTextColor(textOnPanel())
                 textSize = 14f
@@ -596,6 +628,9 @@ class FloatingService : Service() {
     }
 
     /** Suma/resta sobre el jugador marcado, deja la marca bien visible y avisa a quién se le aplicó. */
+    private var burstPlayerId: String? = null
+    private var burstTotal: Int = 0
+
     private fun applyToSelected(delta: Int) {
         val id = selectedId
         val target = players.firstOrNull { it.id == id }
@@ -605,8 +640,12 @@ class FloatingService : Service() {
         }
         players = Store.addPoints(this, id, delta)
         refresh()
-        val sign = if (delta > 0) "+" else ""
-        notify("✓ $sign$delta a ${target.name}")
+        // Si tocás varias veces seguidas (antes de que el aviso se oculte), se acumula en vez
+        // de mostrar solo el último toque.
+        burstTotal = if (burstPlayerId == id && feedback.visibility == View.VISIBLE) burstTotal + delta else delta
+        burstPlayerId = id
+        val sign = if (burstTotal > 0) "+" else ""
+        notify("✓ $sign$burstTotal a ${target.name}")
     }
 
     private fun saveNewPlayer() {
