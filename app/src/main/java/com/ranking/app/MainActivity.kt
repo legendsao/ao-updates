@@ -129,11 +129,42 @@ class MainActivity : ComponentActivity() {
         floating = true
     }
 
+    /** Arma el mensaje con el formato y emojis pedidos (negrita/cursiva estilo WhatsApp con * y _). */
     private fun generateMessage() {
+        val title = Store.rankingTitle(this)
+        val deadline = Store.rankingDeadline(this)
+        val prizeT = Store.rankingPrizeTournament(this)
+        val prize1 = Store.rankingPrize1st(this)
+        val prize2 = Store.rankingPrize2nd(this)
+        val qualifiedCount = Store.rankingQualified(this)
+        val ranked = sortPlayers(players.filter { it.points != 0 })
+        val qualified = ranked.take(qualifiedCount)
+        val rest = ranked.drop(qualifiedCount)
+
+        fun line(p: Player) = "@${p.number.ifEmpty { p.name }} (${p.points} pts)"
+        fun medal(i: Int) = when (i) { 0 -> "🥇"; 1 -> "🥈"; else -> "🔺" }
+
         val text = buildString {
-            append("🏆 Ranking")
-            sortPlayers(players.filter { it.points != 0 }).forEachIndexed { i, p ->
-                append("\n${i + 1}. @${p.number.ifEmpty { p.name }} — ${p.points} pts")
+            append("🃏⚜️ *RANKING")
+            if (title.isNotBlank()) append(" $title")
+            append("* ⚜️🃏")
+            if (deadline.isNotBlank()) {
+                append("\n\n📣 *ACTUALIZACIÓN DE PUNTOS HASTA EL $deadline* 📣")
+            }
+            append("\n\n_RESPONDER LA MESA CON CAPTURA GANADORA PARA SUMAR PUNTOS_ ✅")
+            if (prizeT.isNotBlank() || prize1.isNotBlank() || prize2.isNotBlank()) {
+                append("\n")
+                if (prizeT.isNotBlank()) append("\n🏆 *GANADOR DEL TORNEO: $prizeT*")
+                if (prize1.isNotBlank()) append("\n🥇 *PRIMER PUESTO DEL RANKING: $prize1*")
+                if (prize2.isNotBlank()) append("\n🥈 *SEGUNDO LUGAR $prize2*")
+            }
+            if (qualified.isNotEmpty()) {
+                append("\n\n*CLASIFICADOS AL TORNEO* 🏆\n")
+                qualified.forEachIndexed { i, p -> append("\n${medal(i)} ${line(p)}") }
+            }
+            if (rest.isNotEmpty()) {
+                append("\n\n🔻 *PARTICIPANTES DEL RANKING* 🔻\n")
+                rest.forEach { p -> append("\n♠️ ${line(p)}") }
             }
         }
         val cm = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
@@ -211,6 +242,12 @@ class MainActivity : ComponentActivity() {
             var selectedColor by remember { mutableStateOf(Store.selectedColor(this@MainActivity)) }
             var side by remember { mutableStateOf(Store.bubbleSide(this@MainActivity)) }
             var confirmImport by remember { mutableStateOf(false) }
+            var rkTitle by remember { mutableStateOf(Store.rankingTitle(this@MainActivity)) }
+            var rkDeadline by remember { mutableStateOf(Store.rankingDeadline(this@MainActivity)) }
+            var rkPrizeT by remember { mutableStateOf(Store.rankingPrizeTournament(this@MainActivity)) }
+            var rkPrize1 by remember { mutableStateOf(Store.rankingPrize1st(this@MainActivity)) }
+            var rkPrize2 by remember { mutableStateOf(Store.rankingPrize2nd(this@MainActivity)) }
+            var rkQualified by remember { mutableStateOf(Store.rankingQualified(this@MainActivity).toString()) }
 
             fun persist() {
                 Store.setQuick(this@MainActivity, atajos.mapNotNull { it.trim().toIntOrNull() }.filter { it != 0 }.joinToString(","))
@@ -222,6 +259,10 @@ class MainActivity : ComponentActivity() {
                 Store.setColor(this@MainActivity, "colorButton", buttonColor)
                 Store.setColor(this@MainActivity, "colorSelected", selectedColor)
                 Store.setBubbleSide(this@MainActivity, side)
+                Store.setRankingHeader(
+                    this@MainActivity, rkTitle, rkDeadline, rkPrizeT, rkPrize1, rkPrize2,
+                    rkQualified.toIntOrNull() ?: 16,
+                )
             }
 
             AlertDialog(
@@ -269,6 +310,27 @@ class MainActivity : ComponentActivity() {
                             Store.resetBubblePosition(this@MainActivity)
                             Toast.makeText(this@MainActivity, "Se reinicia la próxima vez que abras la flotante", Toast.LENGTH_SHORT).show()
                         }) { Text("Reiniciar posición de la burbuja") }
+
+                        Text("Mensaje de ranking", style = MaterialTheme.typography.titleSmall)
+                        OutlinedTextField(rkTitle, { rkTitle = it }, singleLine = true,
+                            label = { Text("Nombre del torneo (ej. TRUCO TOTTENHAM)") })
+                        OutlinedTextField(rkDeadline, { rkDeadline = it }, singleLine = true,
+                            label = { Text("Fecha y hora límite (ej. 16/9 20.20 HS)") })
+                        OutlinedTextField(rkPrizeT, { rkPrizeT = it }, singleLine = true,
+                            label = { Text("Premio ganador del torneo (ej. \$50.000)") })
+                        OutlinedTextField(rkPrize1, { rkPrize1 = it }, singleLine = true,
+                            label = { Text("Premio 1° puesto del ranking") })
+                        OutlinedTextField(rkPrize2, { rkPrize2 = it }, singleLine = true,
+                            label = { Text("Premio 2° puesto") })
+                        OutlinedTextField(
+                            rkQualified, { rkQualified = it }, singleLine = true,
+                            label = { Text("Cantidad de clasificados (top N)") },
+                            keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
+                        )
+                        Text(
+                            "Dejá un campo vacío para que esa línea no aparezca en el mensaje.",
+                            style = MaterialTheme.typography.bodySmall,
+                        )
 
                         Text("Respaldo", style = MaterialTheme.typography.titleSmall)
                         Text(

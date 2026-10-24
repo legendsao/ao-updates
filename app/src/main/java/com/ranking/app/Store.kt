@@ -97,6 +97,36 @@ object Store {
 
     fun resetBubblePosition(context: Context) = ui(context).edit().remove("bx").remove("by").apply()
 
+    // --- Encabezado del mensaje de ranking para WhatsApp, editable en Ajustes ---
+
+    fun rankingTitle(context: Context) = ui(context).getString("rkTitle", "TRUCO TOTTENHAM")!!
+    fun rankingDeadline(context: Context) = ui(context).getString("rkDeadline", "")!!
+    fun rankingPrizeTournament(context: Context) = ui(context).getString("rkPrizeT", "")!!
+    fun rankingPrize1st(context: Context) = ui(context).getString("rkPrize1", "")!!
+    fun rankingPrize2nd(context: Context) = ui(context).getString("rkPrize2", "")!!
+
+    /** Cuántos puestos arriba entran como "clasificados" (medalla/🔺) antes de pasar a "participantes" (♠). */
+    fun rankingQualified(context: Context) = ui(context).getInt("rkQualified", 16)
+
+    fun setRankingHeader(
+        context: Context,
+        title: String,
+        deadline: String,
+        prizeTournament: String,
+        prize1st: String,
+        prize2nd: String,
+        qualified: Int,
+    ) {
+        ui(context).edit()
+            .putString("rkTitle", title)
+            .putString("rkDeadline", deadline)
+            .putString("rkPrizeT", prizeTournament)
+            .putString("rkPrize1", prize1st)
+            .putString("rkPrize2", prize2nd)
+            .putInt("rkQualified", qualified.coerceAtLeast(0))
+            .apply()
+    }
+
     /** Texto JSON con los jugadores actuales, para guardar fuera de la app (respaldo que sobrevive a una desinstalación). */
     fun exportJson(context: Context): String {
         val arr = JSONArray()
