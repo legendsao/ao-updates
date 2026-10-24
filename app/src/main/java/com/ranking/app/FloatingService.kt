@@ -544,26 +544,26 @@ class FloatingService : Service() {
         val values = Store.quick(this)
         if (!editMode) {
             values.forEach { n ->
-                val tint = when {
-                    n < 0 -> DANGER()
-                    kotlin.math.abs(n) > 10 -> GOLD()
-                    else -> accent()
-                }
-                // Tamaño progresivo según el monto: así, dentro del mismo color, un +100 no
-                // se ve igual que un +1 (no son "todos el mismo botón").
+                // Mismo estilo que el resto de los botones (nada de semáforo de colores);
+                // solo los negativos se marcan en rojo, que es un código que todos entienden.
+                val negative = n < 0
+                val fillHex = if (negative) DANGER() else Store.buttonColor(this)
+                val txtColor = if (negative) autoText(DANGER()) else textOnButton()
+                // Tamaño progresivo según el monto: así un +100 no se ve igual que un +5.
                 val mag = kotlin.math.abs(n)
-                val tier = when { mag <= 1 -> 0; mag <= 10 -> 1; mag <= 30 -> 2; else -> 3 }
-                val fSize = 12f + tier * 1.3f
-                val padH = 8 + tier * 3
-                val padV = 5 + tier * 2
+                val tier = when { mag <= 5 -> 0; mag <= 15 -> 1; mag <= 30 -> 2; else -> 3 }
+                val fSize = 12f + tier * 1f
+                val padH = 10 + tier * 2
+                val padV = 6 + tier
                 chips.addView(TextView(this).apply {
                     text = if (n > 0) "+$n" else "$n"
                     textSize = fSize
                     setTypeface(typeface, android.graphics.Typeface.BOLD)
-                    setTextColor(translucent(tint, 235))
-                    relief(translucent(tint, 235))
+                    setTextColor(txtColor)
+                    relief(txtColor)
                     setPadding(dp(padH), dp(padV), dp(padH), dp(padV))
-                    background = strokeBg(tint, 30, tint, 70, 20)
+                    background = if (negative) bg(translucent(fillHex, Store.buttonOpacity(this@FloatingService)), 12)
+                        else elementBg(fillHex)
                     val m = dp(3)
                     layoutParams = LinearLayout.LayoutParams(
                         LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT

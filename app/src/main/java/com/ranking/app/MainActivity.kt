@@ -420,12 +420,30 @@ class MainActivity : ComponentActivity() {
                             }) { Text("☀ Claro") }
                         }
 
-                        ColorPicker("Burbuja", bubbleColor) { bubbleColor = it }
-                        ColorPicker("Panel", panelColor) { panelColor = it }
-                        ColorPicker("Botones", buttonColor) { buttonColor = it }
-                        ColorPicker("Jugador seleccionado", selectedColor) { selectedColor = it }
-                        ColorPicker("Dorado (Sumar / montos grandes)", goldColor) { goldColor = it }
-                        ColorPicker("Rojo (Cerrar / montos negativos)", dangerColor) { dangerColor = it }
+                        ColorPicker(
+                            "Burbuja", "El círculo que flota sobre WhatsApp", "🏆",
+                            bubbleColor,
+                        ) { bubbleColor = it }
+                        ColorPicker(
+                            "Panel", "El fondo de toda la ventana cuando la abrís", "Panel",
+                            panelColor,
+                        ) { panelColor = it }
+                        ColorPicker(
+                            "Botones", "Deshacer, Editar, Restar y los chips de puntos", "Botón",
+                            buttonColor,
+                        ) { buttonColor = it }
+                        ColorPicker(
+                            "Jugador seleccionado", "El borde que marca a quién le sumaste", "✓ Nombre",
+                            selectedColor,
+                        ) { selectedColor = it }
+                        ColorPicker(
+                            "Dorado", "El botón Sumar y los puntos de cada jugador", "Sumar",
+                            goldColor,
+                        ) { goldColor = it }
+                        ColorPicker(
+                            "Rojo", "Cerrar y los montos negativos (ej. -1)", "-1",
+                            dangerColor,
+                        ) { dangerColor = it }
 
                         Text("Lado por defecto de la burbuja", style = MaterialTheme.typography.titleSmall)
                         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
@@ -553,12 +571,25 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    /** Fila de color: paleta de toques rápidos + campo para escribir cualquier hex. */
+    /** Fila de color: paleta de toques rápidos, muestra en vivo de dónde se usa, y campo para
+     * escribir cualquier hex. La muestra existe para que se vea QUÉ cambia antes de tocar nada. */
     @Composable
-    private fun ColorPicker(label: String, hex: String, onPick: (String) -> Unit) {
+    private fun ColorPicker(label: String, description: String, sampleText: String, hex: String, onPick: (String) -> Unit) {
         var text by remember(hex) { mutableStateOf(hex) }
         Column(verticalArrangement = Arrangement.spacedBy(4.dp)) {
-            Text(label, style = MaterialTheme.typography.bodyMedium)
+            Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                Column(Modifier.weight(1f)) {
+                    Text(label, style = MaterialTheme.typography.bodyMedium, fontWeight = FontWeight.SemiBold)
+                    Text(description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurface.copy(alpha = 0.6f))
+                }
+                val sampleColor = runCatching { Color(android.graphics.Color.parseColor(hex)) }.getOrDefault(Color.Gray)
+                val luminance = 0.299f * sampleColor.red + 0.587f * sampleColor.green + 0.114f * sampleColor.blue
+                Box(
+                    Modifier.clip(RoundedCornerShape(10.dp)).background(sampleColor).padding(horizontal = 10.dp, vertical = 6.dp),
+                ) {
+                    Text(sampleText, color = if (luminance > 0.6f) Color.Black else Color.White, fontWeight = FontWeight.Bold, fontSize = 13.sp)
+                }
+            }
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 PALETTE.forEach { swatch ->
                     val selected = swatch.equals(hex, ignoreCase = true)
