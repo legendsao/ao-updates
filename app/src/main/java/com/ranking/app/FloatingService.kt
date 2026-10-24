@@ -9,7 +9,9 @@ import android.content.pm.ServiceInfo
 import android.graphics.Color
 import android.graphics.PixelFormat
 import android.graphics.drawable.GradientDrawable
+import android.os.Handler
 import android.os.IBinder
+import android.os.Looper
 import android.text.InputType
 import android.view.Gravity
 import android.view.MotionEvent
@@ -23,7 +25,6 @@ import android.widget.HorizontalScrollView
 import android.widget.LinearLayout
 import android.widget.ScrollView
 import android.widget.TextView
-import android.widget.Toast
 
 class FloatingService : Service() {
 
@@ -118,6 +119,21 @@ class FloatingService : Service() {
     private fun elementBg(hex: String) = bg(translucent(hex, Store.buttonOpacity(this)), 7)
 
     private lateinit var scroll: ScrollView
+    private lateinit var feedback: TextView
+    private val uiHandler = Handler(Looper.getMainLooper())
+    private var clearFeedback: Runnable? = null
+
+    /** Aviso corto dentro del propio panel: a diferencia del Toast del sistema, esto nunca se
+     * pierde ni se descarta (Android limita/descarta Toasts seguidos desde un servicio). */
+    private fun notify(msg: String) {
+        if (!::feedback.isInitialized) return
+        feedback.text = msg
+        feedback.visibility = View.VISIBLE
+        clearFeedback?.let { uiHandler.removeCallbacks(it) }
+        val r = Runnable { feedback.visibility = View.GONE }
+        clearFeedback = r
+        uiHandler.postDelayed(r, 1800)
+    }
     private lateinit var chips: LinearLayout
     private lateinit var editToggle: Button
     private var editMode = false
@@ -214,7 +230,7 @@ class FloatingService : Service() {
         top.addView(btn("✕ Cerrar") { stopSelf() })
         top.addView(btn("↩ Deshacer") {
             if (Store.undo(this@FloatingService)) refresh()
-            else Toast.makeText(this@FloatingService, "Nada para deshacer", Toast.LENGTH_SHORT).show()
+            else notify("Nada para deshacer")
         })
         editToggle = btn("✎ Editar") {
             editMode = !editMode
@@ -222,6 +238,13 @@ class FloatingService : Service() {
         }
         top.addView(editToggle)
         panel.addView(top)
+        feedback = TextView(this).apply {
+            textSize = 11f
+            setTextColor(Color.BLACK)
+            setPadding(dp(2), dp(1), dp(2), dp(1))
+            visibility = View.GONE
+        }
+        panel.addView(feedback)
         panel.addView(scroll)
 
         // Único lugar para sumar o restar: actúa siempre sobre el jugador seleccionado arriba.
@@ -394,7 +417,7 @@ class FloatingService : Service() {
     private fun addQuickFromAmount() {
         val n = amount.text.toString().toIntOrNull()
         if (n == null || n == 0) {
-            Toast.makeText(this, "Escribí un número en Cantidad primero", Toast.LENGTH_SHORT).show()
+            notify("Escribí un número en Cantidad primero")
             return
         }
         Store.setQuick(this, (Store.quick(this) + n).joinToString(","))
@@ -405,7 +428,7 @@ class FloatingService : Service() {
     private fun applyCustom(sign: Int) {
         val n = amount.text.toString().toIntOrNull()
         if (n == null || n <= 0) {
-            Toast.makeText(this, "Escribí una cantidad", Toast.LENGTH_SHORT).show()
+            notify("Escribí una cantidad")
             return
         }
         applyToSelected(n * sign)
@@ -418,19 +441,19 @@ class FloatingService : Service() {
         val id = selectedId
         val target = players.firstOrNull { it.id == id }
         if (id == null || target == null) {
-            Toast.makeText(this, "Tocá un jugador primero", Toast.LENGTH_SHORT).show()
+            notify("⚠ Tocá un jugador primero")
             return
         }
         players = Store.addPoints(this, id, delta)
         refresh()
         val sign = if (delta > 0) "+" else ""
-        Toast.makeText(this, "✓ $sign$delta a ${target.name}", Toast.LENGTH_SHORT).show()
+        notify("✓ $sign$delta a ${target.name}")
     }
 
     private fun saveNewPlayer() {
         val name = nameInput.text.toString().trim()
         if (name.isEmpty()) {
-            Toast.makeText(this, "Falta el nombre", Toast.LENGTH_SHORT).show()
+            notify("Falta el nombre")
             return
         }
         val p = Player(name = name, number = cleanNumber(numberInput.text.toString()))
