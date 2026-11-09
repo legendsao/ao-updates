@@ -1,0 +1,9 @@
+; Retratos de NPC en los paneles de quests (32x32).
+; Los NPC con cabeza muestran la cabeza. Los demas muestran, por defecto, el cuadrado superior centrado del sprite
+; (si el sprite es chico se muestra entero). Para ajustar uno:
+;   NPC=x,y,lado     recorte cuadrado, en pixeles del sprite mirando al sur (x,y = esquina superior izquierda)
+;   NPC=full         el sprite entero, encajado en 32x32
+; Ejemplos (descomentar y ajustar):
+;   566=60,0,56
+;   553=full
+[RETRATOS]
