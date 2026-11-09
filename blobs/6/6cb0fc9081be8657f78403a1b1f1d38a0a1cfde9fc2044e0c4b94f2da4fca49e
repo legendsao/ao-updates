@@ -1,0 +1,210 @@
+[MISION1]
+Nombre=¡Cazador inmortal!
+Descripcion=Deberás ir en busca de 10 apariciones y asesinarlas, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=70000
+OBJ=30619
+
+[MISION2] 
+Nombre=¡Asesino en serie!
+Descripcion=Deberás asesinar 10 usuarios de Legends AO, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=100000
+OBJ=30619
+
+[MISION3]
+Nombre=¡Ganador Nato!
+Descripcion=Ve en busca de duelos 1vs1! Deberás ganar 10 duelos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=150000
+OBJ=30619
+
+[MISION4]
+Nombre=¡El Invencible!
+Descripcion=Crea una sala de desafio y consigue 6 rondas consecutivas, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION5]
+Nombre=¡Team Ganador!
+Descripcion=Busca un compañero y logren ganar 3 rondas consecutivas en desafio 2vs2, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION6]
+Nombre=¡Quest repetida!
+Descripcion=Deberás completar la quest '¡Cazador compulsivo!' 2 veces, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=100000
+OBJ=30619
+
+[MISION7]
+Nombre=¡Team Invencible!
+Descripcion=Consigue un compañero. Deberás ganar 10 duelos en parejas 2vs2, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION8]
+Nombre=¡Premio de Oro!
+Descripcion=El staff de Legends AO organiza eventos diarios, gana al menos un evento. Una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION9]
+Nombre=¡Gastador Compulsivo!
+Descripcion=Deberás gastar al menos 100.000 monedas de oro, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION10]
+Nombre=¡Recolectando Puntos!
+Descripcion=Deberás conseguir al menos 50 puntos de torneo de cualquier manera posible, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION11]
+Nombre=¡Canjeador Compulsivo!
+Descripcion=Deberás canjear al menos (2) items que cuesten más de 100 puntos de torneo, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION12]
+Nombre=¡Sobreviviente!
+Descripcion=Deberás ganar 1 (una) vez el evento Juegos del Hambre, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=200000
+OBJ=30619
+
+[MISION13]
+Nombre=¡La ley del hielo!
+Descripcion=Deberás ir en busca de 5 freezers y asesinarlos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=10
+Oro=50000
+OBJ=30619
+
+[MISION14] 
+Nombre=¡Asesino iniciado!
+Descripcion=Deberás asesinar 5 usuarios de Legends AO, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=5
+Oro=25000
+OBJ=14036
+
+[MISION15]
+Nombre=¡Novato!
+Descripcion=Ve en busca de duelos 1vs1! Deberás ganar 5 duelos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=10
+Oro=80000
+OBJ=30619
+
+[MISION16]
+Nombre=¡Por buen camino!
+Descripcion=Crea una sala de desafio y consigue 2 rondas consecutivas, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=0
+Oro=40000
+OBJ=30619
+
+[MISION17]
+Nombre=¡Dominador!
+Descripcion=Busca un compañero y logren ganar 4 rondas consecutivas en desafio 2vs2, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=20
+Oro=90000
+OBJ=30619
+
+[MISION18]
+Nombre=¡Cazador furtivo!
+Descripcion=Deberás completar la quest '¡Mirada petrificante!' 2 veces, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=40
+Oro=120000
+OBJ=30619
+
+[MISION19]
+Nombre=¡Team iniciante!
+Descripcion=Consigue un compañero. Deberás ganar 5 duelos en parejas 2vs2, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=5
+Oro=60000
+OBJ=30619
+
+[MISION20]
+Nombre=¡Premio de Oro!
+Descripcion=El staff de Legends AO organiza eventos diarios, gana al menos dos eventos. Una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=40
+Oro=300000
+OBJ=30619
+
+[MISION21]
+Nombre=¡Millonario!
+Descripcion=Deberás gastar al menos 1.000.000 monedas de oro, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=0
+Oro=1300000
+OBJ=30619
+
+[MISION22]
+Nombre=¡Granja de puntos!
+Descripcion=Deberás conseguir al menos 100 puntos de torneo de cualquier manera posible, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=40
+Oro=400000
+OBJ=30619
+
+[MISION23]
+Nombre=¡Canjeador Compulsivo!
+Descripcion=Deberás canjear al menos (2) items que cuesten más de 20 puntos de torneo, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=5
+Oro=50000
+OBJ=30619
+
+[MISION24]
+Nombre=¡Sobreviviente del frío!
+Descripcion=Deberás ir en busca de 10 osos polares y asesinarlos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=15
+Oro=70000
+OBJ=30619
+
+[MISION25]
+Nombre=¡Marduk el héroe!
+Descripcion=Deberás completar la quest '¡Dueño de los dungeons!' 2 veces, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=0
+Oro=1000000
+OBJ=30619
+
+[MISION26]
+Nombre=¡Rey de la arena!
+Descripcion=Ve en busca de duelos 1vs1! Deberás ganar 15 duelos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=30
+Oro=350000
+OBJ=30619
+
+[MISION27]
+Nombre=¡Comerciante!
+Descripcion=Deberás gastar al menos 500.000 monedas de oro, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=23
+Oro=300000
+OBJ=30619
+
+[MISION28]
+Nombre=¡Trabajador!
+Descripcion=Deberás gastar al menos 300.000 monedas de oro, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=0
+Oro=250000
+OBJ=30619
+
+[MISION29]
+Nombre=¡Dueños del coliseo!
+Descripcion=Crea una sala de desafio y consigue 10 rondas consecutivas, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=0
+Oro=400000
+OBJ=30619
+
+[MISION30]
+Nombre=¡Entrenador de dragones!
+Descripcion=Deberás ir en busca de 3 dragones rojos y asesinarlos, una vez que lo logres, recibirás el premio instantaneamente.
+Puntos=35
+Oro=500000
+OBJ=30619
+
