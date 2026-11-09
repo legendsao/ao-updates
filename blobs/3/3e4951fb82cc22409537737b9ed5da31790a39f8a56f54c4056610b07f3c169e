@@ -1,0 +1,203 @@
+; gfx11.ini - opciones de DX11. Se recarga solo cada ~1 segundo: editalo con el juego abierto.
+; BLOOM LEVE ENCENDIDO (Bloom=0.5): un brillo suave en efectos, luces y personajes (los nombres y la interfaz quedan nitidos). Para apagarlo: Bloom=0 (DX11 vuelve a dibujar directo, un poco mas rapido). Sin vineta ni correccion de color.
+; Con todo en su valor neutro, DX11 dibuja directo a la pantalla, igual que DX8 (y es mas rapido).
+[Gfx]
+Ambiente=0
+AguaBajaEstela=0
+AguaBajaRelieve=0
+MareaEsquinas=7285,7287,7294,7296
+MareaNoOrillaArchivo=7100
+LienzoMouseFijo=0
+LienzoCapMs=33
+LienzoFiltro=3
+LienzoFija=1000
+LienzoModo=0
+LienzoH=600
+LienzoW=800
+LienzoLog=0
+Lienzo=1
+; PRUEBA monitores 60/240 Hz: 0 = presenta sin tearing (si los FPS en el 2do monitor no bajan, era eso), 1 = como antes. Se lee al abrir el cliente
+Tearing=1
+Bloom=0.15
+BloomThreshold=0.9000
+Saturation=1.0000
+Contrast=1.0000
+Gamma=1.0000
+Exposure=1.0000
+Vignette=0.0000
+Sharpen=0
+Temperature=0
+Tint=0
+ShadowR=0
+ShadowG=0
+ShadowB=0
+HighlightR=0
+HighlightG=0
+HighlightB=0
+AutoGrade=0
+WeatherGrade=0
+Chromatic=0
+Grain=0
+Scanlines=0
+
+; --- Otras opciones del cliente ---
+; Golpe y hechizo del arma guiados por poses (el cetro se echa atras, golpea y vuelve suave). 1 = activado, 0 = golpe clasico
+ArmaSuave=1
+; Cuanto de la trayectoria del arma se recorre en el golpe: 1 = completa, 0.5 = la mitad (valor actual), 0.25 = apenas se mueve
+ArmaIntensidad=0.5
+; Onda de viento al pegar un golpe (tajo en media luna): 1 = activada, 0 = apagada
+VientoGolpe=1
+; Opacidad maxima de la onda de viento (0 a 1)
+VientoAlfa=0.6
+; Tinte de la onda de viento segun el color del arma: la punta toma el color del arma y se degrada a blanco. 1 = pleno, 0 = apagado (siempre blanco)
+VientoTinte=1
+; Medidores de rendimiento internos (escriben Data\perf_visual.txt cada 4 s). 0 = apagados (mas FPS), 1 = encendidos para medir
+Perf=0
+; Partes de cada personaje que proyectan sombra, en este orden: cuerpo, cabeza, casco, arma, escudo. 2 = cuerpo y cabeza (mas FPS), 3 = + casco, 4 = + arma, 5 = todas. Se lee al abrir el cliente
+SombraPartes=3
+; Lluvia: opacidad de las gotas que caen (1 = original, 0,85 = 15% mas transparentes). Se lee al abrir el cliente
+LluviaGotasAire=0.85
+; Lluvia: opacidad de las gotas que pegan en el piso (manchas, ondas y ondas de los charcos; 1 = original, 1,1 = 10% mas opacas)
+LluviaGotasPiso=1.1
+; Diagnostico de teletransporte: registra en Data	eleport_log.txt cuanto tarda cada etapa al cambiar de mapa. 1 = activado
+TeleLog=0
+; Escalado de la imagen al pasar a 800x600 (ALT+ENTER / Opciones): 0 = respeta la configuracion de la placa de video del usuario (bandas negras si asi la tiene), 1 = la placa estira a todo el monitor, 2 = centrada con bordes negros
+EscalaPantalla=0
+; Repintado de listas, cajas y consolas de Windows tras cambiar la resolucion (ALT+ENTER): 0 = no repinta, 1 = solo esos controles, 2 = controles y formulario. Se lee en cada cambio.
+RepintarListas=1
+; Sangre de los golpes generada por codigo (gotas distintas en cada golpe). 1 = activada, 0 = vuelve al efecto de siempre
+SangreCodigo=1
+; Animacion de caminar sincronizada con el paso: el cuadro del cuerpo, arma y escudo sale de cuanto se avanzo de la casilla (no del tiempo), asi los pies no patinan. 1 = activada, 0 = como antes
+PasoSincro=1
+; Ciclos de la animacion de caminar por casilla: 1 = un ciclo completo por paso, 2 = dos ciclos (probar si los pies van muy lentos o muy rapidos)
+PasoCiclos=1
+; Rebote vertical al caminar, en pixeles (0 = sin rebote, 1 = sutil, 2 = marcado). Sube el dibujo en los pasos intermedios y apoya al contactar el piso
+PasoRebote=0
+; Corre la cabeza y el casco de costado, en pixeles (positivo = hacia atras, negativo = hacia adelante, 0 = como esta). Sirve para afinar el eje sin regenerar nada
+CabezaLado=0
+; Sube el casco o la corona, en pixeles (1 = un pixel mas arriba, 0 = como antes, negativo = mas abajo). Se aplica al instante
+CascoAltura=0
+; Baja la cabeza, en pixeles (1 = un pixel mas abajo, 0 = como antes, negativo = mas arriba). Se aplica al instante, tambien a su sombra y reflejo
+CabezaBaja=0
+; Corre la cabeza y el casco de ESPALDAS, en pixeles (1 = un pixel a la derecha, 0 = como antes, negativo = a la izquierda). Se aplica al instante
+CabezaEspalda=0
+; Corre el casco y la corona de ESPALDAS, en pixeles (-1 = un pixel a la izquierda, 0 = como el motor lo dibuja, positivo = a la derecha). Se aplica al instante
+CascoEspalda=-1
+; Diagnostico de rendimiento: 1 = escribe logs\diag_rendimiento.txt (informe del equipo, DLLs cargadas, FPS/ms por etapa cada 5 s, bajones). Tambien se activa creando un archivo vacio diag.on junto al exe. Se lee al abrir el cliente
+DiagRend=0
+; Sube la cabeza y el casco de enanos y gnomos, en pixeles (2 = dos pixeles mas arriba, -2 = dos pixeles mas abajo, 0 = como antes). Se aplica al instante
+EnanoSube=-2
+LienzoTextoFino=1
+VSync=0
+; Cuadros que la GPU puede tener en cola: 0 = valor de Windows (maximos FPS), 1 = menos latencia pero baja mucho los FPS. Se lee al abrir el cliente
+FrameLatency=0
+; Limitador de FPS: 1 = nuevo (plazo parejo, espera dormida; sin cuadro repetido cada ~0,5 s a 60 FPS), 0 = el de antes. Se lee al entrar al juego
+LimitadorNuevo=1
+; EFECTOS REALISTAS (banco C:t, 25/10): luz 2D por pixel, sombras por luz, fuego, clima, nieve, agua v3. Cada clave en 0 vuelve a como antes.
+FuegoNativo=1
+FuegoLuz=1
+FuegoColor=1
+FuegoBrasas=1
+FuegoHumo=1
+FuegoNucleo=1
+FuegoCalor=1
+FuegoReemplazar=1
+FuegoEscala=1.6
+VientoClima=1
+VientoHojas=1
+SolRayos=1
+SolRayosDesde=70
+SolRayosHasta=100
+AguaV2=1.0000
+AguaAlfa=1
+AguaLuces=0.5000
+AguaCausticas=1
+AguaMarMin=1500
+AguaLluvia=1.0000
+NieveAcumSeg=6
+Luz2D=1.0000
+Luz2DFuerza=0.85
+Luz2DBrillo=0.0400
+SombraLuzNueva=1
+Luz2DNoche=0.5000
+Luz2DModo=1
+Luz2DSinCirculos=1
+SombraPenumbra=1.2
+AguaV3=1.0000
+AguaV3Orilla=1
+AguaV3Espuma=1
+; LEGENDS 28/10: franja de espuma pegada a puentes y muelles (PuenteEspuma de la DLL): -1 = automatica (se omite si la espuma del agua v3 ya cubre el borde: evita la triple espuma), 0 = nunca, 1 = siempre
+PuenteEspumaFranja=-1
+AguaOlasLuz=0
+AguaV4=0
+SombraPJV2=1.0000
+SombraMulti=3
+SombraPJPenumbra=1
+SombraPorLuz=1.0000
+SolUnico=0
+SombraCuello=6.0000
+Luz2DMRT=1.0000
+Luz2DCalido=0.4000
+Luz2DSubir=48
+Luz2DHechizos=0.0000
+FxBoton=0
+Luz2DIntensidad=4.4
+Luz2DNocheAmb=1.0000
+; Motor nativo (PJC = personaje nativo: de el cuelgan sombras, particulas de fuego y piso nativos; si falta, vuelven los efectos viejos). Se lee al abrir el cliente
+PJC=1
+; LEGENDS 28/10: modulos nativos con su valor efectivo (antes valian su default del codigo; 1 = la DLL, 0 = camino VB). PJCMov=0 a proposito (apagado). FilaNativa requiere PJC y ObjNativo
+PJCMov=0
+PJCTexto=1
+SombraNativa=1
+PisoNativo=1
+ObjNativo=1
+FilaNativa=1
+ParticulasNativo=1
+ClimaNativo=1
+GlobosNativo=1
+LucesNativo=1
+LienzoUI=1
+LienzoHosts=1
+LienzoConsola=1
+LienzoUiCache=33
+; LEGENDS 28/10: sin lector en el codigo (se dejan por si alguien las tiene escritas): DiagRend (el diagnostico va prendido salvo que exista diag.off), Luz2DSinMRT, AguaChapoteo. LienzoMouseFijo, LienzoW y LienzoH las ESCRIBE el cliente, no se leen
+PJCComparar=0
+PJCVence=1500
+Atlas=1
+AguaDebug=0
+AguaV4Debug=0
+Luz2DRelampagoPrueba=0
+Luz2DSinMRT=0
+AguaChapoteo=1
+SolRecorrido=0.0000
+Luz2DCaida=0.0015
+SolDirX=0.3746
+SolDirY=-0.9272
+Luz2DRadio=1.6
+SombraPJLuzAlto=128
+SombraLuzAlto=128
+GpuDiag=0
+Luz2DNormales=1
+Luz2DDispersion=0
+Luz2DMojado=1
+Luz2DReflejoMojado=0
+SombraPJMezcla=0
+; LEGENDS 28/10: vida de las texturas (1 = no liberar lo usado en este cuadro o el anterior; 0 = como antes)
+TexEvicSuave=1
+TexLiberarDiferido=1
+
+; LEGENDS 31/10: etapas 4-11 de la migracion DX11 APAGADAS mientras se arreglan los errores vistos en juego (minimapa negro, agua que desaparece y pisa la capa 2, luces quemadas). 0 = camino VB de antes del 29/10. Se relee solo cada ~1 s.
+MapaNativo=0
+AguaNativa=0
+MareaNativa=0
+ReflejoNativo=0
+TechosNativo=0
+LucesLista=0
+NocheUnica=0
+LuzRelojVB=0
+; LEGENDS 31/10: los NPC comunes tambien se repiten por la DLL (PJC): en los mapas nuevos hay ~5 NPC por pantalla y el VB gastaba 1,5 ms por cuadro dibujandolos (400 FPS en vez de 1400). 0 = como antes.
+PJCNpc=1
+; Medicion de tirones (31/10): anota cada cuadro lento y su causa en Data\gfx11_log.txt. Volver a PicosLog=0 al terminar.
+PicosLog=0
+PicosMs=8
+PicosMax=2000

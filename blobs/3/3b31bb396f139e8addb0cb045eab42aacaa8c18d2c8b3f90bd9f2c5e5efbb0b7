@@ -1,0 +1,105 @@
+' BESTIARIO: criaturas que NO deben aparecer (viejas, obsoletas o de prueba).
+' Se arma solo desde el modo editor del Bestiario (administradores). Un numero de NPC por linea; despues del apostrofe es comentario.
+577   ' Alma Putrefacta
+942   ' Apocalipsis
+960   ' Araña Gigante para levear
+961   ' Bestia Infernal para levear
+962   ' Bestia para levear
+533   ' Cuervo
+560   ' Dark Ger
+562   ' Dark Jennifer
+558   ' Dark mOrGoLoCk
+559   ' Dark NuKeR
+561   ' Dark Tharon
+933   ' Demonio
+923   ' Demonio
+917   ' Demonio
+928   ' Demonio
+920   ' Diablo
+565   ' Diablo
+604   ' Dinosaurio Enano
+602   ' Djinn del Viento
+572   ' Dragón Infernal
+598   ' Dragón Infernal
+547   ' Dragón Rojo
+527   ' Dragón Rojo
+931   ' Dragón Tenebroso
+540   ' Duende
+567   ' Duende Mágico
+582   ' Enano de las Profundidades
+529   ' Escorpión
+571   ' Espíritu Indomable
+517   ' Gallo Salvaje
+506   ' Gallo Salvaje
+581   ' Gallo Salvaje
+606   ' Golem
+913   ' Golem
+938   ' Guerrero Ancalagon
+958   ' Guerrero Imperial
+959   ' Guerrero Infernal
+636   ' Guerrero Maldito
+596   ' Hada
+535   ' Hormiga
+587   ' Jabali
+588   ' Jabali
+591   ' Jabali
+590   ' Jabali
+589   ' Jabali
+557   ' Jabalí Salvaje
+954   ' Legends AO
+927   ' Liche
+932   ' Liche
+916   ' Liche
+922   ' Liche
+583   ' Liche Infernal
+544   ' Lobo
+545   ' Lobo
+555   ' Lord Orco
+518   ' Lord Zombie
+507   ' Lord Zombie
+611   ' Mago Blanco Diabolico
+610   ' Mago Gris Diabolico
+929   ' Mago Malvado
+924   ' Mago Malvado
+918   ' Mago Malvado
+934   ' Mago Malvado
+551   ' Mago Malvado
+612   ' Mago Oscuro Diabolico
+902   ' Mago Pretoriano
+584   ' Medusa Reina
+921   ' Medusa Reina
+926   ' Medusa Reina
+915   ' Medusa Reina
+914   ' Medusa Reina
+500   ' Murciélago
+592   ' Nightmare
+570   ' No ves nada interesante
+951   ' Noble Desterrado
+541   ' Ogro
+523   ' Orco
+556   ' Quark
+536   ' Rata Gigante
+956   ' Rey Alianza
+947   ' Rey Alianza
+948   ' Rey Horda
+957   ' Rey Horda
+904   ' Rey Pretoriano
+616   ' Rey Vikingo
+900   ' Sacerdote Pretoriano
+580   ' Sirviente Del Indomable
+603   ' Sombra
+563   ' Terodactilo
+586   ' Tigre
+964   ' Torre Azul
+963   ' Torre Rojo
+585   ' Tortuga Gigante
+601   ' Troll del Bosque
+574   ' Ucorno
+597   ' Unicornio
+579   ' Vaca Salvaje
+502   ' Zombie
+546   ' Zombie
+513   ' Zombie
+525   ' Águila
+532   ' Águila
+575   ' Árbol de Jungla
