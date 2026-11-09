@@ -1,0 +1,469 @@
+[INIT]
+Num=33
+
+[Quest1]
+Nombre=¡Acaba con ellos!
+Info=Deberás acabar con los reyes de esa cueva! al finalizar esta quest obtendrás tu recompensa.
+Tipo=1
+Puntos=30
+Oro=125000
+Dificultad=Medio
+NivelMinimo=20
+Mapas=30
+PosiblesDrops=Gema Verde
+Obj=0-0
+NPCs=1
+Npc1=943-7
+
+[Quest2]
+Nombre=¡Petrificado!
+Info=Deberás tomar la vida de 4 medusas legendarias. Al finalizar obtendrás tu recompensa.
+Tipo=1
+Puntos=35
+Oro=200000
+Dificultad=Medio
+NivelMinimo=25
+Mapas=127
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=950-4
+
+[Quest3]
+Nombre=¡Gran aullido!
+Info=Deberás acabar con esa manada de lobos. Al finalizar obtendrás tu recompensa.
+Tipo=1
+Puntos=5
+Oro=13000
+Dificultad=Fácil
+NivelMinimo=15
+Mapas=4
+PosiblesDrops=Piel de lobo
+Obj=0-0
+NPCs=1
+Npc1=501-5
+
+[Quest4]
+Nombre=¡Cuidado con su mordida!
+Info=Deberás sorprender a 5 serpientes y decapitarlas. Al finalizar obtendrás tu merecida recompensa.
+Tipo=1
+Puntos=0
+Oro=10000
+Dificultad=Fácil
+NivelMinimo=10
+Mapas=4
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=504-5
+
+[Quest5]
+Nombre=¡Invasión arácnida!
+Info=Ayúdame a exterminar estas espantosas criaturas y te daré un premio factible.
+Tipo=1
+Puntos=25
+Oro=110000
+Dificultad=Fácil
+NivelMinimo=15
+Mapas=126
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=944-5
+
+[Quest6]
+Nombre=¡Anti leñadores!
+Info=Deberás tomar la vida de 10 de estos dueños del bosque!. Al finalizar obtendrás tu recompensa
+Tipo=1
+Puntos=0
+Oro=7500
+Dificultad=Fácil
+NivelMinimo=20
+Mapas=93
+PosiblesDrops=Hacha orca
+Obj=0-0
+NPCs=1
+Npc1=522-10
+
+[Quest7]
+Nombre=¡Entre aguijones y plumas!
+Info=Deberás acabar con 20 vidas. Al finalizar obtendrás tu recompensa.
+Tipo=1
+Puntos=0
+Oro=9500
+Dificultad=Fácil
+NivelMinimo=10
+Mapas=Bosques
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=2
+Npc1=533-10
+Npc2=529-10
+
+[Quest8]
+Nombre=¡Ojos helados!
+Info=Deberás aniquilar 7 de estos guardianes del frío. Al finalizar obtendrás tus recompensas.
+Tipo=1
+Puntos=15
+Oro=75000
+Dificultad=Medio
+NivelMinimo=15
+Mapas=Bosques Helados
+PosiblesDrops=
+Obj=0-0
+NPCs=1
+Npc1=537-7
+
+[Quest9]
+Nombre=¡Cazador compulsivo!
+Info=Deberás acabar con la vida de 15 osos. Al finalizar obtendrás tus recompensas.
+Tipo=1
+Puntos=5
+Oro=22000
+Dificultad=Fácil-medio
+NivelMinimo=25
+Mapas=93
+PosiblesDrops=Piel de oso
+Obj=0-0
+NPCs=1
+Npc1=538-15
+
+[Quest10]
+Nombre=¡Cazador principiante!
+Info=Asesínalos a todos!. Al finalizar obtendrás tus recompensas.
+Tipo=1
+Puntos=10
+Oro=15000
+Dificultad=Fácil-medio
+NivelMinimo=25
+Mapas=Bosques
+PosiblesDrops=Piel de lobo  - Chuleta
+Obj=0-0
+NPCs=3
+Npc1=557-5
+Npc2=501-5
+Npc3=504-5
+
+[Quest11]
+Nombre=¡Mirada petrificante!
+Info=Deberás acabar con 10 medusas!¡Ojo no las mires fijamente! Al finalizar obtendrás tus recompensas.
+Tipo=1
+Puntos=25
+Oro=125000
+Dificultad=Difícil
+NivelMinimo=30
+Mapas=81
+PosiblesDrops=Cristales
+Obj=0-0
+NPCs=1
+Npc1=553-6
+
+[Quest12]
+Nombre=¡Dueño de los dungeons!
+Info=Deberás asesinar las tres clases de dragones! Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=115
+Oro=300000
+Dificultad=Difícil
+NivelMinimo=45
+Mapas=103 -114 -79
+PosiblesDrops=Gemas: Naranja - Plateada - Lila
+Obj=30619-4
+NPCs=3
+Npc1=564-2
+Npc2=566-1
+Npc3=542-2
+
+[Quest13]
+Nombre=¡Dragones rojos!
+Info=Deberás acabar con la vida de dos dragones rojos. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=50
+Oro=150000
+Dificultad=Difícil
+NivelMinimo=40
+Mapas=114
+PosiblesDrops=Gema lila
+Obj=30619-1
+NPCs=1
+Npc1=542-2
+
+[Quest14]
+Nombre=¡Dragón de la oscuridad!
+Info=Deberás asesinar dos dragones de la oscuridad. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=55
+Oro=155000
+Dificultad=Difícil
+NivelMinimo=40
+Mapas=79
+PosiblesDrops=Gema naranja
+Obj=30619-1
+NPCs=1
+Npc1=566-2
+
+[Quest15]
+Nombre=¡Dragones de plata!
+Info=Deberás asesinar dos dragones de plata! Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=50
+Oro=151000
+Dificultad=Difícil
+NivelMinimo=40
+Mapas=103
+PosiblesDrops=Gema plateada
+Obj=30619-1
+NPCs=1
+Npc1=564-2
+
+[Quest16]
+Nombre=¡Golem de hierro!
+Info=Deberás asesinar a tres ejemplares. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=15
+Oro=85000
+Dificultad=Medio
+NivelMinimo=40
+Mapas=127
+PosiblesDrops=Hierro y báculo
+Obj=0-0
+NPCs=1
+Npc1=607-3
+
+[Quest17]
+Nombre=¡Golem de plata!
+Info=Deberás acabar con tres ejemplares. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=15
+Oro=87250
+Dificultad=Medio
+NivelMinimo=43
+Mapas=124
+PosiblesDrops=Plata
+Obj=0-0
+NPCs=1
+Npc1=608-3
+
+[Quest18]
+Nombre=¡A por el oro!
+Info=Deberás acabar con diez ejemplares. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=18
+Oro=250000
+Dificultad=Difícil
+NivelMinimo=47
+Mapas=124
+PosiblesDrops=Gema roja - Oro
+Obj=0-0
+NPCs=1
+Npc1=609-10
+
+[Quest19]
+Nombre=¡Golem Helado!
+Info=Deberás asesinar dos ejemplares. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=25
+Oro=125000
+Dificultad=Difícil
+NivelMinimo=50
+Mapas=Bosques helados
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=960-2
+
+[Quest20]
+Nombre=¡Imparable!
+Info=Deberás asesinar tres abominaciones. Al finalizar obtendrás tus recompensas!
+Tipo=1
+Puntos=10
+Oro=65000
+Dificultad=Medio
+NivelMinimo=40
+Mapas=139
+PosiblesDrops=Fragmento
+Obj=0-0
+NPCs=1
+Npc1=911-3
+
+[Quest21]
+Nombre=¡Cazador de bestias!
+Info=Deberás asesinar esas horribles bestias!. Al finalizar obtendrás grandes recompensas!
+Tipo=1
+Puntos=55
+Oro=300000
+Dificultad=Difícil
+NivelMinimo=47
+Mapas=82
+PosiblesDrops=Gema celeste
+Obj=30619-1
+NPCs=1
+Npc1=949-7
+
+[Quest22]
+Nombre=¡Hechizos oscuros!
+Info=Deberás asesinar 15 brujas. Al finalizar obtendrás tu recompensa.
+Tipo=1
+Puntos=20
+Oro=175000
+Dificultad=Media
+NivelMinimo=40
+Mapas=126
+PosiblesDrops=N/A
+Obj=30619-2
+NPCs=1
+Npc1=550-15
+
+[Quest23]
+Nombre=¡Asesina 5 usuarios!
+Info=Deberás asesinar 5 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=5
+Oro=10000
+Dificultad=Fácil
+NivelMinimo=15
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-5
+
+[Quest24]
+Nombre=¡Asesina 10 usuarios!
+Info=Deberás asesinar 10 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=5
+Oro=20000
+Dificultad=Fácil
+NivelMinimo=25
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-10
+
+[Quest25]
+Nombre=¡Asesina 15 usuarios!
+Info=Deberás asesinar 15 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=10
+Oro=30000
+Dificultad=Fácil
+NivelMinimo=35
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-15
+
+[Quest26]
+Nombre=¡Asesina 20 usuarios!
+Info=Deberás asesinar 20 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=10
+Oro=35000
+Dificultad=Media
+NivelMinimo=40
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-20
+
+[Quest27]
+Nombre=¡Asesina 25 usuarios!
+Info=Deberás asesinar 25 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=15
+Oro=45000
+Dificultad=Media
+NivelMinimo=45
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-25
+
+[Quest28]
+Nombre=¡Asesina 35 usuarios!
+Info=Deberás asesinar 35 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=40
+Oro=60000
+Dificultad=Media
+NivelMinimo=40
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-35
+
+[Quest29]
+Nombre=¡Asesina 50 usuarios!
+Info=Deberás asesinar 50 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=50
+Oro=100000
+Dificultad=Difícil
+NivelMinimo=50
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-50
+
+[Quest30]
+Nombre=¡Asesina 60 usuarios!
+Info=Deberás asesinar 60 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=55
+Oro=110000
+Dificultad=Difícil
+NivelMinimo=50
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-60
+
+[Quest31]
+Nombre=¡Asesina 65 usuarios!
+Info=Deberás asesinar 65 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=60
+Oro=120000
+Dificultad=Difícil
+NivelMinimo=50
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-65
+
+[Quest32]
+Nombre=¡Asesina 70 usuarios!
+Info=Deberás asesinar 70 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=65
+Oro=250000
+Dificultad=Difícil
+NivelMinimo=55
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-70
+
+[Quest33]
+Nombre=¡Asesina 100 usuarios!
+Info=Deberás asesinar 100 usuarios. Al finalizar obtendrás tus recompensas!
+Tipo=2
+Puntos=100
+Oro=500000
+Dificultad=Difícil
+NivelMinimo=55
+Mapas=Zona insegura
+PosiblesDrops=N/A
+Obj=0-0
+NPCs=1
+Npc1=9999-100
