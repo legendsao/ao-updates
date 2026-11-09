@@ -1,0 +1,421 @@
+[INIT]
+NumHeads=63
+
+[HEAD1]
+Head1=4315	 ' arriba
+Head2=4312	 ' derecha
+Head3=4311	 ' abajo
+Head4=4314	 ' izq
+
+[HEAD2]
+Head1=0	 ' arriba
+Head2=0	 ' derecha
+Head3=0	 ' abajo
+Head4=0	 ' izq
+
+[HEAD3]
+Head1=1017	 ' arriba
+Head2=1015	 ' derecha
+Head3=1014	 ' abajo
+Head4=1016	 ' izq
+
+[HEAD4]
+Head1=1019	 ' arriba
+Head2=1020	 ' derecha
+Head3=1022	 ' abajo
+Head4=1021	 ' izq
+
+[HEAD5]
+Head1=84	 ' arriba
+Head2=82	 ' derecha
+Head3=81	 ' abajo
+Head4=83	 ' izq
+
+[HEAD6]
+Head1=4319	 ' arriba
+Head2=4317	 ' derecha
+Head3=4316	 ' abajo
+Head4=4318	 ' izq
+
+[HEAD7]
+Head1=84	 ' arriba
+Head2=82	 ' derecha
+Head3=81	 ' abajo
+Head4=83	 ' izq
+
+[HEAD8]
+Head1=402	 ' arriba
+Head2=400	 ' derecha
+Head3=399	 ' abajo
+Head4=401	 ' izq
+
+[HEAD9]
+Head1=14094	 ' arriba
+Head2=14092	 ' derecha
+Head3=14091	 ' abajo
+Head4=14093	 ' izq
+
+[HEAD10]
+Head1=14099	 ' arriba
+Head2=14097	 ' derecha
+Head3=14096	 ' abajo
+Head4=14098	 ' izq
+
+[HEAD11]
+Head1=14104	 ' arriba
+Head2=14102	 ' derecha
+Head3=14101	 ' abajo
+Head4=14103	 ' izq
+
+[HEAD12]
+Head1=14109	 ' arriba
+Head2=14107	 ' derecha
+Head3=14106	 ' abajo
+Head4=14108	 ' izq
+
+[HEAD13]
+Head1=0	 ' arriba
+Head2=0	 ' derecha
+Head3=0	 ' abajo
+Head4=0	 ' izq
+
+[HEAD14]
+Head1=0	 ' arriba
+Head2=0	 ' derecha
+Head3=0	 ' abajo
+Head4=0	 ' izq
+
+[HEAD15]
+Head1=14124	 ' arriba
+Head2=14122	 ' derecha
+Head3=14121	 ' abajo
+Head4=14123	 ' izq
+
+[HEAD16]
+Head1=14129	 ' arriba
+Head2=14127	 ' derecha
+Head3=14126	 ' abajo
+Head4=14128	 ' izq
+
+[HEAD17]
+Head1=14134	 ' arriba
+Head2=14132	 ' derecha
+Head3=14131	 ' abajo
+Head4=14133	 ' izq
+
+[HEAD18]
+Head1=14139	 ' arriba
+Head2=14137	 ' derecha
+Head3=14136	 ' abajo
+Head4=14138	 ' izq
+
+[HEAD19]
+Head1=14144	 ' arriba
+Head2=14142	 ' derecha
+Head3=14141	 ' abajo
+Head4=14143	 ' izq
+
+[HEAD20]
+Head1=14149	 ' arriba
+Head2=14147	 ' derecha
+Head3=14146	 ' abajo
+Head4=14148	 ' izq
+
+[HEAD21]
+Head1=14154	 ' arriba
+Head2=14152	 ' derecha
+Head3=14151	 ' abajo
+Head4=14153	 ' izq
+
+[HEAD22]
+Head1=14159	 ' arriba
+Head2=14157	 ' derecha
+Head3=14156	 ' abajo
+Head4=14158	 ' izq
+
+[HEAD23]
+Head1=14164	 ' arriba
+Head2=14162	 ' derecha
+Head3=14161	 ' abajo
+Head4=14163	 ' izq
+
+[HEAD24]
+Head1=14169	 ' arriba
+Head2=14167	 ' derecha
+Head3=14166	 ' abajo
+Head4=14168	 ' izq
+
+[HEAD25]
+Head1=14174	 ' arriba
+Head2=14172	 ' derecha
+Head3=14171	 ' abajo
+Head4=14173	 ' izq
+
+[HEAD26]
+Head1=14179	 ' arriba
+Head2=14177	 ' derecha
+Head3=14176	 ' abajo
+Head4=14178	 ' izq
+
+[HEAD27]
+Head1=14184	 ' arriba
+Head2=14182	 ' derecha
+Head3=14181	 ' abajo
+Head4=14183	 ' izq
+
+[HEAD28]
+Head1=14189	 ' arriba
+Head2=14187	 ' derecha
+Head3=14186	 ' abajo
+Head4=14188	 ' izq
+
+[HEAD29]
+Head1=14194	 ' arriba
+Head2=14192	 ' derecha
+Head3=14191	 ' abajo
+Head4=14193	 ' izq
+
+[HEAD30]
+Head1=14199	 ' arriba
+Head2=14197	 ' derecha
+Head3=14196	 ' abajo
+Head4=14198	 ' izq
+
+[HEAD31]
+Head1=16995	 ' arriba
+Head2=16996	 ' derecha
+Head3=16994	 ' abajo
+Head4=16997	 ' izq
+
+[HEAD32]
+Head1=18259	 ' arriba
+Head2=18257	 ' derecha
+Head3=18256	 ' abajo
+Head4=18258	 ' izq
+
+[HEAD33]
+Head1=27925	 ' arriba
+Head2=27923	 ' derecha
+Head3=27922	 ' abajo
+Head4=27924	 ' izq
+
+[HEAD34]
+Head1=27931	 ' arriba
+Head2=27929	 ' derecha
+Head3=27928	 ' abajo
+Head4=27930	 ' izq
+
+[HEAD35]
+Head1=28132	 ' arriba
+Head2=28130	 ' derecha
+Head3=28129	 ' abajo
+Head4=28131	 ' izq
+
+[HEAD36]
+Head1=28148	 ' arriba
+Head2=28146	 ' derecha
+Head3=28145	 ' abajo
+Head4=28147	 ' izq
+
+[HEAD37]
+Head1=29466	 ' arriba
+Head2=29464	 ' derecha
+Head3=29463	 ' abajo
+Head4=29465	 ' izq
+
+[HEAD38]
+Head1=20550	 ' arriba
+Head2=20548	 ' derecha
+Head3=20547	 ' abajo
+Head4=20549	 ' izq
+
+[HEAD39]
+Head1=18734	 ' arriba
+Head2=18732	 ' derecha
+Head3=18731	 ' abajo
+Head4=18733	 ' izq
+
+[HEAD40]
+Head1=18739	 ' arriba
+Head2=18737	 ' derecha
+Head3=18736	 ' abajo
+Head4=18738	 ' izq
+
+[HEAD41]
+Head1=18744	 ' arriba
+Head2=18742	 ' derecha
+Head3=18741	 ' abajo
+Head4=18743	 ' izq
+
+[HEAD42]
+Head1=21881	 ' arriba
+Head2=21879	 ' derecha
+Head3=21878	 ' abajo
+Head4=21880	 ' izq
+
+[HEAD43]
+Head1=21886	 ' arriba
+Head2=21884	 ' derecha
+Head3=21883	 ' abajo
+Head4=21885	 ' izq
+
+[HEAD44]
+Head1=21891	 ' arriba
+Head2=21889	 ' derecha
+Head3=21888	 ' abajo
+Head4=21890	 ' izq
+
+[HEAD45]
+Head1=21896	 ' arriba
+Head2=21894	 ' derecha
+Head3=21893	 ' abajo
+Head4=21895	 ' izq
+
+[HEAD46]
+Head1=21901	 ' arriba
+Head2=21899	 ' derecha
+Head3=21898	 ' abajo
+Head4=21900	 ' izq
+
+[HEAD47]
+Head1=21906	 ' arriba
+Head2=21904	 ' derecha
+Head3=21903	 ' abajo
+Head4=21905	 ' izq
+
+[HEAD48]
+Head1=29553	 ' arriba
+Head2=29551	 ' derecha
+Head3=29550	 ' abajo
+Head4=29552	 ' izq
+
+[HEAD49]
+Head1=29548	 ' arriba
+Head2=29546	 ' derecha
+Head3=29545	 ' abajo
+Head4=29547	 ' izq
+
+[HEAD50]
+Head1=28685	 ' arriba
+Head2=28683	 ' derecha
+Head3=28682	 ' abajo
+Head4=28684	 ' izq
+
+[HEAD51]
+Head1=28646	 ' arriba
+Head2=28644	 ' derecha
+Head3=28643	 ' abajo
+Head4=28645	 ' izq
+
+[HEAD52]
+Head1=28724	 ' arriba
+Head2=28722	 ' derecha
+Head3=28721	 ' abajo
+Head4=28723	 ' izq
+
+[HEAD53]
+Head1=28729	 ' arriba
+Head2=28727	 ' derecha
+Head3=28726	 ' abajo
+Head4=28728	 ' izq
+
+[HEAD54]
+Head1=30663	 ' arriba
+Head2=30661	 ' derecha
+Head3=30660	 ' abajo
+Head4=30662	 ' izq
+
+[HEAD55]
+Head1=30667	 ' arriba
+Head2=30665	 ' derecha
+Head3=30664	 ' abajo
+Head4=30666	 ' izq
+
+[HEAD56]
+Head1=30723	 ' arriba
+Head2=30721	 ' derecha
+Head3=30720	 ' abajo
+Head4=30722	 ' izq
+
+[HEAD57]
+Head1=30757	 ' arriba
+Head2=30755	 ' derecha
+Head3=30754	 ' abajo
+Head4=30756	 ' izq
+
+[HEAD58]
+Head1=30789	 ' arriba
+Head2=30787	 ' derecha
+Head3=30786	 ' abajo
+Head4=30788	 ' izq
+
+[HEAD59]
+Head1=30798	 ' arriba
+Head2=30796	 ' derecha
+Head3=30795	 ' abajo
+Head4=30797	 ' izq
+
+[HEAD60]
+Head1=30909	 ' arriba
+Head2=30907	 ' derecha
+Head3=30906	 ' abajo
+Head4=30908	 ' izq
+
+[HEAD61]
+Head1=31129	 ' arriba
+Head2=31127	 ' derecha
+Head3=31126	 ' abajo
+Head4=31128	 ' izq
+
+[HEAD62]
+Head1=31134	 ' arriba
+Head2=31132	 ' derecha
+Head3=31131	 ' abajo
+Head4=31133	 ' izq
+
+[HEAD63]
+Head1=31140	 ' arriba
+Head2=31138	 ' derecha
+Head3=31137	 ' abajo
+Head4=31139	 ' izq
+
+[HEAD64]
+Head3=31892	 ' abajo
+Head1=31893	 ' arriba
+Head4=31894	 ' izq
+Head3=31895	 ' abajo
+
+[HEAD]
+Head3=	 ' abajo
+Head1=	 ' arriba
+Head4=	 ' izq
+Head3=	 ' abajo
+
+[HEAD]
+Head3=	 ' abajo
+Head1=	 ' arriba
+Head4=	 ' izq
+Head3=	 ' abajo
+
+[HEAD]
+Head3=	 ' abajo
+Head1=	 ' arriba
+Head4=	 ' izq
+Head3=	 ' abajo
+
+[HEAD]
+Head3=	 ' abajo
+Head1=	 ' arriba
+Head4=	 ' izq
+Head3=	 ' abajo
+
+[HEAD]
+Head3=	 ' abajo
+Head1=	 ' arriba
+Head4=	 ' izq
+Head3=	 ' abajo
+
+
+
+
+
