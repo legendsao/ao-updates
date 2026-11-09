@@ -1,0 +1,17 @@
+; NIEBLA POR ZONAS  (la ve el cliente en el mundo, por encima de todo y por debajo de los techos desaparece sola)
+;
+; Un bloque por mapa: el titulo es el NUMERO del mapa. Hasta 8 zonas por mapa: Zona1 ... Zona8
+;
+;   ZonaN = x1, y1, x2, y2, intensidad1, intensidad2, borde
+;
+;   x1,y1      esquina superior izquierda de la zona (casilla)
+;   x2,y2      esquina inferior derecha de la zona (casilla, inclusive)
+;   intensidad1/2  fuerza de cada capa de nubes, 0 a 255 (opcional, por defecto 185 y 155)
+;   borde      casillas del degradado en cada lado: la niebla va de 0 al maximo (opcional, por defecto 4)
+;
+; Si el cambio no se ve, volve a entrar al mapa (se lee al cambiar de mapa).
+;
+; Ejemplo (mapa 1, una zona de 30x20 casillas):
+;
+;[1]
+;Zona1=40,30,70,50,185,155,4
