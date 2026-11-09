@@ -1,0 +1,13 @@
+; Cabezas que se ofrecen al crear el personaje (cliente: flechas de la cabeza; servidor: valida la cabeza al entrar).
+; Formato: Genero_Raza=lista de numeros o rangos separados por coma. Son las cabezas migradas de Tierras Perdidas: 1000 + N (N = numero en TP). Las cabezas anteriores ya no se ofrecen (creacion y cirugia) pero siguen valiendo para los personajes que las tienen.
+[Cabezas]
+Hombre_Humano=1001-1040
+Mujer_Humano=1069-1088
+Hombre_Elfo=1101-1123
+Mujer_Elfo=1170-1187
+Hombre_ElfoOscuro=1201-1221
+Mujer_ElfoOscuro=1270-1288
+Hombre_Enano=1301-1319
+Mujer_Enano=1370-1384
+Hombre_Gnomo=1401-1416
+Mujer_Gnomo=1470-1484
