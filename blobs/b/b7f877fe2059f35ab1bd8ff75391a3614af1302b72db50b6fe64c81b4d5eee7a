@@ -1,0 +1,132 @@
+[VISUAL]
+; Calidad: 0 Bajo (tinte y luces actuales) / 1 Medio (luz suave, luz de fuego viva, bloom, sombras del sol) / 2 Alto (todo, incluye sombras de luz puntual)
+Calidad=2
+; Interruptores individuales. Vacio: segun calidad. 0 apagado, 1 encendido
+Tinte=1
+LuzSuave=
+LuzDinamica=
+Bloom=
+SombraProy=
+SombraPunto=
+SombraArboles=
+; Rango de ZD del servidor (MIN y MAX de DiaNoche.dat del servidor)
+ZDNoche=120
+ZDDia=180
+; Colores R,G,B
+ColorDia=180,180,180
+ColorAtardecer=195,132,96
+ColorNoche=75,79,117
+ColorNocheMin=75,79,117
+TransicionMs=1500
+; Tope de ganancia de las luces sobre el ambiente
+LuzMaxK=3
+; Parpadeo del fuego (0 sin ruido)
+RuidoFuego=0.10
+; Bloom: intensidad de dia, extra de noche, radio base en tiles, rango maximo de luces fijas con brillo
+BloomDia=0.03
+BloomNoche=0.1
+BloomTam=0.5
+BloomMaxRango=4
+; Sombras: opacidad maxima, multiplicador de largo, hora del sol (hora de la PC)
+SombraAlfa=0.55
+SombraLargo=1
+SolAmanecer=6.5
+SolAtardecer=20
+; Follaje con viento (Calidad 2): amplitud en pixeles de la punta (0 quieto) y lista extra de Grh de arbustos, ej: 1200-1210,3000
+Viento=
+VientoAmp=5
+GrhViento=644,735,27201,7233
+; Agua (Calidad 2): opacidad de las ondas, destellos simultaneos maximos, espuma en la orilla (vacio = si)
+Agua=
+AguaAlfa=0.09
+AguaChispas=0
+AguaEspuma=0
+; Luces fijas del mapa: parpadean solo si hay una particula cerca o un objeto (lampara) en su tile. 1 = ademas parpadean TODAS (incluso las de iluminacion sin objeto)
+LuzFijasParpadean=0
+; Vaiven de la luz del fuego en pixeles (0 quieta)
+LuzMovimiento=2
+; Rastro de anillos al moverse sobre el agua (1 si, 0 no)
+AguaEstela=1
+; Degradado de la sombra: 0 pareja, 0.7 la punta queda al 30% de los pies
+SombraDegrade=0.55
+; Deformacion de la luz del fuego (0 circulo perfecto)
+LuzDeformacion=0.12
+
+
+; Grh de objetos que proyectan sombra (ademas de arboles y objetos con luz): rangos separados por coma, ej: 1200-1250,3000
+GrhSombra=23612,8481,4897,27237,1496,30758,1474,21876,5753,21874,7148,8482,21865,22611,27735,7159,21866,8479,7125,27217,7107,7125,644,735,27201,7233,
+
+
+; Donde arranca la sombra, en pixeles bajo el borde de arriba del tile: personajes y objetos. Si flota separada de los pies, BAJAR el valor; si se mete dentro del cuerpo, SUBIRLO
+SombraPiePJ=22
+SombraPieObj=26
+; Sol fijo: 1 = direccion y largo de la sombra de dia siempre iguales (se apaga con el ciclo del servidor); 0 = sigue la hora de la PC
+SolFijo=1
+; Sombra de contacto fija bajo cada personaje y objeto (vacio = segun calidad) y su opacidad
+SombraContacto=
+ContactoAlfa=0.3
+; Luz de luna: sombra debil de noche cuando no hay luz cerca (vacio = Calidad 2)
+SombraLuna=1
+; Parpadeo segun el tipo de luz: calida (fuego), neutra (blanca), fria (de color). Multiplican a RuidoFuego
+RuidoCalida=1
+RuidoNeutra=0.7
+RuidoFria=0.6
+; Objetos bajos (mesas, bancos): los de menos de SombraAltoMin px de alto no proyectan sombra (solo la de contacto); a partir de SombraAltoPleno, completa
+SombraAltoMin=40
+SombraAltoPleno=110
+; Sol fijo: largo lateral y hacia adelante de la sombra por px de altura (subir = sombra mas larga)
+SolFijoX=0.5
+SolFijoY=-0.42
+; Opacidad de cada capa de un personaje (cuerpo, cabeza, casco, arma, escudo se superponen)
+SombraCapaAlfa=0.65
+; Objetos bajos (menos de este alto en px) y anchos (1.4 veces su alto) como mesas y bancos: solo sombra de contacto. 0 = apagado
+SombraPlanoAlto=110
+; Boton Dia / Noche en el juego (arriba del visor): 1 = visible, 0 = oculto
+BotonDiaNoche=0
+; Reflejo leve de las luces en las betas del agua (vacio = Calidad 2) y su fuerza (1 normal, 0.5 la mitad, 2 el doble)
+AguaReflejoLuz=
+AguaReflejoFuerza=0.2
+; Reflejo en el agua de personajes y NPCs (vacio = Calidad 1 o mas; 0 = el reflejo viejo), si tambien reflejan arboles y objetos de orilla, opacidad junto al pie y ondulacion lateral en pixeles
+ReflejoAgua=
+ReflejoObjetos=0.5
+ReflejoAlfa=1
+ReflejoOnda=2
+; Alto del reflejo en el agua respecto del sprite (0.85 normal, 0.5 la mitad, 1.2 mas largo)
+ReflejoAlto=1
+; Cuanto se tine el reflejo con el color del agua segun la hora (0 = colores del sprite, 1 normal, 1.5 muy tenido)
+ReflejoTinte=1
+; Sombra de luna (la que cae en los pies sin ninguna luz cerca): fraccion de SombraAlfa que se ve de noche cerrada (antes fija en 0.35)
+LunaAlfa=0.8
+; Sombra interactiva (la que cambia con la luz): multiplicador de SombraAlfa en el centro de la luz (antes fijo en 1.1)
+LuzSombraAlfa=1.1
+; Casas (deteccion automatica por techo): sombra de oclusion al pie de las paredes. Vacio = segun la calidad (medio y alto)
+CasaBase=0
+CasaAlfa=0.5
+; Puertas: el dintel se dibuja sobre el personaje que pasa por la puerta (1 = si). ArcoAlto = pixeles de la franja superior del tile
+Arcos=0
+ArcoAlto=12
+; Grh de las puertas NUEVAS (objetos numero 1000 en adelante; las viejas no se tocan). Rangos con guion: su parte alta se dibuja sobre el personaje que pasa por la puerta
+GrhPuertas=9196,9202,8485-8486,21862-21863,23560-23587,23604-23606
+; Puertas: pixeles de la parte baja del tile de arriba de la puerta (pared o dintel) que tapan la cabeza del personaje parado en la puerta (0 = no tapar)
+ArcoCabeza=16
+; Puertas: filas de tiles (arriba de donde termina el sprite de la puerta) que se redibujan sobre el personaje que pasa por la puerta
+ArcoFilas=1
+; Marea: el agua sube y baja sobre la tierra que linda con las orillas (agua con borde de capa 2). Vacio = segun la calidad (medio y alto)
+Marea=
+; Cuanto avanza sobre la tierra (pixeles) y segundos de un ciclo completo
+MareaAlcance=14
+MareaPeriodo=8
+; Fuerza de las sombras proyectadas: ahora se UNEN donde se superponen (no se suman) y esto compensa la oscuridad. 1 = sin compensar, mas alto = mas oscuras
+SombraUnion=1.35
+; Sombras: fraccion del radio de una luz hasta la que NO influye (un arbol lejos de la luz sigue al sol o la luna, con el viento). Mas alto = hay que estar mas pegado a la luz
+LuzSombraUmbral=0.55
+; Sombra de objetos altos y finos (postes, farolas): largo minimo (1 = sin acortar) y relacion ancho/alto por debajo de la cual cuentan como finos
+SombraFinoLargo=0.5
+SombraFinoRatio=0.3
+; Sombra proyectada de farolas y antorchas (objetos que emiten luz): largo y fuerza respecto de un objeto comun (0 = sin sombra proyectada, queda solo la mancha de contacto)
+SombraFarolLargo=0.3
+SombraFarolAlfa=0.55
+; Refuerzo de la sombra de los PERSONAJES de dia (0.10 = 10% mas fuerte; se va apagando hacia la noche; no toca arboles ni objetos)
+SombraPJDia=0.10
+; Puertas: tamano maximo en tiles (ancho o alto) para que se redibuje la pared de arriba sobre el personaje. Las mas grandes (mas de 4x4) se ignoran
+ArcoMaxTiles=4
