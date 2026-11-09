@@ -1,0 +1,136 @@
+; AMBIENTES DE DUNGEON (08/11/2026) - recetas del motor de ambiente (gfx11: ambiente_nucleo.h). Ficha: docs\ficha-dungeons-ambientes.md
+; Lo leen gfx11.dll (al entrar al mapa: se afina sin recompilar, volviendo a entrar) y el mini cliente de efectos. El mapa elige receta en Clima.ini (bloque del mapa ORIGINAL): Ambiente=receta[,nivel]
+; Sin clave en Clima.ini = el mapa queda como hoy. gfx11.ini [Gfx] Ambiente=0 apaga todo (imagen identica a hoy).
+;
+; Un bloque por receta. AmbColor=r,g,b sugerido (luminancia >= 112). Hasta 4 primitivas: P1..P4 = TIPO clave=valor clave=valor ...
+; TIPO: MOTAS HAZ CAIDA NIEBLA BRASAS CAUSTICAS DESTELLO RUNA MANCHA GRIETA
+; Claves comunes: color color2 (hex, sin #) variante alfa(min-max) mezcla(ADD|ALFA) max(por pantalla 800x600) densidad(1 cada N casillas libres)
+;   ancla(HASH|ANTORCHA|LUZCASILLA|LLAMA|MURO_BASE|AGUA|DENTRO_DE_OTRA, se combinan con |) de(n de la primitiva madre) radioAncla porAncla
+;   tam tam2(fraccion de 2 px) vel dir(grados: 90 abajo, 270 arriba, -1 al azar) g deriva vida ciclo pulso(periodo s) titileo(Hz) fundido
+;   evitar(casillas a portales) nivelMin orden(ordenRecorte: 1 = lo primero que se quita) mapas(solo en estos mapas)
+; Propias: HAZ ancho largo resp charco | CAIDA modo(gota|hilo|grumo) altura hilo montoncito salpicadura onda charco | NIEBLA escala mascara muro
+;   solomuro techo | BRASAS zigzag zigzagHz | DESTELLO forma(cruz|punto|cuadro|vela) dur charco charcoAlfa | RUNA glifo(0-5, 8, 9) giro charco
+;   charcoAlfa lejosFuego | MANCHA modo(franja|parches) franja | GRIETA largo
+;   tam = nucleo en px (min-max, puede ser < 1); tam2 = fraccion con 1 px mas. DESTELLO base = alfa fijo entre destellos. MOTAS/BRASAS sobreBloq=1 = tambien sobre lava/roca.
+;   MOTAS y BRASAS van en el AIRE (encima de personajes, con hueco alrededor de cada PJ y su nombre); capa=piso las deja en el piso.
+;   La NIEBLA tambien cubre la mitad inferior de cada personaje (niebla baja, en el aire, nunca sobre el nombre). Nada aclara lo negro (mezclas segun el destino).
+;   Sin runas en el piso salvo Invocaciones; sin franjas pegadas a muros. MANCHA modo=ruido = manchas sueltas lejos de muros y del vacio.
+;   Pisadas=1 (+ PisadasGranos, PisadasVida, PisadasAlfa, PisadasColor, PisadasMax): polvo en los pies de los personajes DIBUJADOS que cambian de casilla.
+;   Es lo unico que reacciona a personajes. Apagado con Ambiente=0, calidad baja o mas de 25 PJ. Motas: <= ~35 visibles por pantalla.
+;   Todas se dibujan como punto suave (nucleo + halo, borde difuso; algunas mas grandes y tenues = profundidad). RUNA pared=1 = brillo sobre la cara del muro.
+; 08/11 (3): correcciones del dueno: polvo fino (no cuadrado), aire encima de los PJ, luz de los haces al reves, jeroglificos en la pared, sin hilos de arena.
+
+; 08/11 (5) RONDA 2: lo que hace reconocible a cada dungeon es el COLOR y la LUZ. GRADO = grading de toda la vista en el pase del piso
+;   (ALFA: destino * (1 - a + col * a), tine y baja un poco; el negro sigue negro). MANCHA modo=luz = charco de luz grande en antorchas,
+;   llamas y luces de casilla (ancla=ANTORCHA|LLAMA|LUZCASILLA). NIEBLA color2 = tinte claro del velo sobre la base de los sprites.
+;   Hasta 6 primitivas por receta. de=N apunta a la primitiva N de la misma receta.
+
+[helada]
+AmbColor=96,128,160
+P1=GRADO color=80B0F0 alfa=0.85 mezcla=ADD orden=4
+P2=MANCHA modo=luz ancla=LUZCASILLA color=BFE8FF alfa=0.30 tam=90-130 orden=4
+P3=MOTAS color=E8F6FC alfa=0.35-0.55 max=35 tam=0.8-1.4 tam2=0.1 vel=3-6 dir=90 deriva=2 vida=6-10 titileo=0.3-0.8 mezcla=ADD orden=3
+P4=MANCHA modo=ruido color=BFE3F2 alfa=0.18 mezcla=ADD orden=4
+P5=DESTELLO forma=cruz color=FFFFFF alfa=0.9 base=0.08 mezcla=ADD max=12 ancla=MURO_BASE densidad=30 tam=3-4 dur=0.6 ciclo=2-5 orden=2
+P6=NIEBLA color=8FA4B8 color2=DCEAF4 alfa=0.22-0.32 mezcla=ADD techo=0.36 escala=3 vel=3 dir=10 mascara=0.55 orden=1
+
+[piramide]
+AmbColor=158,124,82
+Pisadas=1
+PisadasGranos=8-12
+PisadasVida=0.5-0.8
+PisadasAlfa=0.85
+PisadasColor=C8B07A
+PisadasMax=24
+P1=GRADO color=D0A060 alfa=0.18 mezcla=ALFA orden=4
+P2=HAZ color=F2D59A alfa=0.28-0.38 max=3 densidad=10 ancho=56-80 largo=180-260 resp=0.25 pulso=8 charco=80 orden=4
+P3=MOTAS ancla=DENTRO_DE_OTRA de=2 color=FFE7B0 alfa=0.30 mezcla=ADD porAncla=8 max=24 tam=0.6-1.0 vel=2-4 dir=-1 vida=5-8 orden=1
+P4=RUNA pared=1 ancla=MURO_BASE lado=muro color=E0B860 alfa=0.15-0.40 mezcla=ADD max=6 densidad=20 tam=40-64 pulso=6-9 evitar=0 orden=3
+P5=MANCHA modo=luz ancla=ANTORCHA|LUZCASILLA color=FFC070 alfa=0.50 tam=140-180 orden=4
+
+[leric]
+AmbColor=140,124,104
+P1=GRADO color=A88C68 alfa=0.40 mezcla=ALFA orden=4
+P2=MANCHA modo=luz ancla=ANTORCHA color=FFD8A8 alfa=0.45 tam=150-200 orden=4
+P3=MOTAS ancla=ANTORCHA radioAncla=2-4 porAncla=5 max=30 color=B8B2AA alfa=0.30 mezcla=ADD tam=0.7-1.2 vel=2-5 dir=270 deriva=1.5 vida=5-9 orden=3
+P4=MOTAS max=15 color=9A9692 alfa=0.20 mezcla=ADD tam=0.6-1.1 vel=1-2 dir=-1 vida=8-12 orden=1
+
+[perdida]
+AmbColor=118,148,92
+P1=GRADO color=C0FF90 alfa=1.0 mezcla=ADD orden=4
+P2=MANCHA modo=parches color=8FD6A0 alfa=0.30-0.55 mezcla=ADD max=10 densidad=40 tam=24-44 pulso=6 orden=4
+P3=MOTAS ancla=DENTRO_DE_OTRA de=2 porAncla=4 max=35 color=CFF2C8 alfa=0.45-0.75 mezcla=ADD tam=0.8-1.3 vel=2-4 dir=270 deriva=3 vida=6-10 orden=2
+P4=CAIDA modo=grumo color=7A6247 color2=C8B48C alfa=0.9 max=5 densidad=40 altura=70-110 g=600 ciclo=4-9 salpicadura=5-8 orden=3
+P5=NIEBLA color=8AAA94 color2=D0E4C8 alfa=0.32-0.45 mezcla=ADD techo=0.55 escala=2.5 vel=2-3 dir=15 mascara=0.7 mapas=101,103,124 orden=1
+P6=MANCHA modo=luz ancla=ANTORCHA color=FFC890 alfa=0.45 tam=130-170 orden=4
+
+[catacumbas]
+AmbColor=100,128,118
+P1=GRADO color=70B8A0 alfa=0.80 mezcla=ADD orden=4
+P2=NIEBLA color=8AAA94 color2=C8DCCB alfa=0.36-0.50 mezcla=ADD techo=0.60 escala=2.5 vel=2-4 dir=15 mascara=0.80 orden=4
+P3=MOTAS max=30 color=D8D0BC alfa=0.28 mezcla=ADD tam=0.7-1.2 vel=1-3 dir=90 deriva=1 vida=8-12 orden=1
+P4=DESTELLO forma=vela color=FFE2B0 alfa=1.0 mezcla=ADD max=6 ancla=MURO_BASE densidad=22 titileo=0.6-1.2 charco=60 charcoAlfa=0.38 orden=3
+P5=GRADO color=6890A8 alfa=0.40 mezcla=ALFA orden=4
+
+[infernal]
+AmbColor=160,108,96
+P1=GRADO color=C06048 alfa=0.20 mezcla=ALFA orden=4
+P2=BRASAS ancla=LUZCASILLA|LLAMA radioAncla=0-2 porAncla=2 max=35 color=FFB050 color2=D0582A alfa=0.9 mezcla=ADD tam=2.2-3.0 vel=14-28 dir=270 zigzag=5 zigzagHz=0.5-1 vida=2-4 sobreBloq=1 orden=2
+P3=MOTAS max=25 color=8A8280 alfa=0.45 mezcla=ALFA tam=0.8-1.5 vel=4-8 dir=95 deriva=2 vida=6-10 sobreBloq=1 orden=1
+P4=MANCHA modo=brillo color=FF8A30 alfa=0.15-0.60 mezcla=ADD pulso=4-6 orden=3
+P5=MANCHA modo=luz ancla=LLAMA|LUZCASILLA color=FF9A50 alfa=0.30 tam=90-130 orden=4
+
+[minas]
+AmbColor=150,120,92
+P1=GRADO color=B08858 alfa=0.20 mezcla=ALFA orden=4
+P2=MOTAS max=35 color=D8C8A8 alfa=0.32 mezcla=ADD tam=0.7-1.2 vel=1-3 dir=-1 vida=6-10 orden=1
+P3=CAIDA modo=gota color=A8C4C8 alfa=1.0 max=6 densidad=15 altura=52-82 g=900 ciclo=2-5 charco=12-20 onda=1 salpicadura=5-7 orden=3
+P4=DESTELLO forma=punto color=E8C060 color2=9AD0E0 variante=0.3 alfa=1.0 base=0.30 mezcla=ADD max=14 ancla=MURO_BASE lado=muro densidad=8 tam=2-3 dur=0.6 ciclo=2-6 orden=2
+P5=MANCHA modo=luz ancla=ANTORCHA|LUZCASILLA color=FFC878 alfa=0.50 tam=140-180 orden=4
+
+[invocaciones]
+AmbColor=128,108,160
+P1=GRADO color=C0A0FF alfa=1.0 mezcla=ADD orden=4
+P2=RUNA glifo=8 color=8E6CD8 alfa=0.22-0.36 mezcla=ADD max=3 densidad=60 tam=64-96 giro=4 pulso=14-18 charco=56 charcoAlfa=0.12 orden=3
+P3=BRASAS ancla=DENTRO_DE_OTRA de=2 porAncla=8 max=24 color=C8B4F0 alfa=0.7 mezcla=ADD tam=0.8-1.3 vel=3-6 dir=270 vida=4-7 orden=2
+P4=NIEBLA color=6A55A0 color2=C8B8E8 alfa=0.20-0.30 mezcla=ADD techo=0.35 escala=2 vel=2 solomuro=1 orden=1
+P5=MANCHA modo=luz ancla=ANTORCHA|LUZCASILLA color=C8B0FF alfa=0.35 tam=120-160 orden=4
+
+; Islas de las medusas legendarias (mundo 197: 125-128, EXTERIORES): misma familia, un tinte por isla. Noche=0.15: de dia casi nada, de noche pleno.
+; Sin AmbColor (en exteriores no se toca la luz global). Causticas solo cerca del agua; la niebla y todo lo demas nunca sobre el agua ni lo negro.
+
+[medusas]
+; turquesa (125, Kalhat)
+Noche=0.15
+P0=GRADO color=40C8C0 alfa=1.0 mezcla=ADD orden=4
+P1=MOTAS color=7FF0E0 alfa=0.50-0.80 mezcla=ADD max=40 tam=1.0-1.6 tam2=0.1 vel=2-4 dir=270 deriva=3 vida=6-10 titileo=0.2-0.5 orden=1
+P2=CAUSTICAS color=A8E8E0 alfa=0.22-0.32 radioAncla=4 vel=4 orden=3
+P3=NIEBLA color=6FB8B0 alfa=0.25-0.35 mezcla=ADD techo=0.40 escala=2.5 vel=2 dir=20 mascara=0.5 orden=2
+P4=DESTELLO forma=punto color=C8FFF4 alfa=0.9 mezcla=ADD max=6 ancla=HASH densidad=40 tam=2-3 dur=1.5 ciclo=6-12 orden=4
+
+[medusas_esmeralda]
+; esmeralda (126)
+Noche=0.15
+P0=GRADO color=60E0A0 alfa=1.0 mezcla=ADD orden=4
+P1=MOTAS color=8FF0A8 alfa=0.50-0.80 mezcla=ADD max=40 tam=1.0-1.6 tam2=0.1 vel=2-4 dir=270 deriva=3 vida=6-10 titileo=0.2-0.5 orden=1
+P2=CAUSTICAS color=A8E8C0 alfa=0.22-0.32 radioAncla=4 vel=4 orden=3
+P3=NIEBLA color=70B890 alfa=0.25-0.35 mezcla=ADD techo=0.40 escala=2.5 vel=2 dir=20 mascara=0.5 orden=2
+P4=DESTELLO forma=punto color=D0FFE0 alfa=0.9 mezcla=ADD max=6 ancla=HASH densidad=40 tam=2-3 dur=1.5 ciclo=6-12 orden=4
+
+[medusas_violeta]
+; violeta (127)
+Noche=0.15
+P0=GRADO color=9A70E8 alfa=1.0 mezcla=ADD orden=4
+P1=MOTAS color=C8A0FF alfa=0.50-0.80 mezcla=ADD max=40 tam=1.0-1.6 tam2=0.1 vel=2-4 dir=270 deriva=3 vida=6-10 titileo=0.2-0.5 orden=1
+P2=CAUSTICAS color=C8B4F0 alfa=0.22-0.32 radioAncla=4 vel=4 orden=3
+P3=NIEBLA color=9A88C8 alfa=0.25-0.35 mezcla=ADD techo=0.40 escala=2.5 vel=2 dir=20 mascara=0.5 orden=2
+P4=DESTELLO forma=punto color=E8D8FF alfa=0.9 mezcla=ADD max=6 ancla=HASH densidad=40 tam=2-3 dur=1.5 ciclo=6-12 orden=4
+
+[medusas_hielo]
+; azul hielo (128)
+Noche=0.15
+P0=GRADO color=70A8E8 alfa=1.0 mezcla=ADD orden=4
+P1=MOTAS color=A8D8FF alfa=0.50-0.80 mezcla=ADD max=40 tam=1.0-1.6 tam2=0.1 vel=2-4 dir=270 deriva=3 vida=6-10 titileo=0.2-0.5 orden=1
+P2=CAUSTICAS color=C0E4FF alfa=0.22-0.32 radioAncla=4 vel=4 orden=3
+P3=NIEBLA color=90B4D0 alfa=0.25-0.35 mezcla=ADD techo=0.40 escala=2.5 vel=2 dir=20 mascara=0.5 orden=2
+P4=DESTELLO forma=punto color=F0F8FF alfa=0.9 mezcla=ADD max=6 ancla=HASH densidad=40 tam=2-3 dur=1.5 ciclo=6-12 orden=4
