@@ -1,0 +1,2 @@
+Version 1.1.22
++ Actualizador: ya no corta con el aviso de espera larga, reintenta solo hasta que el servidor responde
