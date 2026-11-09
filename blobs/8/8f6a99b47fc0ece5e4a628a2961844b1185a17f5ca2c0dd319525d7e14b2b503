@@ -1,0 +1,1395 @@
+M|1|6|7|Afueras de Kahlimdor|0|BOSQUE|CAMPO|0
+V|96|2|3|0
+P|58|38|1|86|Catacumbas
+M|2|7|7|Bosque|0|BOSQUE|CAMPO|0
+V|23|25|4|1
+M|3|6|8|Bosque de Kahlimdor|0|BOSQUE|CAMPO|0
+V|1|4|0|0
+M|4|7|8|Bosque|0|BOSQUE|CAMPO|0
+V|2|93|6|3
+M|5|6|9|Bosque Mágico|0|BOSQUE|CAMPO|0
+V|0|0|7|0
+N|83|53|6|Desertor|Ciudadano de Kahlimdor|227|97|72
+N|87|57|6|Carcelero|Ciudadano de Anvilmar|226|101|5
+N|80|60|6|Cantora|Viajero|215|19|0
+N|91|61|6|Sacerdote|Ciudadano de Bargomaud|228|101|4
+M|6|7|9|Bosque|0|BOSQUE|CAMPO|0
+V|4|91|8|5
+N|35|81|6|Aldeana|Alma|218|8|500
+P|51|60|2|188|Rey Dragón
+M|7|6|10|Bosque|0|BOSQUE|CAMPO|0
+V|5|0|0|0
+P|50|55|2|152|Dungeon Invocaciones
+M|8|7|10|Bosque|0|BOSQUE|CAMPO|0
+V|6|14|9|0
+N|47|62|6|Soldado|Alma|219|8|500
+M|9|7|11|Bosque|0|BOSQUE|CAMPO|0
+V|8|16|11|0
+M|10|6|12|Cercanias del Castillo|0|BOSQUE|CAMPO|0
+V|0|11|12|0
+M|11|7|12|Bosque|0|BOSQUE|CAMPO|0
+V|9|16|13|10
+M|12|6|13|Bosque|0|BOSQUE|CAMPO|0
+V|10|13|67|65
+M|13|7|13|Bosque|0|BOSQUE|CAMPO|0
+V|11|17|20|12
+M|14|8|10|Cercanias de Tanaris|0|||0
+V|91|28|15|9
+N|81|44|6|Mercader|Viajero|210|3|2
+M|15|8|11|Bosque|0|BOSQUE|CAMPO|0
+V|14|18|16|9
+M|16|8|12|Bosque|0|BOSQUE|CAMPO|0
+V|15|0|17|11
+M|17|8|13|Bosque|0|BOSQUE|CAMPO|0
+V|16|19|21|13
+M|18|9|11|Cercanias de Tanaris|0|BOSQUE|CAMPO|0
+V|28|53|0|15
+P|59|35|1|83|Catacumbas
+M|19|9|13|Cercanias del Castillo|0|BOSQUE|CAMPO|0
+V|0|0|50|17
+M|20|7|14|Afueras de Anvilmar|0|BOSQUE|CAMPO|0
+V|13|21|0|67
+N|52|83|6|Veterano|Ciudadano de Anvilmar|208|130|4
+P|56|21|1|88|Catacumbas
+M|21|8|14|Bosque|0|BOSQUE|CAMPO|0
+V|17|50|22|20
+M|22|8|15|Bosque|0|BOSQUE|CAMPO|0
+V|21|49|0|0
+M|23|7|6|Bosque|0|BOSQUE|CAMPO|0
+V|0|24|2|96
+N|35|31|6|Pastor|Aldeano|224|18|0
+N|22|51|6|Leñadora|Aldeano|223|19|0
+N|65|56|6|Cartógrafa|Viajero|225|22|111
+N|50|66|1|Barnabás|Tabernero|15|33|0
+N|62|78|1|Mathilde|Sastre|12|19|0
+N|55|80|6|Sobreviviente|Viajero|220|19|0
+N|40|82|1|Morwenna|Alquimista|14|227|74
+M|24|8|6|Bosque|0|BOSQUE|CAMPO|0
+V|77|0|25|23
+M|25|8|7|Thir|1|BOSQUE|CAMPO|0
+V|24|94|93|2
+N|52|28|1|Aerendil|Hechicero|46|245|107
+N|62|35|1|Mathilde|Sastre|12|19|0
+N|65|35|1|Herrero||37|199|505
+N|40|39|3|Casimiro||36|37|0
+N|49|39|2|Isembard||5|49|3
+N|72|40|4|Sir Cedric|Viajero|162|130|4
+N|81|40|1|Morwenna|Alquimista|14|227|74
+N|46|45|2|Malakor|Renuncia|154|318|14
+N|64|51|1|Griselda|Provisiones|53|18|0
+N|67|51|1|Barnabás|Tabernero|15|33|0
+N|75|51|1|Hortensia|Comerciante|8|3|4
+N|77|51|1|Neville|Mercader de Mapas|152|265|109
+N|36|53|4|Valdemar|Gobernador|153|57|14
+N|45|53|4|Fulgencio|Cartero|196|100|109
+N|54|53|4|Anselmo|Bóveda de clan|197|248|16
+N|80|58|4|Vorn|Cirujano|193|61|11
+N|88|60|4|Darek||160|318|14
+M|26|12|7|Ruvendel|1|BOSQUE|CAMPO|0
+V|0|0|0|0
+N|40|20|4|Fulgencio|Cartero|196|100|109
+N|40|35|4|Quest De Nobleza||155|63|13
+N|21|44|4|Bargomaud||194|176|11
+N|68|44|1|Barnabás|Tabernero|15|33|0
+N|71|44|1|Griselda|Provisiones|53|18|0
+N|89|44|2|Isembard||5|49|3
+N|46|48|4|Sir Cedric|Viajero|162|130|4
+N|56|48|4|Valdemar|Gobernador|153|57|14
+N|22|69|1|AgitedeCazador||170|89|16
+N|25|69|1|AgitedeGuerrero||169|89|16
+N|28|69|1|AgitedeAsesino||168|232|16
+N|31|69|1|AgitedeClerigo||167|348|16
+N|35|69|1|AgitedeDruida||166|56|16
+N|38|69|1|AgitedeBardo||165|208|13
+N|41|69|1|AgitedePaladin||164|209|13
+N|44|69|1|AgitedeMagos||163|350|16
+N|69|69|4|Anselmo|Bóveda de clan|197|248|16
+N|78|69|3|Casimiro||36|37|0
+N|12|70|1|Aerendil|Hechicero|46|245|107
+N|14|70|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|74|84|1|Morwenna|Alquimista|14|227|74
+N|60|86|1|Mathilde|Sastre|12|19|0
+M|27|5|7|Kahlimdor|1|BOSQUE|CIUDAD|0
+V|0|0|60|0
+N|58|20|1|Morwenna|Alquimista|14|227|74
+N|20|25|1|AgitedeMagos||163|350|16
+N|30|26|1|AgitedeCazador||170|89|16
+N|41|26|1|AgitedeBardo||165|208|13
+N|18|28|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|22|28|1|AgitedeDruida||166|56|16
+N|28|28|1|AgitedePaladin||164|209|13
+N|32|28|1|AgitedeGuerrero||169|89|16
+N|39|28|1|AgitedeClerigo||167|348|16
+N|43|28|1|AgitedeAsesino||168|232|16
+N|50|28|1|Mathilde|Sastre|12|19|0
+N|28|41|1|Hortensia|Comerciante|8|3|4
+N|33|41|1|Barnabás|Tabernero|15|33|0
+N|72|41|4|Demonio|Rey del Infierno|98|260|202
+N|51|44|4|Sir Cedric|Viajero|162|130|4
+N|35|47|1|Mercader||80|3|2
+N|40|49|3|Banquero||24|37|0
+N|17|64|2|Isembard||5|49|3
+N|59|68|1|Bertram|Pescador|58|3|101
+N|22|77|4|Fulgencio|Cartero|196|100|109
+M|28|9|10|Tanaris|1|BOSQUE|CIUDAD|0
+V|90|54|18|14
+N|32|29|2|Isembard||5|49|3
+N|49|51|4|Sir Cedric|Viajero|162|130|4
+N|62|52|3|Casimiro||36|37|0
+N|75|52|1|Morwenna|Alquimista|14|227|74
+N|21|53|1|Hortensia|Comerciante|8|3|4
+N|32|53|1|Griselda|Provisiones|53|18|0
+N|55|62|1|Mercader||80|3|2
+N|75|62|1|Kragor|Minero|48|1|2
+N|21|64|1|Mathilde|Sastre|12|19|0
+N|32|64|1|Aerendil|Hechicero|46|245|107
+N|75|73|1|Bertram|Pescador|58|3|101
+N|33|74|1|Leñador||33|1|4
+N|22|75|1|Barnabás|Tabernero|15|33|0
+P|37|50|2|131|Propiedades
+M|29|7|15|Anvilmar|1||CIUDAD|0
+V|0|0|0|0
+N|89|16|1|AgitedeMagos||163|350|16
+N|29|18|1|Leñador||59|1|4
+N|35|18|1|Leñador||59|1|4
+N|67|18|1|AgitedeGuerrero||169|89|16
+N|78|18|1|AgitedeAsesino||168|232|16
+N|15|19|1|Bertram|Pescador|58|3|101
+N|42|20|1|Morwenna|Alquimista|14|227|74
+N|84|20|1|AgitedeDruida||166|56|16
+N|88|20|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|13|21|1|Griselda|Provisiones|53|18|0
+N|22|21|1|Barnabás|Tabernero|15|33|0
+N|32|21|1|Leñador||59|1|4
+N|60|21|1|Mathilde|Sastre|12|19|0
+N|65|21|1|AgitedeCazador||170|89|16
+N|69|21|1|AgitedePaladin||164|209|13
+N|76|21|1|AgitedeBardo||165|208|13
+N|80|21|1|AgitedeClerigo||167|348|16
+N|50|49|4|Anne|Reina del Imperio|200|63|74
+N|51|49|4|Roderick|Rey del Imperio|171|63|107
+N|18|50|2|Isembard||5|49|3
+N|82|50|3|Casimiro||36|37|0
+N|35|63|5|Guardia Imperial||6|15|0
+N|35|68|5|Guardia Imperial||6|15|0
+N|24|78|4|Sir Cedric|Viajero|162|130|4
+N|50|85|1|Mercader||80|3|2
+N|44|92|4|Fulgencio|Cartero|196|100|109
+M|30|13|4|Dungeon Helada|0|BOSQUE|DUNGEON|1
+V|0|0|0|0
+M|31|8|16|Castillo Sur|0|||0
+V|0|0|0|0
+M|32|6|11|Castillo Oeste|0|||0
+V|0|0|0|0
+M|33|11|3|Castillo Norte|0|||0
+V|0|0|0|0
+M|34|9|12|Castillo Este|0|||0
+V|0|0|0|0
+M|35|10|4|Bosque Nevado|0|NIEVE|CAMPO|0
+V|0|36|37|0
+M|36|11|4|Cercanias del Castillo|0|NIEVE|CAMPO|0
+V|0|0|0|35
+M|37|10|5|Bosque Nevado|0|NIEVE|CAMPO|0
+V|35|0|75|76
+P|54|57|1|30|Dungeon Helada
+M|38|8|18|Desierto|0|DESIERTO|CAMPO|0
+V|43|0|39|0
+M|39|8|19|Ruinas Ancestrales|0|DESIERTO|CAMPO|0
+V|38|129|0|40
+N|44|49|6|Aguatero|Alma|221|8|500
+N|72|52|6|Ermitaño|Viajero|213|56|102
+M|40|7|19|Pirámide de Inthak|0|DESIERTO|CAMPO|0
+V|0|39|0|0
+P|46|54|1|80|Pirámide de Inthak
+M|41|7|16|Muelle de Anvilmar|0|MAR|CAMPO|0
+V|0|0|42|74
+M|42|7|17|Mar|0|MAR|CAMPO|0
+V|41|43|0|133
+M|43|8|17|Cercanias del Castillo|0|MAR|CAMPO|0
+V|0|44|38|42
+M|44|9|17|Mar|0|MAR|CAMPO|0
+V|0|45|0|43
+M|45|10|17|Mar|0|MAR|CAMPO|0
+V|0|70|0|44
+M|46|11|16|Mar|0|MAR|CAMPO|0
+V|47|0|70|0
+M|47|11|15|Mar|0|MAR|CAMPO|0
+V|0|0|46|48
+M|48|10|15|Mar|0|MAR|CAMPO|0
+V|69|47|0|49
+M|49|9|15|Mar|0|MAR|CAMPO|0
+V|50|48|0|22
+M|50|9|14|Mar|0|MAR|CAMPO|0
+V|19|69|49|21
+M|51|10|13|Mar|0|MAR|CAMPO|0
+V|52|0|69|0
+M|52|10|12|Mar|0|MAR|CAMPO|0
+V|53|0|51|0
+M|53|10|11|Mar|0|MAR|CAMPO|0
+V|54|0|52|18
+M|54|10|10|Mar|0|MAR|CAMPO|0
+V|55|78|53|28
+M|55|10|9|Mar|0|MAR|CAMPO|0
+V|58|56|54|90
+M|56|11|9|Mar|0|MAR|CAMPO|0
+V|140|57|78|55
+M|57|12|9|Mar|0|MAR|CAMPO|0
+V|72|0|0|56
+M|58|10|8|Mar|0|MAR|CAMPO|0
+V|59|140|55|92
+M|59|10|7|Mar|0|MAR|CAMPO|0
+V|75|0|58|94
+M|60|5|8|Mar de Kahlimdor|0|||0
+V|27|0|61|0
+M|61|5|9|Mar|0|MAR|CAMPO|0
+V|60|0|62|0
+M|62|5|10|Mar|0|MAR|CAMPO|0
+V|61|0|63|0
+M|63|5|11|Mar|0|MAR|CAMPO|0
+V|62|0|64|73
+M|64|5|12|Mar|0|MAR|CAMPO|0
+V|63|0|65|0
+M|65|5|13|Mar|0|MAR|CAMPO|0
+V|64|0|66|0
+M|66|5|14|Mar|0|MAR|CAMPO|0
+V|65|67|0|0
+P|15|26|2|121|Castillo Hundido P1
+M|67|6|14|Mar|0|MAR|CAMPO|0
+V|12|20|68|66
+M|68|6|15|Mar|0|MAR|CAMPO|0
+V|67|0|74|0
+M|69|10|14|Jhumbel|0|MAR|CAMPO|0
+V|51|0|48|50
+N|66|35|1|Morwenna|Alquimista|14|227|74
+N|81|37|1|Barnabás|Tabernero|15|33|0
+N|74|39|4|Sir Cedric|Viajero|162|130|4
+N|70|45|3|Casimiro||36|37|0
+N|81|48|1|Griselda|Provisiones|53|18|0
+N|66|52|6|Barquera|Ciudadano de Jhumbel|216|3|101
+M|70|11|17|Isla Leric|0|MAR|CAMPO|0
+V|46|0|0|45
+P|51|51|1|97|Dungeon Leric 1P
+M|71|-1|-1|Zona de Duelos|1|BOSQUE|DUNGEON|2
+V|0|0|0|0
+M|72|12|8|Bosque de Ruvendel|0|BOSQUE|CAMPO|0
+V|0|0|57|0
+N|39|14|6|Anciana|Ciudadano de Ruvendel|211|22|111
+P|39|37|2|117|Cueva de Osos
+M|73|4|11|Entrada al Dungeon|0||DUNGEON|0
+V|0|63|0|0
+N|55|47|6|Valiente|Alma|254|8|500
+P|54|43|1|101|Dungeon Perdida
+M|74|6|16|Mar|0|MAR|CAMPO|0
+V|68|41|133|125
+M|75|10|6|Mar|0|MAR|CAMPO|0
+V|37|0|59|95
+M|76|9|5|Bosque Nevado|0|NIEVE|CAMPO|0
+V|0|37|0|77
+M|77|8|5|Bosque Nevado|0|NIEVE|CAMPO|0
+V|136|76|24|0
+N|64|13|6|Cantora|Viajero|215|19|0
+M|78|11|10|Cárcel|1|||0
+V|56|0|0|54
+N|64|49|6|Condenado|Alma|255|8|500
+N|52|59|6|Soldado|Alma|253|8|500
+M|79|14|15|Dungeon Leric|0|BOSQUE|DUNGEON|14
+V|0|0|0|0
+P|52|71|2|99|Dungeon Leric 3P
+M|80|3|5|Pirámide de Inthak|0|BOSQUE|DUNGEON|5
+V|0|0|0|0
+M|81|4|5|Pirámide de Inthak|0|BOSQUE|DUNGEON|5
+V|0|0|0|0
+M|82|5|5|Pirámide de Inthak|0|BOSQUE|DUNGEON|5
+V|0|0|0|0
+M|83|5|2|Catacumbas|0|BOSQUE|DUNGEON|13
+V|0|0|0|0
+M|84|4|2|Catacumbas|0|BOSQUE|DUNGEON|13
+V|0|0|0|0
+M|85|4|3|Catacumbas|0|BOSQUE|DUNGEON|13
+V|0|0|0|0
+M|86|4|1|Catacumbas|0|NIEVE|DUNGEON|13
+V|0|0|0|0
+P|54|17|2|1|Afueras de Kahlimdor
+M|87|4|4|Catacumbas|0|BOSQUE|DUNGEON|13
+V|0|0|0|0
+M|88|3|4|Catacumbas|0|BOSQUE|DUNGEON|13
+V|0|0|0|0
+M|89|-1|-1|Newbie Dungeon|1|BOSQUE|NWDV|0
+V|0|0|0|0
+N|74|77|1|Mathilde|Sastre|12|19|0
+N|79|77|2|Isembard||5|49|3
+N|81|77|1|Barnabás|Tabernero|15|33|0
+N|83|77|1|Griselda|Provisiones|53|18|0
+N|72|81|1|Morwenna|Alquimista|14|227|74
+M|90|9|9|Playas de Tanaris|0|BOSQUE|CAMPO|0
+V|92|55|28|0
+M|91|8|9|Bosque|0|BOSQUE|CAMPO|0
+V|93|0|14|6
+M|92|9|8|Mar|0|BOSQUE|CAMPO|0
+V|94|58|90|93
+M|93|8|8|Bosque|0|BOSQUE|CAMPO|0
+V|25|92|91|4
+N|52|55|6|Desertor|Viajero|214|1|2
+M|94|9|7|Mar|0|BOSQUE|CAMPO|0
+V|95|59|92|25
+M|95|9|6|Mar|0|BOSQUE|CAMPO|0
+V|76|75|94|0
+M|96|-1|-1|Lago del Norte|0|BOSQUE|CAMPO|0
+V|0|23|1|148
+M|97|14|18|Dungeon Leric 1P|0|NIEVE|DUNGEON|14
+V|0|0|0|0
+P|43|16|2|98|Dungeon Leric 2P
+M|98|14|17|Dungeon Leric 2P|0|||14
+V|0|0|0|0
+P|43|16|2|99|Dungeon Leric 3P
+M|99|14|16|Dungeon Leric 3P|0|||14
+V|0|0|0|0
+P|43|16|1|79|Dungeon Leric
+M|100|5|3|Zona de Peleas|1|BOSQUE|ESPECIAL|2
+V|0|0|0|0
+N|23|16|3|Banquero||24|37|0
+N|24|16|1|Griselda|Provisiones|53|18|0
+N|25|16|1|Barnabás|Tabernero|15|33|0
+N|26|16|2|Isembard||5|49|3
+N|27|16|1|Aerendil|Hechicero|46|245|107
+N|28|16|1|Morwenna|Alquimista|14|227|74
+N|30|16|3|Banquero||24|37|0
+N|31|16|1|Griselda|Provisiones|53|18|0
+N|32|16|1|Barnabás|Tabernero|15|33|0
+N|33|16|2|Isembard||5|49|3
+N|34|16|1|Aerendil|Hechicero|46|245|107
+N|35|16|1|Morwenna|Alquimista|14|227|74
+N|37|16|3|Banquero||24|37|0
+N|38|16|1|Griselda|Provisiones|53|18|0
+N|39|16|1|Barnabás|Tabernero|15|33|0
+N|40|16|2|Isembard||5|49|3
+N|41|16|1|Aerendil|Hechicero|46|245|107
+N|42|16|1|Morwenna|Alquimista|14|227|74
+N|44|16|3|Banquero||24|37|0
+N|45|16|1|Griselda|Provisiones|53|18|0
+N|46|16|1|Barnabás|Tabernero|15|33|0
+N|47|16|2|Isembard||5|49|3
+N|48|16|1|Aerendil|Hechicero|46|245|107
+N|49|16|1|Morwenna|Alquimista|14|227|74
+N|52|16|3|Banquero||24|37|0
+N|53|16|1|Griselda|Provisiones|53|18|0
+N|54|16|1|Barnabás|Tabernero|15|33|0
+N|55|16|2|Isembard||5|49|3
+N|56|16|1|Aerendil|Hechicero|46|245|107
+N|57|16|1|Morwenna|Alquimista|14|227|74
+N|59|16|3|Banquero||24|37|0
+N|60|16|1|Griselda|Provisiones|53|18|0
+N|61|16|1|Barnabás|Tabernero|15|33|0
+N|62|16|2|Isembard||5|49|3
+N|63|16|1|Aerendil|Hechicero|46|245|107
+N|64|16|1|Morwenna|Alquimista|14|227|74
+N|66|16|3|Banquero||24|37|0
+N|67|16|1|Griselda|Provisiones|53|18|0
+N|68|16|1|Barnabás|Tabernero|15|33|0
+N|69|16|2|Isembard||5|49|3
+N|70|16|1|Aerendil|Hechicero|46|245|107
+N|71|16|1|Morwenna|Alquimista|14|227|74
+N|73|16|3|Banquero||24|37|0
+N|74|16|1|Griselda|Provisiones|53|18|0
+N|75|16|1|Barnabás|Tabernero|15|33|0
+N|76|16|2|Isembard||5|49|3
+N|77|16|1|Aerendil|Hechicero|46|245|107
+N|78|16|1|Morwenna|Alquimista|14|227|74
+N|23|23|3|Banquero||24|37|0
+N|24|23|1|Griselda|Provisiones|53|18|0
+N|25|23|1|Barnabás|Tabernero|15|33|0
+N|26|23|2|Isembard||5|49|3
+N|27|23|1|Aerendil|Hechicero|46|245|107
+N|28|23|1|Morwenna|Alquimista|14|227|74
+N|30|23|3|Banquero||24|37|0
+N|31|23|1|Griselda|Provisiones|53|18|0
+N|32|23|1|Barnabás|Tabernero|15|33|0
+N|33|23|2|Isembard||5|49|3
+N|34|23|1|Aerendil|Hechicero|46|245|107
+N|35|23|1|Morwenna|Alquimista|14|227|74
+N|37|23|3|Banquero||24|37|0
+N|38|23|1|Griselda|Provisiones|53|18|0
+N|39|23|1|Barnabás|Tabernero|15|33|0
+N|40|23|2|Isembard||5|49|3
+N|41|23|1|Aerendil|Hechicero|46|245|107
+N|42|23|1|Morwenna|Alquimista|14|227|74
+N|44|23|3|Banquero||24|37|0
+N|45|23|1|Griselda|Provisiones|53|18|0
+N|46|23|1|Barnabás|Tabernero|15|33|0
+N|47|23|2|Isembard||5|49|3
+N|48|23|1|Aerendil|Hechicero|46|245|107
+N|49|23|1|Morwenna|Alquimista|14|227|74
+N|52|23|3|Banquero||24|37|0
+N|53|23|1|Griselda|Provisiones|53|18|0
+N|54|23|1|Barnabás|Tabernero|15|33|0
+N|55|23|2|Isembard||5|49|3
+N|56|23|1|Aerendil|Hechicero|46|245|107
+N|57|23|1|Morwenna|Alquimista|14|227|74
+N|59|23|3|Banquero||24|37|0
+N|60|23|1|Griselda|Provisiones|53|18|0
+N|61|23|1|Barnabás|Tabernero|15|33|0
+N|62|23|2|Isembard||5|49|3
+N|63|23|1|Aerendil|Hechicero|46|245|107
+N|64|23|1|Morwenna|Alquimista|14|227|74
+N|66|23|3|Banquero||24|37|0
+N|67|23|1|Griselda|Provisiones|53|18|0
+N|68|23|1|Barnabás|Tabernero|15|33|0
+N|69|23|2|Isembard||5|49|3
+N|70|23|1|Aerendil|Hechicero|46|245|107
+N|71|23|1|Morwenna|Alquimista|14|227|74
+N|73|23|3|Banquero||24|37|0
+N|74|23|1|Griselda|Provisiones|53|18|0
+N|75|23|1|Barnabás|Tabernero|15|33|0
+N|76|23|2|Isembard||5|49|3
+N|77|23|1|Aerendil|Hechicero|46|245|107
+N|78|23|1|Morwenna|Alquimista|14|227|74
+N|23|37|1|Morwenna|Alquimista|14|227|74
+N|24|37|3|Casimiro||36|37|0
+N|25|37|1|Barnabás|Tabernero|15|33|0
+N|26|37|1|Griselda|Provisiones|53|18|0
+N|27|37|1|Aerendil|Hechicero|46|245|107
+N|28|37|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|23|58|1|AgitedeMagos||163|350|16
+N|24|58|1|AgitedePaladin||164|209|13
+N|25|58|1|AgitedeBardo||165|208|13
+N|26|58|1|AgitedeDruida||166|56|16
+N|27|58|1|AgitedeClerigo||167|348|16
+N|28|58|1|AgitedeAsesino||168|232|16
+N|29|58|1|AgitedeGuerrero||169|89|16
+N|30|58|1|AgitedeCazador||170|89|16
+P|17|33|3|100|Zona de Peleas
+P|34|47|3|100|Zona de Peleas
+M|101|3|10|Dungeon Perdida|0|BOSQUE|DUNGEON|3
+V|0|0|0|0
+P|45|88|1|73|Entrada al Dungeon
+P|52|88|1|73|Entrada al Dungeon
+M|102|3|9|Dungeon Perdida|0|BOSQUE|DUNGEON|3
+V|0|0|0|0
+P|50|44|1|102|Dungeon Perdida
+P|85|81|1|73|Entrada al Dungeon
+M|103|3|8|Dungeon Perdida|0|||3
+V|0|0|0|0
+P|28|45|1|73|Entrada al Dungeon
+P|43|85|1|102|Dungeon Perdida
+P|60|85|1|102|Dungeon Perdida
+M|104|6|4|Castillo GM|0|||2
+V|0|0|0|0
+N|26|8|3|Banquero||24|37|0
+N|31|8|3|Banquero||24|37|0
+N|63|22|6|147||183|363|0
+N|67|22|6|Bestias||173|343|0
+N|71|22|6|Dracos/golems||175|342|0
+N|75|22|6|setenta||177|351|0
+N|79|22|6|cientocuarenta||179|338|0
+N|65|24|6|Rey||172|308|13
+N|69|24|6|Yetis||174|72|0
+N|73|24|6|Medusas||176|125|271
+N|77|24|6|cientocatorce||178|353|0
+N|66|52|3|Casimiro||36|37|0
+N|76|52|1|Morwenna|Alquimista|14|227|74
+N|66|69|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|76|69|1|Hortensia|Comerciante|8|3|4
+N|64|78|1|Barnabás|Tabernero|15|33|0
+N|67|78|1|Griselda|Provisiones|53|18|0
+P|49|13|2|28|Tanaris
+P|53|13|2|28|Tanaris
+P|64|22|2|7|Entrada Invocaciones
+P|68|22|2|40|Pirámide de Inthak
+P|72|22|1|73|Entrada al Dungeon
+P|76|22|2|70|Isla Leric
+P|80|22|1|138|Minas Abandonadas P2
+P|66|24|2|121|Castillo Hundido P1
+P|70|24|2|37|Bosque Nevado
+P|74|24|2|125|Kalhat
+P|78|24|1|112|Dungeon Infernal
+M|105|5|2|Telo|0|||2
+V|0|0|0|0
+M|106|-1|-1|Parejas 2vs2|1|||7
+V|0|0|0|0
+M|107|6|3|Zona de Peleas|0|BOSQUE|ESPECIAL|2
+V|0|0|0|0
+N|23|16|3|Banquero||24|37|0
+N|24|16|1|Griselda|Provisiones|53|18|0
+N|25|16|1|Barnabás|Tabernero|15|33|0
+N|26|16|2|Isembard||5|49|3
+N|27|16|1|Aerendil|Hechicero|46|245|107
+N|28|16|1|Morwenna|Alquimista|14|227|74
+N|30|16|3|Banquero||24|37|0
+N|31|16|1|Griselda|Provisiones|53|18|0
+N|32|16|1|Barnabás|Tabernero|15|33|0
+N|33|16|2|Isembard||5|49|3
+N|34|16|1|Aerendil|Hechicero|46|245|107
+N|35|16|1|Morwenna|Alquimista|14|227|74
+N|37|16|3|Banquero||24|37|0
+N|38|16|1|Griselda|Provisiones|53|18|0
+N|39|16|1|Barnabás|Tabernero|15|33|0
+N|40|16|2|Isembard||5|49|3
+N|41|16|1|Aerendil|Hechicero|46|245|107
+N|42|16|1|Morwenna|Alquimista|14|227|74
+N|44|16|3|Banquero||24|37|0
+N|45|16|1|Griselda|Provisiones|53|18|0
+N|46|16|1|Barnabás|Tabernero|15|33|0
+N|47|16|2|Isembard||5|49|3
+N|48|16|1|Aerendil|Hechicero|46|245|107
+N|49|16|1|Morwenna|Alquimista|14|227|74
+N|52|16|3|Banquero||24|37|0
+N|53|16|1|Griselda|Provisiones|53|18|0
+N|54|16|1|Barnabás|Tabernero|15|33|0
+N|55|16|2|Isembard||5|49|3
+N|56|16|1|Aerendil|Hechicero|46|245|107
+N|57|16|1|Morwenna|Alquimista|14|227|74
+N|59|16|3|Banquero||24|37|0
+N|60|16|1|Griselda|Provisiones|53|18|0
+N|61|16|1|Barnabás|Tabernero|15|33|0
+N|62|16|2|Isembard||5|49|3
+N|63|16|1|Aerendil|Hechicero|46|245|107
+N|64|16|1|Morwenna|Alquimista|14|227|74
+N|66|16|3|Banquero||24|37|0
+N|67|16|1|Griselda|Provisiones|53|18|0
+N|68|16|1|Barnabás|Tabernero|15|33|0
+N|69|16|2|Isembard||5|49|3
+N|70|16|1|Aerendil|Hechicero|46|245|107
+N|71|16|1|Morwenna|Alquimista|14|227|74
+N|73|16|3|Banquero||24|37|0
+N|74|16|1|Griselda|Provisiones|53|18|0
+N|75|16|1|Barnabás|Tabernero|15|33|0
+N|76|16|2|Isembard||5|49|3
+N|77|16|1|Aerendil|Hechicero|46|245|107
+N|78|16|1|Morwenna|Alquimista|14|227|74
+N|23|23|3|Banquero||24|37|0
+N|24|23|1|Griselda|Provisiones|53|18|0
+N|25|23|1|Barnabás|Tabernero|15|33|0
+N|26|23|2|Isembard||5|49|3
+N|27|23|1|Aerendil|Hechicero|46|245|107
+N|28|23|1|Morwenna|Alquimista|14|227|74
+N|30|23|3|Banquero||24|37|0
+N|31|23|1|Griselda|Provisiones|53|18|0
+N|32|23|1|Barnabás|Tabernero|15|33|0
+N|33|23|2|Isembard||5|49|3
+N|34|23|1|Aerendil|Hechicero|46|245|107
+N|35|23|1|Morwenna|Alquimista|14|227|74
+N|37|23|3|Banquero||24|37|0
+N|38|23|1|Griselda|Provisiones|53|18|0
+N|39|23|1|Barnabás|Tabernero|15|33|0
+N|40|23|2|Isembard||5|49|3
+N|41|23|1|Aerendil|Hechicero|46|245|107
+N|42|23|1|Morwenna|Alquimista|14|227|74
+N|44|23|3|Banquero||24|37|0
+N|45|23|1|Griselda|Provisiones|53|18|0
+N|46|23|1|Barnabás|Tabernero|15|33|0
+N|47|23|2|Isembard||5|49|3
+N|48|23|1|Aerendil|Hechicero|46|245|107
+N|49|23|1|Morwenna|Alquimista|14|227|74
+N|52|23|3|Banquero||24|37|0
+N|53|23|1|Griselda|Provisiones|53|18|0
+N|54|23|1|Barnabás|Tabernero|15|33|0
+N|55|23|2|Isembard||5|49|3
+N|56|23|1|Aerendil|Hechicero|46|245|107
+N|57|23|1|Morwenna|Alquimista|14|227|74
+N|59|23|3|Banquero||24|37|0
+N|60|23|1|Griselda|Provisiones|53|18|0
+N|61|23|1|Barnabás|Tabernero|15|33|0
+N|62|23|2|Isembard||5|49|3
+N|63|23|1|Aerendil|Hechicero|46|245|107
+N|64|23|1|Morwenna|Alquimista|14|227|74
+N|66|23|3|Banquero||24|37|0
+N|67|23|1|Griselda|Provisiones|53|18|0
+N|68|23|1|Barnabás|Tabernero|15|33|0
+N|69|23|2|Isembard||5|49|3
+N|70|23|1|Aerendil|Hechicero|46|245|107
+N|71|23|1|Morwenna|Alquimista|14|227|74
+N|73|23|3|Banquero||24|37|0
+N|74|23|1|Griselda|Provisiones|53|18|0
+N|75|23|1|Barnabás|Tabernero|15|33|0
+N|76|23|2|Isembard||5|49|3
+N|77|23|1|Aerendil|Hechicero|46|245|107
+N|78|23|1|Morwenna|Alquimista|14|227|74
+M|108|-1|-1|Zona de CVC|1|||7
+V|0|0|0|0
+M|109|-1|-1|Desafio 1vs1|1|||7
+V|0|0|0|0
+M|110|-1|-1|Desafio 2vs2|1|||7
+V|0|0|0|0
+M|111|4|3|Laberinto|0|||2
+V|0|0|0|0
+M|112|4|4|Dungeon Infernal|0|BOSQUE|DUNGEON|15
+V|0|0|0|0
+P|21|68|2|116|Volcan de Ruvendel
+M|113|5|4|Dungeon Infernal|0|BOSQUE|DUNGEON|15
+V|0|0|0|0
+M|114|6|4|Dungeon Infernal|0|BOSQUE|DUNGEON|15
+V|0|0|0|0
+M|115|3|3|Dungeon Infernal|0|BOSQUE|DUNGEON|2
+V|0|0|0|0
+M|116|12|6|Volcan de Ruvendel|0|BOSQUE|CAMPO|0
+V|0|0|0|187
+P|51|55|1|112|Dungeon Infernal
+M|117|5|4|Cueva de Osos|0|BOSQUE|CAMPO|4
+V|0|0|0|0
+N|61|65|6|Criado|Alma|222|8|500
+M|118|7|3|Zona de Peleas|1|BOSQUE|ESPECIAL|2
+V|0|0|0|0
+N|23|16|3|Banquero||24|37|0
+N|24|16|1|Griselda|Provisiones|53|18|0
+N|25|16|1|Barnabás|Tabernero|15|33|0
+N|26|16|2|Isembard||5|49|3
+N|27|16|1|Aerendil|Hechicero|46|245|107
+N|28|16|1|Morwenna|Alquimista|14|227|74
+N|30|16|3|Banquero||24|37|0
+N|31|16|1|Griselda|Provisiones|53|18|0
+N|32|16|1|Barnabás|Tabernero|15|33|0
+N|33|16|2|Isembard||5|49|3
+N|34|16|1|Aerendil|Hechicero|46|245|107
+N|35|16|1|Morwenna|Alquimista|14|227|74
+N|37|16|3|Banquero||24|37|0
+N|38|16|1|Griselda|Provisiones|53|18|0
+N|39|16|1|Barnabás|Tabernero|15|33|0
+N|40|16|2|Isembard||5|49|3
+N|41|16|1|Aerendil|Hechicero|46|245|107
+N|42|16|1|Morwenna|Alquimista|14|227|74
+N|44|16|3|Banquero||24|37|0
+N|45|16|1|Griselda|Provisiones|53|18|0
+N|46|16|1|Barnabás|Tabernero|15|33|0
+N|47|16|2|Isembard||5|49|3
+N|48|16|1|Aerendil|Hechicero|46|245|107
+N|49|16|1|Morwenna|Alquimista|14|227|74
+N|52|16|3|Banquero||24|37|0
+N|53|16|1|Griselda|Provisiones|53|18|0
+N|54|16|1|Barnabás|Tabernero|15|33|0
+N|55|16|2|Isembard||5|49|3
+N|56|16|1|Aerendil|Hechicero|46|245|107
+N|57|16|1|Morwenna|Alquimista|14|227|74
+N|59|16|3|Banquero||24|37|0
+N|60|16|1|Griselda|Provisiones|53|18|0
+N|61|16|1|Barnabás|Tabernero|15|33|0
+N|62|16|2|Isembard||5|49|3
+N|63|16|1|Aerendil|Hechicero|46|245|107
+N|64|16|1|Morwenna|Alquimista|14|227|74
+N|66|16|3|Banquero||24|37|0
+N|67|16|1|Griselda|Provisiones|53|18|0
+N|68|16|1|Barnabás|Tabernero|15|33|0
+N|69|16|2|Isembard||5|49|3
+N|70|16|1|Aerendil|Hechicero|46|245|107
+N|71|16|1|Morwenna|Alquimista|14|227|74
+N|73|16|3|Banquero||24|37|0
+N|74|16|1|Griselda|Provisiones|53|18|0
+N|75|16|1|Barnabás|Tabernero|15|33|0
+N|76|16|2|Isembard||5|49|3
+N|77|16|1|Aerendil|Hechicero|46|245|107
+N|78|16|1|Morwenna|Alquimista|14|227|74
+N|23|23|3|Banquero||24|37|0
+N|24|23|1|Griselda|Provisiones|53|18|0
+N|25|23|1|Barnabás|Tabernero|15|33|0
+N|26|23|2|Isembard||5|49|3
+N|27|23|1|Aerendil|Hechicero|46|245|107
+N|28|23|1|Morwenna|Alquimista|14|227|74
+N|30|23|3|Banquero||24|37|0
+N|31|23|1|Griselda|Provisiones|53|18|0
+N|32|23|1|Barnabás|Tabernero|15|33|0
+N|33|23|2|Isembard||5|49|3
+N|34|23|1|Aerendil|Hechicero|46|245|107
+N|35|23|1|Morwenna|Alquimista|14|227|74
+N|37|23|3|Banquero||24|37|0
+N|38|23|1|Griselda|Provisiones|53|18|0
+N|39|23|1|Barnabás|Tabernero|15|33|0
+N|40|23|2|Isembard||5|49|3
+N|41|23|1|Aerendil|Hechicero|46|245|107
+N|42|23|1|Morwenna|Alquimista|14|227|74
+N|44|23|3|Banquero||24|37|0
+N|45|23|1|Griselda|Provisiones|53|18|0
+N|46|23|1|Barnabás|Tabernero|15|33|0
+N|47|23|2|Isembard||5|49|3
+N|48|23|1|Aerendil|Hechicero|46|245|107
+N|49|23|1|Morwenna|Alquimista|14|227|74
+N|52|23|3|Banquero||24|37|0
+N|53|23|1|Griselda|Provisiones|53|18|0
+N|54|23|1|Barnabás|Tabernero|15|33|0
+N|55|23|2|Isembard||5|49|3
+N|56|23|1|Aerendil|Hechicero|46|245|107
+N|57|23|1|Morwenna|Alquimista|14|227|74
+N|59|23|3|Banquero||24|37|0
+N|60|23|1|Griselda|Provisiones|53|18|0
+N|61|23|1|Barnabás|Tabernero|15|33|0
+N|62|23|2|Isembard||5|49|3
+N|63|23|1|Aerendil|Hechicero|46|245|107
+N|64|23|1|Morwenna|Alquimista|14|227|74
+N|66|23|3|Banquero||24|37|0
+N|67|23|1|Griselda|Provisiones|53|18|0
+N|68|23|1|Barnabás|Tabernero|15|33|0
+N|69|23|2|Isembard||5|49|3
+N|70|23|1|Aerendil|Hechicero|46|245|107
+N|71|23|1|Morwenna|Alquimista|14|227|74
+N|73|23|3|Banquero||24|37|0
+N|74|23|1|Griselda|Provisiones|53|18|0
+N|75|23|1|Barnabás|Tabernero|15|33|0
+N|76|23|2|Isembard||5|49|3
+N|77|23|1|Aerendil|Hechicero|46|245|107
+N|78|23|1|Morwenna|Alquimista|14|227|74
+M|119|5|4|Llanura de la Nada|0|BOSQUE|CAMPO|2
+V|0|0|0|0
+M|120|7|4|Ping Pong|0|BOSQUE|ESPECIAL|2
+V|0|0|0|0
+N|18|32|3|Casimiro||36|37|0
+N|19|32|1|Morwenna|Alquimista|14|227|74
+N|20|32|1|Griselda|Provisiones|53|18|0
+N|21|32|1|Barnabás|Tabernero|15|33|0
+N|39|32|3|Casimiro||36|37|0
+N|40|32|1|Morwenna|Alquimista|14|227|74
+N|41|32|1|Griselda|Provisiones|53|18|0
+N|42|32|1|Barnabás|Tabernero|15|33|0
+N|58|32|3|Casimiro||36|37|0
+N|59|32|1|Morwenna|Alquimista|14|227|74
+N|60|32|1|Griselda|Provisiones|53|18|0
+N|61|32|1|Barnabás|Tabernero|15|33|0
+N|79|32|3|Casimiro||36|37|0
+N|80|32|1|Morwenna|Alquimista|14|227|74
+N|81|32|1|Griselda|Provisiones|53|18|0
+N|82|32|1|Barnabás|Tabernero|15|33|0
+M|121|5|4|Castillo Hundido P1|0|||8
+V|0|0|0|0
+N|60|56|6|Guerrero Ancalagon||256|140|109
+N|36|60|6|Guerrero Ancalagon||257|140|109
+P|83|14|2|66|Mar
+P|23|48|1|122|Castillo Hundido P2
+M|122|5|3|Castillo Hundido P2|0|BOSQUE|DUNGEON|8
+V|0|0|0|0
+N|38|55|6|Guerrero Ancalagon||256|140|109
+N|58|69|6|Guerrero Ancalagon||257|140|109
+P|23|51|2|121|Castillo Hundido P1
+P|50|82|1|123|Sala del Trono
+M|123|5|2|Sala del Trono|0|BOSQUE|DUNGEON|8
+V|0|0|0|0
+N|29|60|6|Cocinero|Alma|229|8|500
+P|50|63|1|122|Castillo Hundido P2
+M|124|2|9|Dungeon Perdida|0||Dungeon|3
+V|0|0|0|0
+P|33|35|1|124|Dungeon Perdida
+P|67|35|1|73|Entrada al Dungeon
+P|33|70|1|124|Dungeon Perdida
+P|67|70|1|124|Dungeon Perdida
+M|125|5|16|Kalhat|1|||0
+V|126|74|126|0
+N|37|26|3|Casimiro||36|37|0
+N|55|28|1|Barnabás|Tabernero|15|33|0
+N|57|28|1|Griselda|Provisiones|53|18|0
+N|68|35|1|Mathilde|Sastre|12|19|0
+N|56|47|2|Isembard||5|49|3
+N|26|51|1|Morwenna|Alquimista|14|227|74
+N|32|81|6|Barquera|Viajero|230|3|101
+M|126|5|17|Archipielago de Kalhat|0|||0
+V|125|133|128|127
+M|127|4|17|Archipielago de Kalhat|0|||0
+V|0|126|0|0
+M|128|5|18|Archipielago de Kalhat|0|||0
+V|126|0|0|0
+M|129|9|19|Desierto|0|||0
+V|0|130|0|39
+N|86|57|6|Niño|Ciudadano de Inthak|212|18|0
+M|130|10|19|Inthak|1|||0
+V|0|0|0|129
+N|39|44|2|Isembard||5|49|3
+N|56|50|1|Ralph||9|3|4
+N|65|52|3|Banquero||24|37|0
+N|67|52|4|Anselmo|Bóveda de clan|197|248|16
+N|40|53|1|Mercader||80|3|2
+N|48|53|4|Sir Cedric|Viajero|162|130|4
+N|38|59|4|Fulgencio|Cartero|196|100|109
+N|59|61|4|Valdemar|Gobernador|153|57|14
+N|47|64|1|Morwenna|Alquimista|14|227|74
+N|37|72|1|Mercader||80|3|2
+N|58|73|1|Barnabás|Tabernero|15|33|0
+M|131|5|6|Propiedades|1|||26
+V|0|0|0|0
+P|16|14|2|135|Propiedades
+P|30|14|2|135|Propiedades
+P|44|14|2|150|Propiedades
+P|59|14|2|150|Propiedades
+P|73|14|2|150|Propiedades
+P|16|30|2|134|Propiedades
+P|30|30|2|134|Propiedades
+P|44|30|2|135|Propiedades
+P|59|30|2|135|Propiedades
+P|73|30|2|135|Propiedades
+P|16|46|2|143|Propiedades
+P|30|46|2|143|Propiedades
+P|44|46|2|134|Propiedades
+P|59|46|2|134|Propiedades
+P|73|46|2|134|Propiedades
+P|16|62|2|132|Propiedades
+P|30|62|2|132|Propiedades
+P|44|62|2|143|Propiedades
+P|59|62|2|143|Propiedades
+P|73|62|2|143|Propiedades
+P|16|78|2|132|Propiedades
+P|30|78|2|132|Propiedades
+M|132|5|5|Propiedades|1|BOSQUE|CAMPO|26
+V|0|0|0|0
+N|14|33|2|Isembard||5|49|3
+N|27|33|3|Casimiro||36|37|0
+N|42|33|2|Isembard||5|49|3
+N|55|33|3|Casimiro||36|37|0
+N|70|33|2|Isembard||5|49|3
+N|83|33|3|Casimiro||36|37|0
+N|14|39|1|Morwenna|Alquimista|14|227|74
+N|27|39|1|Griselda|Provisiones|53|18|0
+N|42|39|1|Morwenna|Alquimista|14|227|74
+N|55|39|1|Griselda|Provisiones|53|18|0
+N|70|39|1|Morwenna|Alquimista|14|227|74
+N|83|39|1|Griselda|Provisiones|53|18|0
+N|14|73|2|Isembard||5|49|3
+N|27|73|3|Casimiro||36|37|0
+N|42|73|2|Isembard||5|49|3
+N|55|73|3|Casimiro||36|37|0
+N|70|73|2|Isembard||5|49|3
+N|83|73|3|Casimiro||36|37|0
+N|14|79|1|Morwenna|Alquimista|14|227|74
+N|27|79|1|Griselda|Provisiones|53|18|0
+N|42|79|1|Morwenna|Alquimista|14|227|74
+N|55|79|1|Griselda|Provisiones|53|18|0
+N|70|79|1|Morwenna|Alquimista|14|227|74
+N|83|79|1|Griselda|Provisiones|53|18|0
+P|18|33|2|28|Tanaris
+P|23|33|2|28|Tanaris
+P|46|33|2|28|Tanaris
+P|51|33|2|28|Tanaris
+P|79|33|2|28|Tanaris
+P|18|73|2|28|Tanaris
+P|23|73|2|28|Tanaris
+P|46|73|2|28|Tanaris
+P|51|73|2|28|Tanaris
+P|74|73|2|28|Tanaris
+P|79|73|2|28|Tanaris
+M|133|6|17|Mar|0|||0
+V|74|42|0|126
+M|134|4|6|Propiedades|1|||26
+V|0|0|0|0
+N|14|33|2|Isembard||5|49|3
+N|27|33|3|Casimiro||36|37|0
+N|42|33|2|Isembard||5|49|3
+N|55|33|3|Casimiro||36|37|0
+N|70|33|2|Isembard||5|49|3
+N|83|33|3|Casimiro||36|37|0
+N|14|39|1|Morwenna|Alquimista|14|227|74
+N|27|39|1|Griselda|Provisiones|53|18|0
+N|42|39|1|Morwenna|Alquimista|14|227|74
+N|55|39|1|Griselda|Provisiones|53|18|0
+N|70|39|1|Morwenna|Alquimista|14|227|74
+N|83|39|1|Griselda|Provisiones|53|18|0
+N|14|73|2|Isembard||5|49|3
+N|27|73|3|Casimiro||36|37|0
+N|42|73|2|Isembard||5|49|3
+N|55|73|3|Casimiro||36|37|0
+N|70|73|2|Isembard||5|49|3
+N|83|73|3|Casimiro||36|37|0
+N|14|79|1|Morwenna|Alquimista|14|227|74
+N|27|79|1|Griselda|Provisiones|53|18|0
+N|42|79|1|Morwenna|Alquimista|14|227|74
+N|55|79|1|Griselda|Provisiones|53|18|0
+N|70|79|1|Morwenna|Alquimista|14|227|74
+N|83|79|1|Griselda|Provisiones|53|18|0
+P|18|33|2|28|Tanaris
+P|23|33|2|28|Tanaris
+P|46|33|2|28|Tanaris
+P|74|33|2|28|Tanaris
+P|79|33|2|28|Tanaris
+P|18|73|2|28|Tanaris
+P|23|73|2|28|Tanaris
+P|46|73|2|28|Tanaris
+M|135|5|7|Propiedades|1|||26
+V|0|0|0|0
+N|14|33|2|Isembard||5|49|3
+N|27|33|3|Casimiro||36|37|0
+N|42|33|2|Isembard||5|49|3
+N|55|33|3|Casimiro||36|37|0
+N|70|33|2|Isembard||5|49|3
+N|83|33|3|Casimiro||36|37|0
+N|14|39|1|Morwenna|Alquimista|14|227|74
+N|27|39|1|Griselda|Provisiones|53|18|0
+N|42|39|1|Morwenna|Alquimista|14|227|74
+N|55|39|1|Griselda|Provisiones|53|18|0
+N|70|39|1|Morwenna|Alquimista|14|227|74
+N|83|39|1|Griselda|Provisiones|53|18|0
+N|14|73|2|Isembard||5|49|3
+N|27|73|3|Casimiro||36|37|0
+N|42|73|2|Isembard||5|49|3
+N|55|73|3|Casimiro||36|37|0
+N|70|73|2|Isembard||5|49|3
+N|83|73|3|Casimiro||36|37|0
+N|14|79|1|Morwenna|Alquimista|14|227|74
+N|27|79|1|Griselda|Provisiones|53|18|0
+N|42|79|1|Morwenna|Alquimista|14|227|74
+N|55|79|1|Griselda|Provisiones|53|18|0
+N|70|79|1|Morwenna|Alquimista|14|227|74
+N|83|79|1|Griselda|Provisiones|53|18|0
+P|18|33|2|28|Tanaris
+P|23|33|2|28|Tanaris
+P|46|33|2|28|Tanaris
+P|51|33|2|28|Tanaris
+P|74|33|2|28|Tanaris
+P|79|33|2|28|Tanaris
+P|18|73|2|28|Tanaris
+P|23|73|2|28|Tanaris
+P|46|73|2|28|Tanaris
+P|51|73|2|28|Tanaris
+P|74|73|2|28|Tanaris
+P|79|73|2|28|Tanaris
+M|136|8|4|Helka|1|BOSQUE|CAMPO|0
+V|0|0|77|0
+N|19|19|2|Isembard||5|49|3
+N|43|21|3|Casimiro||36|37|0
+N|69|24|1|AgitedeMagos||163|350|16
+N|70|24|1|AgitedePaladin||164|209|13
+N|72|24|1|AgitedeBardo||165|208|13
+N|73|24|1|AgitedeDruida||166|56|16
+N|75|24|1|AgitedeClerigo||167|348|16
+N|76|24|1|AgitedeAsesino||168|232|16
+N|78|24|1|AgitedeGuerrero||169|89|16
+N|79|24|1|AgitedeCazador||170|89|16
+N|25|50|1|Hortensia|Comerciante|8|3|4
+N|75|50|2|Isembard||5|49|3
+N|77|50|2|Isembard||5|49|3
+N|52|51|4|Sir Cedric|Viajero|162|130|4
+N|69|69|1|Barnabás|Tabernero|15|33|0
+N|73|69|1|Griselda|Provisiones|53|18|0
+N|18|70|1|Morwenna|Alquimista|14|227|74
+N|25|70|1|Aerendil|Hechicero|46|245|107
+N|43|71|1|Mirian|Sastre|205|19|0
+N|20|75|1|AgitedeMagos||163|350|16
+N|23|75|1|Aerindolf|Hechicero Distinguido|51|317|107
+M|137|5|2|Minas Abandonadas P1|0|BOSQUE|DUNGEON|20
+V|0|0|0|0
+P|51|17|2|140|Entrada a las Minas
+P|47|75|1|138|Minas Abandonadas P2
+M|138|5|3|Minas Abandonadas P2|0|BOSQUE|DUNGEON|20
+V|0|0|0|0
+P|51|17|1|137|Minas Abandonadas P1
+P|47|75|1|139|Minas Abandonadas P3
+M|139|5|4|Minas Abandonadas P3|0|BOSQUE|DUNGEON|20
+V|0|0|0|0
+P|51|17|1|138|Minas Abandonadas P2
+M|140|11|8|Entrada a las Minas|0|||0
+V|0|0|56|58
+P|77|27|1|137|Minas Abandonadas P1
+M|141|5|4|Quest de Nobleza|0|||6
+V|0|0|0|0
+M|142|-1|-1|Tyëlendor City|1|||0
+V|0|0|0|0
+N|67|17|1|Morwenna|Alquimista|14|227|74
+N|78|17|1|Mathilde|Sastre|12|19|0
+N|31|18|6|147||183|363|0
+N|35|18|6|Bestias||173|343|0
+N|39|18|6|Dracos/golems||175|342|0
+N|43|18|6|setenta||177|351|0
+N|47|18|6|cientocuarenta||179|338|0
+N|19|19|2|Isembard||5|49|3
+N|33|20|6|Rey||172|308|13
+N|37|20|6|Yetis||174|72|0
+N|41|20|6|Medusas||176|125|271
+N|45|20|6|cientocatorce||178|353|0
+N|67|28|1|Aerendil|Hechicero|46|245|107
+N|78|28|1|Percival|Carpintero|44|1|2
+N|21|39|3|Casimiro||36|37|0
+N|38|39|4|Ludovico|Propiedades|159|355|0
+N|67|39|1|Barnabás|Tabernero|15|33|0
+N|78|39|1|Griselda|Provisiones|53|18|0
+N|44|44|4|Sir Cedric|Viajero|162|130|4
+N|37|46|1|AgitedePaladin||164|209|13
+N|38|46|1|AgitedeBardo||165|208|13
+N|39|46|1|AgitedeDruida||166|56|16
+N|40|46|1|AgitedeClerigo||167|348|16
+N|48|46|1|Morwenna|Alquimista|14|227|74
+N|49|46|2|Isembard||5|49|3
+N|50|46|3|Casimiro||36|37|0
+N|51|46|1|Thorgrim|Armero|7|100|1
+N|52|46|1|Mathilde|Sastre|12|19|0
+N|53|46|1|Aerindolf|Hechicero Distinguido|51|317|107
+N|54|46|1|Aerendil|Hechicero|46|245|107
+N|55|46|1|Barnabás|Tabernero|15|33|0
+N|56|46|1|Griselda|Provisiones|53|18|0
+N|37|51|1|AgitedeCazador||170|89|16
+N|38|51|1|AgitedeMagos||163|350|16
+N|39|51|1|AgitedeAsesino||168|232|16
+N|40|51|1|AgitedeGuerrero||169|89|16
+P|32|18|2|7|Entrada Invocaciones
+P|36|18|2|40|Pirámide de Inthak
+P|40|18|1|73|Entrada al Dungeon
+P|44|18|2|70|Isla Leric
+P|48|18|1|138|Minas Abandonadas P2
+P|34|20|2|121|Castillo Hundido P1
+P|38|20|2|37|Bosque Nevado
+P|42|20|2|125|Kalhat
+P|46|20|1|112|Dungeon Infernal
+P|35|39|2|131|Propiedades
+P|44|55|2|28|Tanaris
+P|44|61|2|28|Tanaris
+M|143|6|6|Propiedades|1|||26
+V|0|0|0|0
+N|14|33|2|Isembard||5|49|3
+N|27|33|3|Casimiro||36|37|0
+N|42|33|2|Isembard||5|49|3
+N|55|33|3|Casimiro||36|37|0
+N|70|33|2|Isembard||5|49|3
+N|83|33|3|Casimiro||36|37|0
+N|14|39|1|Morwenna|Alquimista|14|227|74
+N|27|39|1|Griselda|Provisiones|53|18|0
+N|42|39|1|Morwenna|Alquimista|14|227|74
+N|55|39|1|Griselda|Provisiones|53|18|0
+N|70|39|1|Morwenna|Alquimista|14|227|74
+N|83|39|1|Griselda|Provisiones|53|18|0
+N|14|73|2|Isembard||5|49|3
+N|27|73|3|Casimiro||36|37|0
+N|42|73|2|Isembard||5|49|3
+N|55|73|3|Casimiro||36|37|0
+N|70|73|2|Isembard||5|49|3
+N|83|73|3|Casimiro||36|37|0
+N|14|79|1|Morwenna|Alquimista|14|227|74
+N|27|79|1|Griselda|Provisiones|53|18|0
+N|42|79|1|Morwenna|Alquimista|14|227|74
+N|55|79|1|Griselda|Provisiones|53|18|0
+N|70|79|1|Morwenna|Alquimista|14|227|74
+N|83|79|1|Griselda|Provisiones|53|18|0
+P|18|33|2|28|Tanaris
+P|23|33|2|28|Tanaris
+P|46|33|2|28|Tanaris
+P|51|33|2|28|Tanaris
+P|74|33|2|28|Tanaris
+P|79|33|2|28|Tanaris
+P|18|73|2|28|Tanaris
+P|23|73|2|28|Tanaris
+P|46|73|2|28|Tanaris
+P|51|73|2|28|Tanaris
+P|74|73|2|28|Tanaris
+M|144|-1|-1|Mapa 144|0|||0
+V|0|0|0|0
+M|145|6|5|CarrerasNSU1|0|||2
+V|0|0|0|0
+M|146|5|5|CarrerasNSU|1|||2
+V|0|0|0|0
+M|147|7|5|Mapa 147|0|||2
+V|0|0|0|0
+P|36|72|2|149|Lago del Norte
+M|148|5|6|Lago del Norte|0|||0
+V|168|96|0|0
+N|42|88|6|Guerrera|Ciudadano de Kahlimdor|209|129|202
+M|149|4|4|Lago del Norte|0|||25
+V|0|0|0|0
+M|150|6|7|Propiedades|1|||26
+V|0|0|0|0
+N|14|33|2|Isembard||5|49|3
+N|27|33|3|Casimiro||36|37|0
+N|42|33|2|Isembard||5|49|3
+N|55|33|3|Casimiro||36|37|0
+N|70|33|2|Isembard||5|49|3
+N|83|33|3|Casimiro||36|37|0
+N|14|39|1|Morwenna|Alquimista|14|227|74
+N|27|39|1|Griselda|Provisiones|53|18|0
+N|42|39|1|Morwenna|Alquimista|14|227|74
+N|55|39|1|Griselda|Provisiones|53|18|0
+N|70|39|1|Morwenna|Alquimista|14|227|74
+N|83|39|1|Griselda|Provisiones|53|18|0
+N|14|73|2|Isembard||5|49|3
+N|27|73|3|Casimiro||36|37|0
+N|42|73|2|Isembard||5|49|3
+N|55|73|3|Casimiro||36|37|0
+N|70|73|2|Isembard||5|49|3
+N|83|73|3|Casimiro||36|37|0
+N|14|79|1|Morwenna|Alquimista|14|227|74
+N|27|79|1|Griselda|Provisiones|53|18|0
+N|42|79|1|Morwenna|Alquimista|14|227|74
+N|55|79|1|Griselda|Provisiones|53|18|0
+N|70|79|1|Morwenna|Alquimista|14|227|74
+N|83|79|1|Griselda|Provisiones|53|18|0
+P|18|33|2|28|Tanaris
+P|23|33|2|28|Tanaris
+P|46|33|2|28|Tanaris
+P|51|33|2|28|Tanaris
+P|74|33|2|28|Tanaris
+P|79|33|2|28|Tanaris
+P|18|73|2|28|Tanaris
+P|23|73|2|28|Tanaris
+P|46|73|2|28|Tanaris
+P|51|73|2|28|Tanaris
+P|74|73|2|28|Tanaris
+P|79|73|2|28|Tanaris
+M|151|-1|-1|MapaClanes|1|||0
+V|0|0|0|0
+M|156|-1|-1|Mapa 156|0|||0
+V|39|0|0|0
+P|49|66|3|162|Zona de Peleas
+M|157|4|2|Atlantis 1er Piso|0|BOSQUE|DUNGEON|25
+V|0|0|0|0
+M|158|4|3|Atlantis 1er Piso|0|||25
+V|0|0|0|0
+M|159|4|1|Atlantis 2do Piso|0|||25
+V|0|0|0|0
+M|160|4|0|Cámara de Poseidón|0|BOSQUE|DUNGEON|25
+V|0|0|0|0
+M|161|4|5|Bargomaud|1|BOSQUE|CIUDAD|25
+V|0|0|0|0
+N|54|15|6|Custodia|Ciudadano de Bargomaud|238|19|0
+N|50|27|4|EntregaDios||190|317|110
+N|53|29|4|EntregaCajas||195|218|110
+N|32|34|2|Isembard||5|49|3
+N|65|35|1|Morwenna|Alquimista|14|227|74
+N|74|36|1|Mathilde|Sastre|12|19|0
+N|50|43|6|Sacerdotisa|Ciudadano de Bargomaud|243|63|74
+N|79|45|6|Veterano|Ciudadano de Bargomaud|246|1|2
+N|46|50|6|Anciano|Ciudadano de Bargomaud|231|56|103
+N|54|50|6|Escriba|Ciudadano de Bargomaud|232|97|72
+N|50|51|4|Sir Cedric|Viajero|162|130|4
+N|39|54|6|Peregrina|Ciudadano de Bargomaud|217|55|74
+N|72|54|6|Custodia|Ciudadano de Bargomaud|249|22|111
+N|20|59|6|Custodia|Ciudadano de Bargomaud|236|22|111
+N|83|59|6|Guardia|Ciudadano de Bargomaud|240|130|4
+N|25|60|3|Casimiro||36|37|0
+N|27|60|4|Anselmo|Bóveda de clan|197|248|16
+N|37|60|4|Fulgencio|Cartero|196|100|109
+N|43|65|1|Thorgrim|Armero|7|100|1
+N|66|72|1|Barnabás|Tabernero|15|33|0
+N|71|72|1|Griselda|Provisiones|53|18|0
+N|56|83|6|Custodio|Ciudadano de Bargomaud|242|57|6
+M|162|9|3|Zona de Peleas|1||ESPECIAL|2
+V|0|0|0|0
+N|23|16|3|Banquero||24|37|0
+N|24|16|1|Griselda|Provisiones|53|18|0
+N|25|16|1|Barnabás|Tabernero|15|33|0
+N|26|16|2|Isembard||5|49|3
+N|27|16|1|Aerendil|Hechicero|46|245|107
+N|28|16|1|Morwenna|Alquimista|14|227|74
+N|30|16|3|Banquero||24|37|0
+N|31|16|1|Griselda|Provisiones|53|18|0
+N|32|16|1|Barnabás|Tabernero|15|33|0
+N|33|16|2|Isembard||5|49|3
+N|34|16|1|Aerendil|Hechicero|46|245|107
+N|35|16|1|Morwenna|Alquimista|14|227|74
+N|37|16|3|Banquero||24|37|0
+N|38|16|1|Griselda|Provisiones|53|18|0
+N|39|16|1|Barnabás|Tabernero|15|33|0
+N|40|16|2|Isembard||5|49|3
+N|41|16|1|Aerendil|Hechicero|46|245|107
+N|42|16|1|Morwenna|Alquimista|14|227|74
+N|44|16|3|Banquero||24|37|0
+N|45|16|1|Griselda|Provisiones|53|18|0
+N|46|16|1|Barnabás|Tabernero|15|33|0
+N|47|16|2|Isembard||5|49|3
+N|48|16|1|Aerendil|Hechicero|46|245|107
+N|49|16|1|Morwenna|Alquimista|14|227|74
+N|52|16|3|Banquero||24|37|0
+N|53|16|1|Griselda|Provisiones|53|18|0
+N|54|16|1|Barnabás|Tabernero|15|33|0
+N|55|16|2|Isembard||5|49|3
+N|56|16|1|Aerendil|Hechicero|46|245|107
+N|57|16|1|Morwenna|Alquimista|14|227|74
+N|59|16|3|Banquero||24|37|0
+N|60|16|1|Griselda|Provisiones|53|18|0
+N|61|16|1|Barnabás|Tabernero|15|33|0
+N|62|16|2|Isembard||5|49|3
+N|63|16|1|Aerendil|Hechicero|46|245|107
+N|64|16|1|Morwenna|Alquimista|14|227|74
+N|66|16|3|Banquero||24|37|0
+N|67|16|1|Griselda|Provisiones|53|18|0
+N|68|16|1|Barnabás|Tabernero|15|33|0
+N|69|16|2|Isembard||5|49|3
+N|70|16|1|Aerendil|Hechicero|46|245|107
+N|71|16|1|Morwenna|Alquimista|14|227|74
+N|73|16|3|Banquero||24|37|0
+N|74|16|1|Griselda|Provisiones|53|18|0
+N|75|16|1|Barnabás|Tabernero|15|33|0
+N|76|16|2|Isembard||5|49|3
+N|77|16|1|Aerendil|Hechicero|46|245|107
+N|78|16|1|Morwenna|Alquimista|14|227|74
+N|23|23|3|Banquero||24|37|0
+N|24|23|1|Griselda|Provisiones|53|18|0
+N|25|23|1|Barnabás|Tabernero|15|33|0
+N|26|23|2|Isembard||5|49|3
+N|27|23|1|Aerendil|Hechicero|46|245|107
+N|28|23|1|Morwenna|Alquimista|14|227|74
+N|30|23|3|Banquero||24|37|0
+N|31|23|1|Griselda|Provisiones|53|18|0
+N|32|23|1|Barnabás|Tabernero|15|33|0
+N|33|23|2|Isembard||5|49|3
+N|34|23|1|Aerendil|Hechicero|46|245|107
+N|35|23|1|Morwenna|Alquimista|14|227|74
+N|37|23|3|Banquero||24|37|0
+N|38|23|1|Griselda|Provisiones|53|18|0
+N|39|23|1|Barnabás|Tabernero|15|33|0
+N|40|23|2|Isembard||5|49|3
+N|41|23|1|Aerendil|Hechicero|46|245|107
+N|42|23|1|Morwenna|Alquimista|14|227|74
+N|44|23|3|Banquero||24|37|0
+N|45|23|1|Griselda|Provisiones|53|18|0
+N|46|23|1|Barnabás|Tabernero|15|33|0
+N|47|23|2|Isembard||5|49|3
+N|48|23|1|Aerendil|Hechicero|46|245|107
+N|49|23|1|Morwenna|Alquimista|14|227|74
+N|52|23|3|Banquero||24|37|0
+N|53|23|1|Griselda|Provisiones|53|18|0
+N|54|23|1|Barnabás|Tabernero|15|33|0
+N|55|23|2|Isembard||5|49|3
+N|56|23|1|Aerendil|Hechicero|46|245|107
+N|57|23|1|Morwenna|Alquimista|14|227|74
+N|59|23|3|Banquero||24|37|0
+N|60|23|1|Griselda|Provisiones|53|18|0
+N|61|23|1|Barnabás|Tabernero|15|33|0
+N|62|23|2|Isembard||5|49|3
+N|63|23|1|Aerendil|Hechicero|46|245|107
+N|64|23|1|Morwenna|Alquimista|14|227|74
+N|66|23|3|Banquero||24|37|0
+N|67|23|1|Griselda|Provisiones|53|18|0
+N|68|23|1|Barnabás|Tabernero|15|33|0
+N|69|23|2|Isembard||5|49|3
+N|70|23|1|Aerendil|Hechicero|46|245|107
+N|71|23|1|Morwenna|Alquimista|14|227|74
+N|73|23|3|Banquero||24|37|0
+N|74|23|1|Griselda|Provisiones|53|18|0
+N|75|23|1|Barnabás|Tabernero|15|33|0
+N|76|23|2|Isembard||5|49|3
+N|77|23|1|Aerendil|Hechicero|46|245|107
+N|78|23|1|Morwenna|Alquimista|14|227|74
+M|163|8|4|Laberinto|0|||2
+V|0|0|0|0
+M|164|8|3|Evento Plantes|1||ESPECIAL|2
+V|0|0|0|0
+N|23|16|3|Banquero||24|37|0
+N|24|16|1|Griselda|Provisiones|53|18|0
+N|25|16|1|Barnabás|Tabernero|15|33|0
+N|26|16|2|Isembard||5|49|3
+N|27|16|1|Aerendil|Hechicero|46|245|107
+N|28|16|1|Morwenna|Alquimista|14|227|74
+N|30|16|3|Banquero||24|37|0
+N|31|16|1|Griselda|Provisiones|53|18|0
+N|32|16|1|Barnabás|Tabernero|15|33|0
+N|33|16|2|Isembard||5|49|3
+N|34|16|1|Aerendil|Hechicero|46|245|107
+N|35|16|1|Morwenna|Alquimista|14|227|74
+N|37|16|3|Banquero||24|37|0
+N|38|16|1|Griselda|Provisiones|53|18|0
+N|39|16|1|Barnabás|Tabernero|15|33|0
+N|40|16|2|Isembard||5|49|3
+N|41|16|1|Aerendil|Hechicero|46|245|107
+N|42|16|1|Morwenna|Alquimista|14|227|74
+N|44|16|3|Banquero||24|37|0
+N|45|16|1|Griselda|Provisiones|53|18|0
+N|46|16|1|Barnabás|Tabernero|15|33|0
+N|47|16|2|Isembard||5|49|3
+N|48|16|1|Aerendil|Hechicero|46|245|107
+N|49|16|1|Morwenna|Alquimista|14|227|74
+N|52|16|3|Banquero||24|37|0
+N|53|16|1|Griselda|Provisiones|53|18|0
+N|54|16|1|Barnabás|Tabernero|15|33|0
+N|55|16|2|Isembard||5|49|3
+N|56|16|1|Aerendil|Hechicero|46|245|107
+N|57|16|1|Morwenna|Alquimista|14|227|74
+N|59|16|3|Banquero||24|37|0
+N|60|16|1|Griselda|Provisiones|53|18|0
+N|61|16|1|Barnabás|Tabernero|15|33|0
+N|62|16|2|Isembard||5|49|3
+N|63|16|1|Aerendil|Hechicero|46|245|107
+N|64|16|1|Morwenna|Alquimista|14|227|74
+N|66|16|3|Banquero||24|37|0
+N|67|16|1|Griselda|Provisiones|53|18|0
+N|68|16|1|Barnabás|Tabernero|15|33|0
+N|69|16|2|Isembard||5|49|3
+N|70|16|1|Aerendil|Hechicero|46|245|107
+N|71|16|1|Morwenna|Alquimista|14|227|74
+N|73|16|3|Banquero||24|37|0
+N|74|16|1|Griselda|Provisiones|53|18|0
+N|75|16|1|Barnabás|Tabernero|15|33|0
+N|76|16|2|Isembard||5|49|3
+N|77|16|1|Aerendil|Hechicero|46|245|107
+N|78|16|1|Morwenna|Alquimista|14|227|74
+N|23|23|3|Banquero||24|37|0
+N|24|23|1|Griselda|Provisiones|53|18|0
+N|25|23|1|Barnabás|Tabernero|15|33|0
+N|26|23|2|Isembard||5|49|3
+N|27|23|1|Aerendil|Hechicero|46|245|107
+N|28|23|1|Morwenna|Alquimista|14|227|74
+N|30|23|3|Banquero||24|37|0
+N|31|23|1|Griselda|Provisiones|53|18|0
+N|32|23|1|Barnabás|Tabernero|15|33|0
+N|33|23|2|Isembard||5|49|3
+N|34|23|1|Aerendil|Hechicero|46|245|107
+N|35|23|1|Morwenna|Alquimista|14|227|74
+N|37|23|3|Banquero||24|37|0
+N|38|23|1|Griselda|Provisiones|53|18|0
+N|39|23|1|Barnabás|Tabernero|15|33|0
+N|40|23|2|Isembard||5|49|3
+N|41|23|1|Aerendil|Hechicero|46|245|107
+N|42|23|1|Morwenna|Alquimista|14|227|74
+N|44|23|3|Banquero||24|37|0
+N|45|23|1|Griselda|Provisiones|53|18|0
+N|46|23|1|Barnabás|Tabernero|15|33|0
+N|47|23|2|Isembard||5|49|3
+N|48|23|1|Aerendil|Hechicero|46|245|107
+N|49|23|1|Morwenna|Alquimista|14|227|74
+N|52|23|3|Banquero||24|37|0
+N|53|23|1|Griselda|Provisiones|53|18|0
+N|54|23|1|Barnabás|Tabernero|15|33|0
+N|55|23|2|Isembard||5|49|3
+N|56|23|1|Aerendil|Hechicero|46|245|107
+N|57|23|1|Morwenna|Alquimista|14|227|74
+N|59|23|3|Banquero||24|37|0
+N|60|23|1|Griselda|Provisiones|53|18|0
+N|61|23|1|Barnabás|Tabernero|15|33|0
+N|62|23|2|Isembard||5|49|3
+N|63|23|1|Aerendil|Hechicero|46|245|107
+N|64|23|1|Morwenna|Alquimista|14|227|74
+N|66|23|3|Banquero||24|37|0
+N|67|23|1|Griselda|Provisiones|53|18|0
+N|68|23|1|Barnabás|Tabernero|15|33|0
+N|69|23|2|Isembard||5|49|3
+N|70|23|1|Aerendil|Hechicero|46|245|107
+N|71|23|1|Morwenna|Alquimista|14|227|74
+N|73|23|3|Banquero||24|37|0
+N|74|23|1|Griselda|Provisiones|53|18|0
+N|75|23|1|Barnabás|Tabernero|15|33|0
+N|76|23|2|Isembard||5|49|3
+N|77|23|1|Aerendil|Hechicero|46|245|107
+N|78|23|1|Morwenna|Alquimista|14|227|74
+M|165|-1|-1|Carreras|1|||7
+V|0|0|0|0
+M|166|-1|-1|Captura la Bandera|1|||7
+V|0|0|0|0
+M|170|7|7|Dimension Abismal|0|||25
+V|0|0|0|0
+M|171|5|7|Cementerio de Heroes|0|||25
+V|0|0|0|172
+M|172|4|7|Cementerio|0|||25
+V|0|171|0|0
+M|173|4|6|Sur de Bargomaud|0|||25
+V|0|0|172|0
+M|174|3|5|Este de Bargomaud|0|||25
+V|0|0|0|0
+P|39|24|2|175|Accseso al Bosque
+M|175|2|4|Accseso al Bosque|0|||25
+V|0|0|0|0
+P|49|24|2|174|Este de Bargomaud
+P|16|61|2|175|Accseso al Bosque
+P|51|81|2|175|Accseso al Bosque
+M|176|2|3|Bosque Oculto|0|||25
+V|0|0|0|0
+M|177|6|3|Cámara Magmática|0|||25
+V|0|0|0|0
+M|178|6|4|Grieta del Volcán|0|||25
+V|0|0|0|0
+M|179|5|5|Este de Bargomaud|0|||25
+V|0|0|0|0
+M|180|6|2|Corazón del Volcan|0|||25
+V|0|0|0|0
+M|181|2|2|Jardín de Tarraske|0|||25
+V|0|0|0|0
+M|182|-1|-1|Atlantis P2|0|BOSQUE|DUNGEON|25
+V|0|0|0|0
+M|183|-1|-1|Reyes de la Colina|1|||7
+V|0|0|0|0
+M|187|11|6|Mapa 187|0|||0
+V|0|116|0|75
+M|188|-1|-1|Rey Dragón|0|||0
+V|0|0|0|0
+P|56|69|2|6|Bosque
+M|189|-1|-1|Aram|0|BOSQUE|CAMPO|0
+V|0|0|0|0
+M|190|-1|-1|Juegos del Hambre|0|||7
+V|0|0|0|0
+M|999|-1|-1|Mapa 999|0|||0
+V|0|0|0|0
