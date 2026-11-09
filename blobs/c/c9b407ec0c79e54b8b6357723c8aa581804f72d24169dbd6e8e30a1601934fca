@@ -1,0 +1,26 @@
+; ArmasSinViento.dat - indices de arma (Anim de Obj.dat) que NO sueltan la onda de viento al golpear: baculos, cetros y armas de proyectil.
+; Las espadas, hachas, mazas y dagas (y cualquier arma que no este aca) si la sueltan. Un indice por linea; ; empieza un comentario.
+; Lo genero a partir de Obj.dat (StaffPower > 0 o Proyectil = 1). Si agregas un baculo nuevo, anot?? aca su Anim.
+7
+10
+11
+23
+29
+30
+31
+35
+40
+41
+42
+50
+51
+52
+53
+54
+60
+61
+62
+63
+71
+74
+76
