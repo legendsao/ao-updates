@@ -1,0 +1,10 @@
+'ACA VA EL NUMERO DE INTERFACES TOTALES
+[MAIN]
+Interfaces=3
+
+'ACA VA LA LISTA DE LAS INTERFACES INSTALADAS (carpeta dentro de Data\GRAFICOS; la 1 es la original = Principal)
+'24/10: la nueva en tres colores; el tema de las ventanas sale del nombre (Azul, Negro, otra = dorada, ver modUITema)
+[INTERFACES]
+N1=Principal
+N2=Azul
+N3=Negro
