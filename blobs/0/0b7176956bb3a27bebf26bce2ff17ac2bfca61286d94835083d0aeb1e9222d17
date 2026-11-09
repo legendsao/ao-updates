@@ -1,0 +1,1771 @@
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:01 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:08:02 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,451,713,30
+19/10/2026 16:08:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:02 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:02 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,451,713,30
+19/10/2026 16:08:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:02 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:02 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,451,713,30
+19/10/2026 16:08:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:04 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,454,717,30
+19/10/2026 16:08:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:04 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,452,722,30
+19/10/2026 16:08:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:04 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,450,727,30
+19/10/2026 16:08:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:04 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 9,0,3,1080,432,740,0,0,,
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 10,0,3,1073,435,724,0,0,
+19/10/2026 16:08:04 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,448,732,30
+19/10/2026 16:08:05 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:05 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 9,0,3,1080,432,740,0,0,,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 10,0,3,1088,442,754,0,0,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 10,0,3,1086,444,748,0,0,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,448,738,30
+19/10/2026 16:08:05 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:05 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 9,0,3,1080,432,740,0,0,,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 10,0,3,1088,442,754,0,0,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 10,0,3,1086,444,748,0,0,
+19/10/2026 16:08:05 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,449,743,30
+19/10/2026 16:08:18 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:18 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:18 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,409,263,30
+19/10/2026 16:08:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:19 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,413,259,30
+19/10/2026 16:08:19 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:19 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,416,258,30
+19/10/2026 16:08:19 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:20 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,416,255,30
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:20 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,412,254,30
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:20 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,50,411,255,30
+19/10/2026 16:08:20 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:21 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:21 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,50,413,259,30
+19/10/2026 16:08:21 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:21 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:21 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,50,417,264,30
+19/10/2026 16:08:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:21 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:21 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,50,421,269,30
+19/10/2026 16:08:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:21 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:21 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,50,423,267,30
+19/10/2026 16:08:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H50,1
+19/10/2026 16:08:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:22 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:22 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,425,264,30
+19/10/2026 16:08:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:22 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:22 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,426,261,30
+19/10/2026 16:08:26 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:26 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:26 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,404,252,30
+19/10/2026 16:08:27 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:31 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,414,265,30
+19/10/2026 16:08:34 HandleData | err 9 | Subscript out of range | paquete: 339,0,3,803,418,248,0,0,
+19/10/2026 16:08:45 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,814,409,287,0,0,
+19/10/2026 16:08:45 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,812,411,281,0,0,
+19/10/2026 16:08:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:47 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,814,409,287,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,812,411,281,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,412,283,30
+19/10/2026 16:08:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:47 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,814,409,287,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,812,411,281,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,414,289,30
+19/10/2026 16:08:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:47 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,814,409,287,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 185,0,3,812,411,281,0,0,
+19/10/2026 16:08:47 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,413,294,30
+19/10/2026 16:08:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:48 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:48 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,411,299,30
+19/10/2026 16:08:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:48 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:48 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,409,304,30
+19/10/2026 16:08:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:50 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:50 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,410,308,30
+19/10/2026 16:08:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:50 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:50 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,405,313,30
+19/10/2026 16:08:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:50 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:50 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,400,317,30
+19/10/2026 16:08:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,398,322,30
+19/10/2026 16:08:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,396,328,30
+19/10/2026 16:08:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,395,334,30
+19/10/2026 16:08:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,393,339,30
+19/10/2026 16:08:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,50,392,337,30
+19/10/2026 16:08:52 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL50
+19/10/2026 16:08:52 HandleData | err 5 | Invalid procedure call or argument | paquete: BP50
+19/10/2026 16:08:52 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,50,393,333,30
+19/10/2026 16:10:31 HandleData | err 9 | Subscript out of range | paquete: 14,0,3,829,369,332,0,0,,
+19/10/2026 16:10:31 HandleData | err 9 | Subscript out of range | paquete: 14,0,3,829,369,332,0,0,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:11:59 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 14,0,3,829,369,332,0,0,,
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,386,333,30
+19/10/2026 16:12:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:00 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 14,0,3,829,369,332,0,0,,
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,386,333,30
+19/10/2026 16:12:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:00 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 14,0,3,829,369,332,0,0,,
+19/10/2026 16:12:00 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,386,333,30
+19/10/2026 16:12:03 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:03 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:03 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:03 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,384,353,30
+19/10/2026 16:12:03 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:03 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:05 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:05 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,383,357,30
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:05 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:05 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,382,361,30
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 100,1,4,852,382,372,0,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,853,386,372,0,0,,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,863,388,376,0,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,860,393,373,0,0,
+19/10/2026 16:12:05 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:05 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,382,366,30
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 100,1,4,852,382,372,0,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,853,386,372,0,0,,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,863,388,376,0,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:05 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,860,393,373,0,0,
+19/10/2026 16:12:06 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:06 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 100,1,4,852,382,372,0,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,383,370,30
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,853,386,372,0,0,,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,863,388,376,0,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,860,393,373,0,0,
+19/10/2026 16:12:06 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:06 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 100,1,4,852,382,372,0,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,853,386,372,0,0,,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,386,375,30
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,863,388,376,0,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:06 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,860,393,373,0,0,
+19/10/2026 16:12:06 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:12:07 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:07 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 100,1,4,852,382,372,0,0,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,853,386,372,0,0,,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 317,107,2,842,388,361,0,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,863,388,376,0,0,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 245,107,3,843,389,361,0,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,389,376,30
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,860,393,373,0,0,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,891,401,386,0,0,,
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 227,74,3,856,402,372,0,0
+19/10/2026 16:12:07 HandleData | err 9 | Subscript out of range | paquete: 18,0,3,892,404,386,0,0,,
+19/10/2026 16:12:07 HandleData | err 5 | Invalid procedure call or argument | paquete: *842,388,362
+19/10/2026 16:12:08 HandleData | err 5 | Invalid procedure call or argument | paquete: *853,385,372
+19/10/2026 16:12:09 HandleData | err 5 | Invalid procedure call or argument | paquete: *843,389,362
+19/10/2026 16:12:11 HandleData | err 5 | Invalid procedure call or argument | paquete: *842,387,362
+19/10/2026 16:12:11 HandleData | err 5 | Invalid procedure call or argument | paquete: *853,386,372
+19/10/2026 16:12:14 HandleData | err 5 | Invalid procedure call or argument | paquete: *856,402,373
+19/10/2026 16:12:16 HandleData | err 5 | Invalid procedure call or argument | paquete: *843,389,361
+19/10/2026 16:12:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP843,245,107,3
+19/10/2026 16:12:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:17 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:17 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:12:17 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,691,384,30
+19/10/2026 16:12:17 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:12:18 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:12:18 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:18 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:18 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:12:18 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:12:18 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,699,385,30
+19/10/2026 16:12:18 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:12:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,703,386,30
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 18,0,3,867,711,376,0,0,,
+19/10/2026 16:12:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,707,388,30
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 37,0,2,909,719,400,0,0,,
+19/10/2026 16:12:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,710,389,30
+19/10/2026 16:12:19 HandleData | err 9 | Subscript out of range | paquete: 37,0,2,909,719,400,0,0,,
+19/10/2026 16:12:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:20 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:20 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:20 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,714,391,30
+19/10/2026 16:12:20 HandleData | err 9 | Subscript out of range | paquete: 37,0,2,909,719,400,0,0,,
+19/10/2026 16:12:20 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,400
+19/10/2026 16:12:21 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:12:21 HandleData | err 9 | Subscript out of range | paquete: 18,0,3,867,711,376,0,0,,
+19/10/2026 16:12:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:12:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 18,0,3,867,711,376,0,0,,
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,714,386,30
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,715,390,30
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,715,393,30
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,714,395,30
+19/10/2026 16:12:24 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:25 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,711,397,30
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:25 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,708,400,30
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:25 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,718,400,0,0,,
+19/10/2026 16:12:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:12:26 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,399
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,714,418,0,0
+19/10/2026 16:12:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,713,408,30
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,714,418,0,0
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 37,0,1,909,718,399,0,0,,
+19/10/2026 16:12:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,713,412,30
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,714,418,0,0
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 37,0,1,909,718,399,0,0,,
+19/10/2026 16:12:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,711,415,30
+19/10/2026 16:12:31 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,714,418,0,0
+19/10/2026 16:12:32 HandleData | err 9 | Subscript out of range | paquete: 19,0,2,918,701,419,0,0,,
+19/10/2026 16:12:32 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:12:32 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,419
+19/10/2026 16:12:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:32 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:32 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:32 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,42,704,419,30
+19/10/2026 16:12:32 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,715,418,0,0
+19/10/2026 16:12:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:33 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,42,699,421,30
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:33 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,42,694,422,30
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:33 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,42,689,423,30
+19/10/2026 16:12:33 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,690,420,30
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,693,417,30
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,697,415,30
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 350,16,3,907,684,401,35,
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,701,413,30
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:12:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 19,0,4,918,700,419,0,0,,
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 210,1211,1,42,706,409,30
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 227,74,2,916,715,418,0,0
+19/10/2026 16:12:34 HandleData | err 9 | Subscript out of range | paquete: 37,0,3,909,718,400,0,0,,
+19/10/2026 16:12:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:12:36 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:12:36 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:12:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:12:37 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:12:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO9193,711,409
+19/10/2026 16:12:39 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,717,400
+19/10/2026 16:12:42 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:12:48 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,400
+19/10/2026 16:12:48 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:12:58 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:13:05 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:13:07 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,418
+19/10/2026 16:13:12 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:13:12 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:13:12 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:13:14 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,719,400
+19/10/2026 16:13:17 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,716,418
+19/10/2026 16:13:19 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,400
+19/10/2026 16:13:20 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,419
+19/10/2026 16:13:25 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:13:25 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:13:27 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:13:28 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,717,400
+19/10/2026 16:13:34 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:13:34 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:13:35 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,400
+19/10/2026 16:13:39 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:13:50 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,419
+19/10/2026 16:13:53 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,418
+19/10/2026 16:13:55 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:14:02 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,702,418
+19/10/2026 16:14:05 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,702,417
+19/10/2026 16:14:15 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:14:15 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,703,417
+19/10/2026 16:14:19 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:14:19 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,702,417
+19/10/2026 16:14:23 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,417
+19/10/2026 16:14:25 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,419
+19/10/2026 16:14:26 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:14:28 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,719,400
+19/10/2026 16:14:30 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,713,419
+19/10/2026 16:14:30 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,417
+19/10/2026 16:14:35 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,400
+19/10/2026 16:14:37 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,713,418
+19/10/2026 16:14:37 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:14:42 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:14:45 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:14:45 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,416
+19/10/2026 16:14:51 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:14:54 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:14:58 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:15:00 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,715,418
+19/10/2026 16:15:06 HandleData | err 5 | Invalid procedure call or argument | paquete: *916,714,418
+19/10/2026 16:15:10 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,419
+19/10/2026 16:15:11 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,718,399
+19/10/2026 16:15:14 HandleData | err 5 | Invalid procedure call or argument | paquete: *909,719,399
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:36 HandleData | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 19,0,3,918,700,418,0,0,,
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,710,412,30
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 227,74,4,916,714,418,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 37,0,1,909,719,400,0,0,,
+19/10/2026 16:15:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 19,0,3,918,700,418,0,0,,
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,710,412,30
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 227,74,4,916,714,418,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 37,0,1,909,719,400,0,0,,
+19/10/2026 16:15:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 19,0,3,918,700,418,0,0,,
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,710,412,30
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 227,74,4,916,714,418,0,0
+19/10/2026 16:15:37 HandleData | err 9 | Subscript out of range | paquete: 37,0,1,909,719,400,0,0,,
+19/10/2026 16:15:40 HandleData | err 9 | Subscript out of range | paquete: 19,0,3,918,700,418,0,0,,
+19/10/2026 16:15:43 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:15:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:15:45 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,418
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 37,0,4,909,719,400,0,0,,
+19/10/2026 16:15:46 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:46 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 210,1211,4,42,450,631,30
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:15:46 HandleData | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:15:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:48 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 210,1211,2,42,457,635,30
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 199,505,1,1034,473,643,0
+19/10/2026 16:15:48 HandleData | err 9 | Subscript out of range | paquete: 227,74,3,1020,475,629,0,
+19/10/2026 16:15:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:15:48 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:15:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:51 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:51 HandleData | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:15:51 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:15:51 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,469,640,30
+19/10/2026 16:15:51 HandleData | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:15:51 HandleData | err 9 | Subscript out of range | paquete: 3,101,2,1040,476,656,0,0
+19/10/2026 16:15:52 HandleData | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:15:53 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:15:53 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:15:53 HandleData | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:15:53 HandleData | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:15:53 HandleData | err 9 | Subscript out of range | paquete: 210,1211,3,42,470,647,30
+19/10/2026 16:15:53 HandleData | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:15:53 HandleData | err 9 | Subscript out of range | paquete: 3,101,2,1040,476,656,0,0
+19/10/2026 16:15:53 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,475,656
+19/10/2026 16:15:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,644
+19/10/2026 16:16:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:16:02 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:16:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,474,656
+19/10/2026 16:16:11 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,473,643
+19/10/2026 16:16:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,474,657
+19/10/2026 16:16:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,473,644
+19/10/2026 16:16:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,474,656
+19/10/2026 16:16:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,644
+19/10/2026 16:16:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:16:30 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:16:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,644
+19/10/2026 16:16:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:16:39 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,471,650,30
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,474,657,0,0
+19/10/2026 16:20:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:20:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,471,650,30
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,474,657,0,0
+19/10/2026 16:20:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:20:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,471,650,30
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:20:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,474,657,0,0
+19/10/2026 16:20:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:20:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,474,658
+19/10/2026 16:20:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:20:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:20:47 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:20:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 16:20:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,3,1025,434,633,0,0,
+19/10/2026 16:20:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,2,1021,432,632,0,0,
+19/10/2026 16:20:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 16:20:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 16:20:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:20:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:20:51 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:20:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,475,643
+19/10/2026 16:21:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:21:04 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:21:05 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,1,1040,473,656,0,0
+19/10/2026 16:21:11 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,474,656
+19/10/2026 16:21:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:21:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,1020,475,629,0,
+19/10/2026 16:21:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:10 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,454,626,30
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:23:11 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:11 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,454,626,30
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:23:11 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:11 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,454,626,30
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:23:11 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:23:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:23:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,4,1034,473,643,0
+19/10/2026 16:23:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,1020,475,629,0,
+19/10/2026 16:23:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:23:18 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1034,474,643
+19/10/2026 16:23:18 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1034,199,505,3
+19/10/2026 16:23:18 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,473,656,0,0
+19/10/2026 16:23:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1040,473,657
+19/10/2026 16:23:20 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,473,657,0,0
+19/10/2026 16:23:20 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:23:20 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:23:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:21 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,469,636,30
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 16:23:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,1020,475,629,0,
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:23:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:22 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,1035,423,644,0,0,
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 1,2,3,1042,425,656,0,0,,
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,1021,430,632,0,0,
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,2,1025,434,633,0,0,
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,2,1036,434,644,0
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,440,644,30
+19/10/2026 16:23:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:23:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1021,431,632
+19/10/2026 16:23:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,645
+19/10/2026 16:23:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1035,423,645
+19/10/2026 16:23:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,646
+19/10/2026 16:23:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1035,422,645
+19/10/2026 16:23:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,645
+19/10/2026 16:23:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 99,0,3,932,627,437,0,0,,
+19/10/2026 16:23:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,627,442,30
+19/10/2026 16:23:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,607,448,30
+19/10/2026 16:23:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,642,444,30
+19/10/2026 16:23:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,934,652,439,0,0,,
+19/10/2026 16:23:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,920,656,432,0,0,,
+19/10/2026 16:23:45 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:23:45 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:23:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,652,428,30
+19/10/2026 16:23:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,934,652,439,0,0,,
+19/10/2026 16:23:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,920,656,432,0,0,,
+19/10/2026 16:23:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:23:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:23:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:24:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:19 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:19 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 99,0,3,932,627,437,0,0,,
+19/10/2026 16:24:19 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,637,449,30
+19/10/2026 16:24:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:23 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:23 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,617,465,30
+19/10/2026 16:24:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:23 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:23 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,627,492,30
+19/10/2026 16:24:23 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 99,0,3,961,634,489,0,0,,
+19/10/2026 16:24:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 99,0,3,961,634,489,0,0,,
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,643,503,30
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 87,0,3,966,645,506,0,0,,
+19/10/2026 16:24:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,663,507,30
+19/10/2026 16:24:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,679,490,30
+19/10/2026 16:24:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:24:24 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,683,465,30
+19/10/2026 16:24:24 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 73,0,3,953,690,466,0,0,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:40 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,137,687,467,3
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 73,0,3,953,690,466,0,0,,
+19/10/2026 16:25:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:25:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,137,687,467,3
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 73,0,3,953,690,466,0,0,,
+19/10/2026 16:25:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:25:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,137,687,467,3
+19/10/2026 16:25:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 73,0,3,953,690,466,0,0,,
+19/10/2026 16:26:13 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: NDX953
+19/10/2026 16:26:13 HandleData | err 5 | Invalid procedure call or argument | paquete: DP953,73,0,3,690,466
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,687,458,3
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,689,454,3
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,691,450,3
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,689,445,3
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,688,443,3
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,690,441,3
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,692,438,3
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,694,435,3
+19/10/2026 16:26:16 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,933,703,437,0,0,,
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,696,432,3
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,933,703,437,0,0,,
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,918,701,418,0,0,,
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,695,429,3
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,918,701,418,0,0,,
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,933,703,437,0,0,,
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,692,426,3
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,918,701,418,0,0,,
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL137
+19/10/2026 16:26:17 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP137
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,137,690,423,3
+19/10/2026 16:26:17 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,918,701,418,0,0,,
+19/10/2026 16:26:19 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,417
+19/10/2026 16:26:24 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,702,417
+19/10/2026 16:26:33 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,4,918,701,417,0,0,,
+19/10/2026 16:26:40 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:26:45 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:26:56 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,417
+19/10/2026 16:27:04 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:27:09 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,935,678,440,0,0,,
+19/10/2026 16:27:10 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,933,703,437,0,0,,
+19/10/2026 16:27:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 56,16,3,904,675,401,1,3,
+19/10/2026 16:27:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 208,13,4,905,677,402,35,
+19/10/2026 16:27:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 209,13,3,906,681,402,24,
+19/10/2026 16:27:13 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 350,16,4,907,683,401,35,
+19/10/2026 16:27:15 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,676,401
+19/10/2026 16:27:16 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,402
+19/10/2026 16:27:16 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,419
+19/10/2026 16:27:18 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,401
+19/10/2026 16:27:18 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP907,350,16,3
+19/10/2026 16:27:19 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,682,402
+19/10/2026 16:27:20 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,679,402
+19/10/2026 16:27:20 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,420
+19/10/2026 16:27:22 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,675,401
+19/10/2026 16:27:22 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP904,56,16,3
+19/10/2026 16:27:24 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,420
+19/10/2026 16:27:26 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,682,403
+19/10/2026 16:27:28 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,679,403
+19/10/2026 16:27:29 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,419
+19/10/2026 16:27:30 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,683,401
+19/10/2026 16:27:34 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,682,402
+19/10/2026 16:27:34 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,418
+19/10/2026 16:27:35 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,401
+19/10/2026 16:27:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP907,350,16,3
+19/10/2026 16:27:37 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,679,402
+19/10/2026 16:27:42 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,402
+19/10/2026 16:27:42 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:27:42 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:27:45 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,402
+19/10/2026 16:27:47 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,401
+19/10/2026 16:27:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP906,209,13,3
+19/10/2026 16:27:47 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,683,401
+19/10/2026 16:27:50 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,418
+19/10/2026 16:27:51 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,401
+19/10/2026 16:27:51 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP907,350,16,3
+19/10/2026 16:27:52 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,401
+19/10/2026 16:27:52 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP905,208,13,3
+19/10/2026 16:27:54 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,402
+19/10/2026 16:27:58 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:27:58 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:27:59 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,401
+19/10/2026 16:27:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP906,209,13,3
+19/10/2026 16:28:01 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,675,402
+19/10/2026 16:28:03 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,701,418
+19/10/2026 16:28:04 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,680,401
+19/10/2026 16:28:07 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,402
+19/10/2026 16:28:07 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:28:07 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:28:08 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,675,401
+19/10/2026 16:28:08 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP904,56,16,3
+19/10/2026 16:28:08 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,401
+19/10/2026 16:28:08 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP906,209,13,3
+19/10/2026 16:28:14 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,401
+19/10/2026 16:28:14 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP907,350,16,3
+19/10/2026 16:28:15 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,682,401
+19/10/2026 16:28:18 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,418
+19/10/2026 16:28:21 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,683,401
+19/10/2026 16:28:22 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,679,401
+19/10/2026 16:28:22 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,699,419
+19/10/2026 16:28:25 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,400
+19/10/2026 16:28:26 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,683,402
+19/10/2026 16:28:30 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,419
+19/10/2026 16:28:30 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,401
+19/10/2026 16:28:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP905,208,13,3
+19/10/2026 16:28:31 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,675,402
+19/10/2026 16:28:32 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,684,402
+19/10/2026 16:28:32 HandleData | err 5 | Invalid procedure call or argument | paquete: *907,684,401
+19/10/2026 16:28:35 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,400
+19/10/2026 16:28:36 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,676,402
+19/10/2026 16:28:38 HandleData | err 5 | Invalid procedure call or argument | paquete: *918,700,418
+19/10/2026 16:28:38 HandleData | err 5 | Invalid procedure call or argument | paquete: CP918,19,0,3
+19/10/2026 16:28:39 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,683,402
+19/10/2026 16:28:41 HandleData | err 5 | Invalid procedure call or argument | paquete: *905,678,401
+19/10/2026 16:28:43 HandleData | err 5 | Invalid procedure call or argument | paquete: *904,676,401
+19/10/2026 16:28:44 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:28:44 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:28:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:28:50 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,3,867,711,376,0,0,,
+19/10/2026 16:28:52 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:28:52 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,2,909,718,403,0,0,,
+19/10/2026 16:28:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:29:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 350,16,3,907,684,401,35,
+19/10/2026 16:29:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:29:03 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:29:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H137,4
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:45 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,691,383,30
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:46 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:46 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,691,383,30
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:46 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:46 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,691,383,30
+19/10/2026 16:42:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:47 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,866,708,376,0,0,,
+19/10/2026 16:42:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 350,16,3,907,684,401,35,
+19/10/2026 16:42:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:42:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 56,16,2,904,675,402,1,3,
+19/10/2026 16:42:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 208,13,3,905,678,401,35,
+19/10/2026 16:42:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 209,13,4,906,680,401,24,
+19/10/2026 16:42:49 HandleData | err 5 | Invalid procedure call or argument | paquete: *906,681,401
+19/10/2026 16:42:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP906,209,13,3
+19/10/2026 16:42:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,908,709,401,0,0
+19/10/2026 16:42:51 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 56,16,3,904,675,401,1,3,
+19/10/2026 16:42:51 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 208,13,1,905,678,400,35,
+19/10/2026 16:42:51 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 209,13,3,906,681,401,24,
+19/10/2026 16:42:52 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:52 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:53 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:53 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 56,16,3,904,675,401,1,3,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 208,13,1,905,678,400,35,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 209,13,3,906,681,401,24,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 350,16,3,907,684,401,35,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,686,389,30
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:53 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:53 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,684,382,30
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:53 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:53 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 63,13,3,845,680,367,0,0,
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,683,376,30
+19/10/2026 16:42:53 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,876,686,380,0,0,
+19/10/2026 16:42:54 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,877,696,380,0,0,
+19/10/2026 16:42:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:42:58 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:42:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 57,14,3,1012,454,609,0,0
+19/10/2026 16:42:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,454,616,30
+19/10/2026 16:42:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 16:43:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:43:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:43:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:43:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:43:03 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 16:43:03 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,2,1025,434,633,0,0,
+19/10/2026 16:43:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,434,634
+19/10/2026 16:43:08 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,634
+19/10/2026 16:43:09 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:43:09 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:43:09 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,4,1025,433,634,0,0,
+19/10/2026 16:43:09 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 16:43:14 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,645
+19/10/2026 16:43:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,635
+19/10/2026 16:43:19 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,634
+19/10/2026 16:43:21 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,2,1021,432,634,0,0,
+19/10/2026 16:43:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:43:24 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:43:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 16:43:24 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 16:43:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1021,431,634
+19/10/2026 16:43:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,432,644
+19/10/2026 16:43:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,434,633
+19/10/2026 16:43:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:43:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1161,427,907,0,0,
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,1158,434,903,0,0,
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,438,896,30
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1159,443,904,0,0,
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1149,447,891,0,0,
+19/10/2026 16:43:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 74,0,3,1147,448,889,0,0,
+19/10/2026 16:43:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:43:45 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:43:45 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1161,427,907,0,0,
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,1158,434,903,0,0,
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,438,894,30
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1159,443,904,0,0,
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1149,447,891,0,0,
+19/10/2026 16:43:45 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 74,0,3,1147,448,889,0,0,
+19/10/2026 16:43:45 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:44:13 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:44:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:44:23 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:44:23 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,416,547,30
+19/10/2026 16:45:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:25 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:25 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,984,352,552,0,0,
+19/10/2026 16:45:25 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,360,559,30
+19/10/2026 16:45:25 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,991,372,567,0,0,
+19/10/2026 16:45:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:25 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:25 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,300,515,30
+19/10/2026 16:45:25 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 9,0,3,971,304,522,0,0,,,
+19/10/2026 16:45:26 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:26 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,270,476,30
+19/10/2026 16:45:26 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:26 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,294,449,30
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,943,296,457,0,0,,
+19/10/2026 16:45:26 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:26 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,312,438,30
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,936,315,444,0,0,,
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,930,320,436,0,0,,
+19/10/2026 16:45:26 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:26 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:26 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,237,407,30
+19/10/2026 16:45:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,227,384,30
+19/10/2026 16:45:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,199,347,30
+19/10/2026 16:45:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 42,0,3,884,190,384,0,0,,
+19/10/2026 16:45:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,194,386,30
+19/10/2026 16:45:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,183,430,30
+19/10/2026 16:45:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,135,400,30
+19/10/2026 16:45:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,888,144,388,0,0,,
+19/10/2026 16:45:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,140,465,30
+19/10/2026 16:45:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,158,527,30
+19/10/2026 16:45:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:45:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 12,0,3,989,183,566,0,0,,
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,190,569,30
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1002,193,582,0,0,
+19/10/2026 16:45:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 197,509,3,987,206,564,0,
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:30 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,238,580,30
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 197,509,3,994,247,573,0,
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:30 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1029,242,637,0,0,
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,247,626,30
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1014,250,612,0,0,
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:30 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,250,670,30
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 14,0,3,1043,255,660,0,0,
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 196,507,3,1045,255,666,0
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:30 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,239,738,30
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:45:30 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:30 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:30 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,253,754,30
+19/10/2026 16:45:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,291,761,30
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 13,0,3,1090,299,765,0,0,
+19/10/2026 16:45:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,318,767,30
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 14,0,3,1095,328,775,0,0,
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 196,507,3,1092,331,773,0
+19/10/2026 16:45:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 74,0,3,1091,342,772,0,0,
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,357,773,30
+19/10/2026 16:45:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,400,795,30
+19/10/2026 16:45:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:31 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,447,777,30
+19/10/2026 16:45:31 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 63,107,3,1094,449,774,0,
+19/10/2026 16:45:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:45:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:45:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:33 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:33 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 9,0,3,1087,461,750,0,0,,
+19/10/2026 16:45:33 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,474,762,30
+19/10/2026 16:45:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:45:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 9,0,3,1087,461,750,0,0,,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1082,462,742,0,0,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,471,751,30
+19/10/2026 16:45:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1088,442,754,0,0,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1086,444,748,0,0,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,454,743,30
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 9,0,3,1087,461,750,0,0,,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1082,462,742,0,0,
+19/10/2026 16:45:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 9,0,3,1080,432,740,0,0,,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1073,435,724,0,0,
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,449,732,30
+19/10/2026 16:45:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,453,716,30
+19/10/2026 16:45:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:40 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:40 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,455,712,30
+19/10/2026 16:45:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:40 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:40 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,458,710,30
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,460,707,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,461,704,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,461,701,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,460,698,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,459,696,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,461,693,30
+19/10/2026 16:45:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,1063,474,704,0,0,
+19/10/2026 16:45:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,463,690,30
+19/10/2026 16:45:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,463,687,30
+19/10/2026 16:45:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,463,684,30
+19/10/2026 16:45:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,465,681,30
+19/10/2026 16:45:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:42 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,466,677,30
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,466,673,30
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,465,669,30
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,463,665,30
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,2,1040,475,656,0,0
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,460,661,30
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,2,1040,475,656,0,0
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,455,657,30
+19/10/2026 16:45:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:45:43 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,449,654,30
+19/10/2026 16:45:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,, | (tope de 300 alcanzado, no se registra mas)
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:13 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,453,647,30
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:51:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:51:15 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,453,647,30
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:51:15 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:51:15 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,453,647,30
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:51:15 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:51:20 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,3,1025,434,634,0,0,
+19/10/2026 16:51:20 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,2,1036,434,644,0
+19/10/2026 16:51:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,1035,423,647,0,0,
+19/10/2026 16:51:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 1,2,3,1042,425,656,0,0,,
+19/10/2026 16:51:22 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,1021,430,632,0,0,
+19/10/2026 16:51:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1021,429,632
+19/10/2026 16:51:23 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:51:23 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:51:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,634
+19/10/2026 16:51:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1035,423,646
+19/10/2026 16:51:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1021,430,632
+19/10/2026 16:51:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1021,33,0,3
+19/10/2026 16:51:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,432,644
+19/10/2026 16:51:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,434,634
+19/10/2026 16:51:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1035,423,645
+19/10/2026 16:51:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:51:36 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:51:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1035,422,645
+19/10/2026 16:51:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,634
+19/10/2026 16:51:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,432,644
+19/10/2026 16:51:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,2,1035,423,645,0,0,
+19/10/2026 16:51:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,635
+19/10/2026 16:51:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:51:49 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:51:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 16:51:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,644
+19/10/2026 16:51:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,634
+19/10/2026 16:52:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 16:52:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 16:52:04 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,645
+19/10/2026 16:52:08 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,645
+19/10/2026 16:52:11 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,432,633
+19/10/2026 16:52:12 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:52:12 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:52:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 16:52:20 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 16:52:21 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,644
+19/10/2026 16:52:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,434,633
+19/10/2026 16:52:25 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:52:25 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:52:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 16:52:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 16:52:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,432,644
+19/10/2026 16:52:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,433,644
+19/10/2026 16:52:38 HandleData | err 5 | Invalid procedure call or argument | paquete: CP1036,245,107,3
+19/10/2026 16:52:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,432,633
+19/10/2026 16:52:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 16:52:46 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 16:52:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:52:58 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:52:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,260,271,30
+19/10/2026 16:52:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:52:59 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:52:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,256,266,30
+19/10/2026 16:52:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:52:59 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:52:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,250,262,30
+19/10/2026 16:53:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:00 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,244,259,30
+19/10/2026 16:53:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:53:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:00 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,247,261,30
+19/10/2026 16:53:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:53:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:53:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:01 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,252,262,30
+19/10/2026 16:53:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:53:03 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,256,264,30
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,259,268,30
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,261,272,30
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,265,277,30
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,268,281,30
+19/10/2026 16:53:27 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:27 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:27 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,270,285,30
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,817,262,302,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,274,289,30
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,817,262,302,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,277,293,30
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,817,262,302,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,278,297,30
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,817,262,302,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,815,267,289,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,278,301,30
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,279,305,30
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,280,308,30
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:28 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:28 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,282,311,30
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:28 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,284,314,30
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,828,280,331,0,0
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,286,317,30
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,828,280,331,0,0
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,289,320,30
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,821,302,308,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,1
+19/10/2026 16:53:29 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:29 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,828,280,331,0,0
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,42,290,318,30
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,821,302,308,0,0,,
+19/10/2026 16:53:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:53:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:53:31 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:53:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:53:32 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO5593,292,319
+19/10/2026 16:53:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO5592,292,319
+19/10/2026 16:53:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:53:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,828,280,331,0,0
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,822,284,310,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,296,323,30
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,821,302,308,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,827,308,327,0,0,,
+19/10/2026 16:53:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,300,327,30
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,827,308,327,0,0,,
+19/10/2026 16:53:34 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:34 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 33,0,3,823,290,315,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,42,303,330,30
+19/10/2026 16:53:34 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,827,308,327,0,0,,
+19/10/2026 16:53:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:53:35 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO5593,304,331
+19/10/2026 16:53:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO5592,304,331
+19/10/2026 16:53:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:53:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 19,0,3,826,302,327,0,0,,
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,827,308,327,0,0,,
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,313,334,30
+19/10/2026 16:53:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,827,308,327,0,0,,
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,321,336,30
+19/10/2026 16:53:37 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:37 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:37 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,328,339,30
+19/10/2026 16:53:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:38 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,334,342,30
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,832,342,336,0,0,
+19/10/2026 16:53:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:38 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,341,346,30
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,832,342,336,0,0,
+19/10/2026 16:53:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:38 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,832,342,336,0,0,
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,346,350,30
+19/10/2026 16:53:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:38 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,351,354,30
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,4
+19/10/2026 16:53:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:39 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,350,356,30
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:39 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,347,356,30
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:39 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,42,345,355,30
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,3
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: |H42,2
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,348,359,30
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,352,363,30
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,849,354,369,0,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,849,354,369,0,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,357,367,30
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,849,354,369,0,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,360,371,30
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 318,14,3,881,363,383,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,,
+19/10/2026 16:53:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL42
+19/10/2026 16:53:41 HandleData | err 5 | Invalid procedure call or argument | paquete: BP42
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,849,354,369,0,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,846,357,368,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,847,359,368,0,0,,
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 318,14,3,881,363,383,0,0
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,42,364,375,30
+19/10/2026 16:53:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 49,3,3,848,369,368,0,0,, | (tope de 300 alcanzado, no se registra mas)
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:03:58 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,450,636,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 17:04:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,450,636,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 17:04:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,450,636,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 17:04:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 17:04:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,3,1025,433,633,0,0,
+19/10/2026 17:04:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 17:04:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 17:04:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 17:04:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 100,109,3,1019,464,629,0
+19/10/2026 17:04:06 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 199,505,3,1034,474,643,0
+19/10/2026 17:04:06 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 227,74,3,1020,475,629,0,
+19/10/2026 17:04:06 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,101,3,1040,474,655,0,0
+19/10/2026 17:04:07 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:07 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:07 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 130,4,3,1022,448,632,0,0
+19/10/2026 17:04:07 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,453,643,
+19/10/2026 17:04:07 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 3,4,3,1032,454,642,0,0,,
+19/10/2026 17:04:07 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 37,0,3,1023,459,632,0,0,
+19/10/2026 17:04:07 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 248,16,3,1024,461,632,0,
+19/10/2026 17:04:07 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:04:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 245,107,3,1036,433,644,0
+19/10/2026 17:04:29 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 18,0,2,1025,434,633,0,0,
+19/10/2026 17:04:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1025,433,633
+19/10/2026 17:04:33 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP1025,18,0,3
+19/10/2026 17:04:36 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: *1036,434,644
+19/10/2026 17:04:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:38 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:38 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,460,283,
+19/10/2026 17:04:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:39 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,336,260,
+19/10/2026 17:04:39 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 185,0,3,809,342,264,0,0,
+19/10/2026 17:04:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:40 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,330,256,
+19/10/2026 17:04:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:40 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:40 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,324,255,
+19/10/2026 17:04:41 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:04:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,807,309,263,0,0,,
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,810,311,266,0,0,,
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,318,254,
+19/10/2026 17:04:41 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:04:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:41 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,807,309,263,0,0,,
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 10,0,3,810,311,266,0,0,,
+19/10/2026 17:04:41 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,321,252,
+19/10/2026 17:04:41 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:04:42 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,322,248,
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,322,244,
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:42 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:42 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,323,240,
+19/10/2026 17:04:43 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:04:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:43 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:43 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,323,236,
+19/10/2026 17:04:43 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:04:44 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,2
+19/10/2026 17:04:44 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:44 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,327,234,
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:44 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,331,232,
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:44 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:44 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,335,230,
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:47 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,325,228,
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:47 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,320,227,
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:47 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:47 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,316,225,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,311,224,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,305,222,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,298,221,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,292,220,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,287,220,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,282,220,
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:48 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:48 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,277,218,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,272,216,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,267,214,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,263,211,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,261,207,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,259,203,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,256,199,
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:49 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:49 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,253,195,
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:50 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,249,190,
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:50 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,245,185,
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:50 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:50 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,241,180,
+19/10/2026 17:04:50 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:54 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,239,178,
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:54 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,237,175,
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:54 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,238,171,
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:54 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,240,168,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,243,165,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,246,162,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,250,161,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,1,1789,254,161,
+19/10/2026 17:04:55 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,2
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,259,162,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,264,163,
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:55 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:55 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,270,164,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,276,166,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,282,168,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,288,170,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,294,172,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,300,175,
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:56 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:56 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,305,178,
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:57 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,310,182,
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:57 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,315,186,
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:57 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,320,189,
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:57 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:57 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,322,191,
+19/10/2026 17:04:58 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:04:58 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,3
+19/10/2026 17:04:58 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,2
+19/10/2026 17:04:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,2,1789,326,192,
+19/10/2026 17:04:58 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 339,0,3,790,334,188,0,0,
+19/10/2026 17:04:59 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,3
+19/10/2026 17:04:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,328,195,
+19/10/2026 17:04:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 339,0,3,790,334,188,0,0,
+19/10/2026 17:04:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:04:59 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:04:59 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,331,198,
+19/10/2026 17:05:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,333,202,
+19/10/2026 17:05:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:00 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:00 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,334,206,
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,330,211,
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,329,215,
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,329,220,
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,327,224,
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:01 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:01 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,325,228,
+19/10/2026 17:05:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,325,232,
+19/10/2026 17:05:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:02 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:02 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,329,235,
+19/10/2026 17:05:08 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO30967,330,237
+19/10/2026 17:05:09 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BO330,237
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:10 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,325,242,
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:10 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,320,244,
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:10 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,316,246,
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:10 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:10 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,4,1789,311,248,
+19/10/2026 17:05:11 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:05:11 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:05:12 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,3
+19/10/2026 17:05:12 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1789
+19/10/2026 17:05:12 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1789
+19/10/2026 17:05:12 Net_Mundo_CC | err 9 | Subscript out of range | paquete: 210,1211,3,1789,307,251,
+19/10/2026 17:05:12 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:05:12 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1
+19/10/2026 17:05:13 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,4
+19/10/2026 17:05:13 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1789,1 | (tope de 300 alcanzado, no se registra mas)
+19/10/2026 17:06:57 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: RheleM,1,,,,,,,,, | veces: 1
+19/10/2026 17:06:57 Net_Sesion_ADDPJ | err 13 | Type mismatch | paquete: asdd,4,,,,,,,,, | veces: 1
+19/10/2026 17:06:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1790 | veces: 1
+19/10/2026 17:06:58 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1790 | veces: 1
+19/10/2026 17:07:08 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1790,2 | veces: 1
+19/10/2026 17:07:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: QDL1790 | veces: 10
+19/10/2026 17:07:16 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: BP1790 | veces: 10
+19/10/2026 17:07:44 HandleData | err 5 | Invalid procedure call or argument | paquete: *842,388,362 | veces: 1
+19/10/2026 17:07:45 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: HO5592,386,375 | veces: 1
+19/10/2026 17:07:51 HandleData | err 5 | Invalid procedure call or argument | paquete: |H1790,3 | veces: 10
+19/10/2026 17:08:03 HandleData | err 5 | Invalid procedure call or argument | paquete: *875,408,379 | veces: 10
+19/10/2026 17:08:54 HandleData | err -2147221504 | Input string is not valid Base64. | paquete: CP856,227,74,3 | veces: 1
