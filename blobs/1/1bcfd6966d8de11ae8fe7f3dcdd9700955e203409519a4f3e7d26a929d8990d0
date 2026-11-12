@@ -1,0 +1,65 @@
+' VIAJES DE SIR CEDRIC (LEGENDS)
+' Lo lee el panel del viajero (modViajarUI). El orden de las secciones es el orden de la grilla: 4 columnas, como en el formulario de antes.
+' Clave de la seccion = la que se manda al servidor (/VIAJAR <CLAVE>). Nivel = nivel minimo para viajar (0 = cualquiera).
+' Desc = descripcion corta que se muestra al pie del panel (entra en 3 renglones, unos 150 caracteres).
+' Aviso (opcional) = advertencia que hay que confirmar antes de viajar.
+' Foto = mapa,x,y: desde donde se saca la foto del destino (ver GenerarFotosViajes.ps1 y modFotoViajes).
+' El archivo se guarda en ANSI (Windows-1252) para que las tildes se vean bien.
+
+[CEDRIC]
+Intro=Saludos, viajero. Elegí un destino y te cuento qué te espera allí.
+
+[TANARIS]
+Nombre=Tanaris
+Nivel=0
+Foto=28,50,50
+Desc=Ciudad franca de comerciantes y gente sin bandera. Un buen primer refugio: nadie te pregunta de qué lado estás.
+
+[THIR]
+Nombre=Thir
+Nivel=0
+Foto=25,74,45
+Desc=Aldea callada entre bosques espesos, camino al norte helado. Lo justo para seguir adelante.
+
+[JHUMBEL]
+Nombre=Jhumbel
+Nivel=30
+Foto=69,38,20
+Aviso=Se requiere tener una barca para moverse por este mapa, o podés no poder regresar.
+Desc=Pueblo de pescadores en un archipiélago, con puerto hacia una isla temida. Sin barca, quizás no encuentres el regreso.
+
+[INTHAK]
+Nombre=Inthak
+Nivel=30
+Foto=130,50,57
+Desc=Ciudad del desierto del sur, a la sombra de una pirámide. Al oeste, entre las arenas, quedan las ruinas de una ciudad más antigua.
+
+[ANVILMAR]
+Nombre=Anvilmar
+Nivel=0
+Foto=29,46,85
+Desc=Capital de la Alianza Imperial: murallas altas, leyes estrictas y un rey que juzga a todos por igual.
+
+[KAHLIMDOR]
+Nombre=Kahlimdor
+Nivel=0
+Foto=27,50,48
+Desc=Bastión de la Horda Infernal, ciudad de hierro negro. Aquí la fuerza vale más que cualquier ley.
+
+[RUVENDEL]
+Nombre=Ruvendel
+Nivel=30
+Foto=26,51,52
+Desc=Ciudad de frontera a la sombra del volcán. Aquí empieza el camino de la nobleza, solo para los más bravos.
+
+[HELKA]
+Nombre=Helka
+Nivel=20
+Foto=136,52,55
+Desc=Enclave en el extremo norte, donde la nieve nunca se va. Buen punto de partida para explorar el polo.
+
+[BARGOMAUD]
+Nombre=Bargomaud
+Nivel=50
+Foto=161,50,52
+Desc=Tierra antigua de santuarios y caminos largos. Alquimista, armero, sastre y taberna antes de adentrarte.
