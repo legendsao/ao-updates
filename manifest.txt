@@ -1,4 +1,4 @@
-version=1.1.38
+version=1.1.39
 #full=manifest-full.txt
 Updater.upd|598134e141a25dc960f3dbdd6cfc13246a2fe9319e7504c2a4f4e475dec7d02f|246272
-#sig=QdnQObGmRHwRB1u6Q7JggsFiVaKAJmDPKT6BfNVZCyQpu9iIzRk43mb0SC3XiCeG+ywoLBVARcxIeXlmGDypUA==
+#sig=5xMsIYn7zVaLuev3aKKoD9Ybe8SunrrEy8U18jCE4hkYlApg4V1auxnxMEX62cl43l3aaUYJph614bzP79cVZw==
