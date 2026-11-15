@@ -1,0 +1,4 @@
+; manchas de agua de pantano por mapa (15/11): k=x,y,radio[,borde] en casillas del mundo (mapa 197 = mundo continuo)
+[Mapa197]
+Cantidad=1
+1=620,810,50,8
