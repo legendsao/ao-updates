@@ -1,0 +1,10 @@
+[Auroras]
+; ambiente magico (aurora en el agua + esporas). Mapas= numeros de UserMap (mapas sueltos). [Mapa197]: zonas del MUNDO CONTINUO, k=x1,y1,x2,y2 en casillas del mundo (MundoContinuo.dat).
+Mapas=
+[Mapa197]
+; medusas legendarias: 125 Kalhat, 126-128 archipielago
+Cantidad=4
+1=81,1080,171,1172
+2=92,1173,171,1255
+3=1,1163,91,1262
+4=81,1256,180,1345
