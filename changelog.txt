@@ -1,2 +1,2 @@
-Version 1.1.22
-+ Actualizador: ya no corta con el aviso de espera larga, reintenta solo hasta que el servidor responde
+Version 1.1.46
++ Chat y comandos: a algunos jugadores se les rompia al entrar (comando invalido, sin pociones, sin chat, sin abrir NPC); corregido
