@@ -1,2 +1,2 @@
-Version 1.1.46
-+ Chat y comandos: a algunos jugadores se les rompia al entrar (comando invalido, sin pociones, sin chat, sin abrir NPC); corregido
+Version 1.1.47
++ Chat y comandos: se evita que la conexion quede desfasada al descartar un mensaje demasiado largo
