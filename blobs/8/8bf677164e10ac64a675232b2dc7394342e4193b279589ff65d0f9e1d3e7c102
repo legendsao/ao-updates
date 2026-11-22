@@ -1,0 +1,138 @@
+20:17:32 cargando frmMain
+20:17:32 Load frmMain err=0 
+20:17:32 imagenes de interfaz err=0 
+20:17:32 Gx_Start gfxOn=True LienzoOn=True err=0
+20:17:32 item 1 PicMacro7 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 2 PicMacro6 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 3 PicMacro0 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 4 PicMacro9 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 5 PicMacro8 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 6 PicMacro5 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 7 PicMacro4 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 8 PicMacro3 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 9 PicMacro2 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 10 PicMacro1 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 11 Command1 tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 12 cmdDiaNoche tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 13 Image6 tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 14 Minimap tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 15 Puntito tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 16 PuntitoParty tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 17 PuntitoParty tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 18 PuntitoParty tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 19 PuntitoParty tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 20 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 21 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 22 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 23 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 24 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 25 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 26 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 27 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 28 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 29 PuntitoClan tipo=3 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 30 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 31 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 32 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 33 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 34 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 35 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 36 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 37 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 38 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 39 NombreClan tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 40 NombreParty tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 41 NombreParty tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 42 NombreParty tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 43 NombreParty tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 44 modohabla tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 45 SendTxt tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 46 SendCMSTXT tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 47 picInv tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 48 ClanConsole tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 49 PrivatesConsole tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 50 GlobalConsole tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 51 RecTxt tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 52 renderer tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 53 hlst tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 54 ExpBar tipo=10 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 55 lblSkin tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 56 Partylbl tipo=2 vis=True x=533 y=96 w=17 h=17 tex=0 txt=
+20:17:32 item 57 AlertaImg tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 58 Exp tipo=1 vis=True x=600 y=80 w=201 h=17 tex=2113929374 txt=9999999999/99999999 [5.3
+20:17:32 item 59 Image7 tipo=2 vis=True x=616 y=80 w=170 h=15 tex=2113933313 txt=
+20:17:32 item 60 Label3 tipo=1 vis=True x=624 y=512 w=41 h=17 tex=2113929376 txt=115
+20:17:32 item 61 Picture1 tipo=2 vis=True x=534 y=48 w=14 h=11 tex=0 txt=
+20:17:32 item 62 Consolass tipo=2 vis=True x=536 y=80 w=12 h=17 tex=0 txt=
+20:17:32 item 63 DyD tipo=2 vis=True x=775 y=165 w=18 h=18 tex=2113933314 txt=
+20:17:32 item 64 Coord tipo=1 vis=True x=688 y=424 w=107 h=23 tex=2113929380 txt=(000,00,00)
+20:17:32 item 65 Image3 tipo=2 vis=True x=520 y=552 w=25 h=41 tex=0 txt=
+20:17:32 item 66 kkkkkkkkkkkkk tipo=1 vis=True x=576 y=272 w=17 h=17 tex=0 txt=
+20:17:32 item 67 kkkkkkkkkkkkk tipo=1 vis=True x=675 y=340 w=17 h=17 tex=0 txt=
+20:17:32 item 68 kkkkkkkkkkkkk tipo=1 vis=True x=660 y=352 w=17 h=17 tex=0 txt=
+20:17:32 item 69 kkkkkkkkkkkkk tipo=1 vis=True x=660 y=328 w=17 h=17 tex=0 txt=
+20:17:32 item 70 ItemName tipo=1 vis=True x=594 y=368 w=161 h=25 tex=2113929386 txt=Armadura de placas compl
+20:17:32 item 71 Image2 tipo=2 vis=True x=576 y=280 w=12 h=12 tex=0 txt=
+20:17:32 item 72 MSNImage tipo=2 vis=True x=536 y=32 w=13 h=11 tex=0 txt=
+20:17:32 item 73 ConsolaImage tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 74 ClanConsolaImage tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 75 GlobalConsoleImage tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 76 PrivatesCosoleImage tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 77 Text1 tipo=1 vis=True x=0 y=0 w=553 h=25 tex=0 txt=
+20:17:32 item 78 GldLbl tipo=1 vis=True x=622 y=476 w=41 h=16 tex=2113929394 txt=54.367
+20:17:32 item 79 PicSeg tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 80 PicMH tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 81 PicItemSeg tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 82 Label1 tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 83 LvlLbl tipo=1 vis=True x=587 y=77 w=30 h=18 tex=2113929399 txt=56
+20:17:32 item 84 FPSMain tipo=1 vis=True x=40 y=555 w=33 h=17 tex=2113929400 txt=240
+20:17:32 item 85 PuntosTorneoLbl tipo=1 vis=True x=600 y=494 w=89 h=17 tex=2113929401 txt=65
+20:17:32 item 86 PuntosDonacionLbl tipo=1 vis=True x=600 y=529 w=89 h=17 tex=2113929402 txt=92
+20:17:32 item 87 PingLbl tipo=1 vis=True x=32 y=568 w=33 h=17 tex=2113929403 txt=<47
+20:17:32 item 88 ONLINES tipo=1 vis=True x=40 y=580 w=27 h=13 tex=2113929404 txt=50
+20:17:32 item 89 Defensa tipo=1 vis=True x=672 y=576 w=28 h=13 tex=2113929405 txt=40/40
+20:17:32 item 90 Arma tipo=1 vis=True x=672 y=560 w=28 h=13 tex=2113929406 txt=15/15
+20:17:32 item 91 BaculoLbl tipo=1 vis=True x=597 y=559 w=28 h=13 tex=2113929407 txt=10/10
+20:17:32 item 92 DefMag tipo=1 vis=True x=596 y=575 w=28 h=13 tex=2113929408 txt=10/10
+20:17:32 item 93 AGUABAR tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 94 COMIDABAR tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 95 ManaBar tipo=1 vis=True x=584 y=422 w=100 h=17 tex=2113929411 txt=1868/1868
+20:17:32 item 96 StaBar tipo=1 vis=True x=584 y=440 w=100 h=17 tex=2113929412 txt=765/765
+20:17:32 item 97 HpBar tipo=1 vis=True x=584 y=404 w=100 h=17 tex=2113929413 txt=443/443
+20:17:32 item 98 MANShp tipo=3 vis=True x=583 y=423 w=101 h=15 tex=0 txt=
+20:17:32 item 99 Hpshp tipo=3 vis=True x=583 y=405 w=101 h=15 tex=0 txt=
+20:17:32 item 100 STAShp tipo=3 vis=True x=583 y=441 w=101 h=15 tex=0 txt=
+20:17:32 item 101 GMSOS tipo=1 vis=True x=552 y=584 w=65 h=17 tex=2113929417 txt=SOS
+20:17:32 item 102 GMTORNEO tipo=1 vis=True x=632 y=584 w=73 h=17 tex=2113929418 txt=TORNEO
+20:17:32 item 103 GMPANEL tipo=1 vis=True x=720 y=584 w=65 h=17 tex=2113929419 txt=CASTI GM
+20:17:32 item 104 Label2 tipo=1 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 105 Image5 tipo=2 vis=True x=760 y=0 w=19 h=25 tex=0 txt=
+20:17:32 item 106 Image4 tipo=2 vis=True x=776 y=0 w=26 h=25 tex=0 txt=
+20:17:32 item 107 Image1 tipo=2 vis=True x=560 y=552 w=25 h=25 tex=0 txt=
+20:17:32 item 108 Image1 tipo=2 vis=True x=456 y=576 w=65 h=17 tex=0 txt=
+20:17:32 item 109 Image1 tipo=2 vis=True x=456 y=552 w=65 h=25 tex=0 txt=
+20:17:32 item 110 Fuerza tipo=1 vis=True x=592 y=456 w=17 h=17 tex=2113929426 txt=18
+20:17:32 item 111 Agilidad tipo=1 vis=True x=656 y=456 w=17 h=17 tex=2113929427 txt=18
+20:17:32 item 112 CmdLanzar tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 113 cmdInfo tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 114 cmdQuitar tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 115 cmdMoverHechi tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 116 cmdMoverHechi tipo=2 vis=False x=0 y=0 w=0 h=0 tex=0 txt=
+20:17:32 item 117 Label7 tipo=1 vis=True x=680 y=120 w=109 h=38 tex=0 txt=
+20:17:32 item 118 Label4 tipo=1 vis=True x=552 y=120 w=115 h=37 tex=0 txt=
+20:17:32 item 119 Label8 tipo=1 vis=True x=552 y=32 w=239 h=21 tex=2113929435 txt=sssssssssssssssss
+20:17:32 item 120 InvEqu tipo=2 vis=True x=549 y=115 w=245 h=282 tex=2113933315 txt=
+20:17:32 item 121 Text1 tipo=1 vis=True x=8 y=592 w=545 h=9 tex=0 txt=
+20:17:32 item 122 Text1 tipo=1 vis=True x=544 y=0 w=201 h=25 tex=0 txt=
+20:17:32 ventana 1 modohabla tipo=3 vis=False sig=
+20:17:32 ventana 2 SendTxt tipo=3 vis=False sig=
+20:17:32 ventana 3 SendCMSTXT tipo=3 vis=False sig=
+20:17:32 ventana 4 ClanConsole tipo=1 vis=False sig=
+20:17:32 ventana 5 PrivatesConsole tipo=1 vis=False sig=
+20:17:32 ventana 6 GlobalConsole tipo=1 vis=False sig=
+20:17:32 ventana 7 RecTxt tipo=1 vis=False sig=
+20:17:32 ventana 8 hlst tipo=2 vis=False sig=
+20:17:32 foto motor=1
+20:17:32 300 cuadros con refresco de propiedades en cada cuadro: 250 ms (0.83 ms por cuadro)
+20:17:32 300 cuadros con refresco cada 16 ms (valor por defecto): 141 ms (0.47 ms por cuadro)
+20:17:32 listo err=0
