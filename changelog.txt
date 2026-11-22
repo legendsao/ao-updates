@@ -1,2 +1,24 @@
-Version 1.1.47
-+ Chat y comandos: se evita que la conexion quede desfasada al descartar un mensaje demasiado largo
+Version 1.1.53
++ Comercio entre jugadores: ahora muestra y permite comerciar los 36 casilleros de la mochila (antes solo 20).
++ Renombrador, Renuncia al Dios, Pocion de Raza y Perdon Faccionario: ahora se pueden comerciar y tirar.
++ Clanes: cerrar el clan ya no te desconecta.
++ Teclas: la Captura de pantalla y Grabar video (iniciar/finalizar) se pueden asignar desde Configurar teclas, ademas de los iconos junto a la consola.
++ Staff: el Director puede usar los editores de balance y objetos.
++ Tienda Legends: items nuevos en la solapa Otros, todos a 999 Legends Points por ahora.
++ Renombrador: te abre un panel para elegir un nombre nuevo; te dice al instante si esta libre. El nombre viejo queda reservado 7 dias.
++ Renuncia al Dios: te libera de tu dios y elegis otro; hay que pasar por los cuatro antes de repetir.
++ Pocion de Raza: cambias de raza de verdad (cuerpo, cara, vida, mana, bonus y ropa) y conservas tu vida extra.
++ Perdon Faccionario: te deja neutral y despues elegis libremente tu bando.
++ Guerra: la ciudad atacada queda sin techos y el palacio de Anvilmar casi destruido; mas brechas y mas carga de defensa.
++ Tienda Legends: solapas Tunicas, VIPS, Skins, Monturas y Otros. La lista baja con scroll, cada tunica muestra su precio y la ficha su descripcion y bonus. Nueva Tunica de la Suerte.
++ VIPS: se muestran los tres premium (Platino, Oro y Plata) con sus beneficios; la compra llega pronto.
++ Interfaz: tocar el recuadro de puntos de torneo abre el canje, y el de Legends Points abre la tienda.
++ Captura de pantalla: ahora funciona al instante, sin abrir otros programas. Nuevo icono de camara junto a la consola; las fotos se guardan en la carpeta capturas.
++ Grabacion de video: nuevo icono junto a la consola (se pone rojo mientras graba). En Opciones > Grabacion elegis calidad, FPS, duracion, y si grabar el mouse, el microfono y el sonido.
++ Interfaz: oro, puntos de torneo y Legends Points con iconos y recuadros nuevos, ubicacion mas clara.
++ Ambiente: grillos, truenos y luciernagas mas discretos.
++ Carteles de la guerra en pantalla.
++ Carpetas: el juego se reordeno por completo y ahora todo esta en su lugar (graficos, sonidos, mapas, init, logs y capturas).
++ Limpieza: se eliminaron unos 300 MB de archivos basura; el juego pesa casi la mitad.
++ Actualizacion: el juego ordena sus carpetas solo y conserva tus opciones, teclas, macros y mapa explorado. La primera vez baja unos 300 MB.
++ Enviar diagnostico: ahora informa el motivo cuando algo se rechaza.
