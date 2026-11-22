@@ -1,7 +1,15 @@
-Version 1.1.53
+Version 1.1.54
++ Guerra: el boton del cartel (IR A ATACAR / DEFENDER) ahora te lleva a la guerra, igual que /GUERRA.
++ Guerra: ya no hace falta estar enlistado para participar.
++ Guerra: al terminar, todos vuelven al instante a su ciudad.
++ Guerra: si entras con la guerra en curso en la ciudad atacada, te mandan a Tanaris (antes algunos iban al Newbie Dungeon).
++ Renombrador: ya se puede usar siendo miembro de un clan; tu nombre se cambia tambien en el clan.
++ Clanes: se puede cerrar un clan con miembros; se los echa a todos.
 + Comercio entre jugadores: ahora muestra y permite comerciar los 36 casilleros de la mochila (antes solo 20).
 + Renombrador, Renuncia al Dios, Pocion de Raza y Perdon Faccionario: ahora se pueden comerciar y tirar.
 + Clanes: cerrar el clan ya no te desconecta.
++ Guerra: el cartel de la guerra aparece arriba al centro del juego aunque entres con la guerra en curso.
++ Quests: el seguimiento solo se muestra cuando hay criaturas en el mapa.
 + Teclas: la Captura de pantalla y Grabar video (iniciar/finalizar) se pueden asignar desde Configurar teclas, ademas de los iconos junto a la consola.
 + Staff: el Director puede usar los editores de balance y objetos.
 + Tienda Legends: items nuevos en la solapa Otros, todos a 999 Legends Points por ahora.
