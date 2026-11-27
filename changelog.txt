@@ -1,3 +1,50 @@
+Version 1.1.61
++ Resolucion: nueva opcion 1280x720 en Opciones > Pantalla; se cambia en el momento y podes volver a 800x600 cuando quieras
++ Vista 1280x720: se ve mas mapa alrededor, pero tu alcance es el mismo; fuera de el no ves jugadores ni criaturas ni podes atacarlos
++ Vista 1280x720: quien entra o sale de tu alcance aparece y se desvanece suavemente
++ Jefe nuevo: el Jinete de la Niebla cabalga en el Bosque Magico. No lo dejes correr: cuanto mas galopa, mas fuerte pega.
++ El Caballo de Helka: la mision de Eadric ahora pide derrotar al Jinete y 1.000.000 de oro.
++ Montura de Caballo: ya no se puede vender ni pasar a otro jugador; se puede guardar en el banco.
++ Noble Desterrado: sus hechizos y ataques de area tienen efectos nuevos, y el aviso en el piso se apaga suave al caer el golpe
++ Misiones: el tablon muestra lo que de verdad se paga, con las mejores arriba; la de los Freezers ahora pide 5
++ Montura de Dragon Dorado: 10% mas de dano contra criaturas, tambien con hechizos
++ Dungeon Infernal: tres Grandes Dragones Rojos que vuelven a su lugar
++ Pisos de los dioses: el portal siempre sale en un piso abierto; los pisos cambian cuando termina el portal
++ Pisos de los dioses: aviso antes de que se cierren y cartel con los abiertos en Bargomaud
++ Contenedor de Almas: ahora se pide desde el nivel 55
++ Beta: las almas ofrendadas a los dioses rinden mucho mas
++ Dungeon Infernal: ahora se entra desde el nivel 35
++ Dungeon Perdida: hay un segundo Gran Dragon de Plata
++ Dungeon Perdida: arreglado el paso entre sus dos primeras salas, ya no rebota ni se atraviesan paredes
++ Crear personaje: el nombre se comprueba mientras lo escribis y, si no se puede usar, te dice por que
++ Apocalipsis: cambia su precio
++ Rey del Castillo Hundido: efectos nuevos para los hechizos del rey y de su dragon
++ Poseidon: el dios tiene aspecto nuevo y avanza sobre una corriente de agua
++ Poseidon: efecto nuevo en sus ataques, el Juicio de Poseidon, con aviso en el piso antes de pegar
++ Dios Tarraske: nuevo efecto para sus hechizos y su ataque en area, una corona de roca que brota de la tierra
++ Dios Mifrit: su ataque en area es un remolino de fuego y cada hechizo tiene su propio efecto: cadenas al rojo, lluvia de ascuas y una bocanada de magma
++ Dios Erebros: nuevos efectos para sus hechizos y su ataque en area; de la oscuridad se levanta el Terror, con garras y fauces
++ Misiones: cada recompensa en su renglon
++ Comercio: botones Comprar y Vender separados, como en el Legends original
++ Contenedor de Almas y cristales: se abren con la tecla Usar, ya no con doble clic
++ Crear personaje: tilde verde o cruz roja y el fondo se oscurece
++ Auto entrenar: sigue en segundo plano contra la criatura que estabas apuntando
++ Inmovilizar: las criaturas grandes quedan atrapadas por raices
++ Crear personaje: usa los mismos colores que el resto de la interfaz
++ Macro de entrenamiento: el juego te avisa que existe y con que tecla se prende
++ Paneles: cerrarlos ya no minimiza el juego
++ Puntos de torneo: el numero se actualiza al canjear o donar
++ Crear personaje: Volver ya no corta la conexion
++ Seleccion de personajes: el fondo quedo centrado
++ Dungeon Infernal: los dragones ya no aparecen sobre la lava
++ Opciones: el cartel de confirmacion ya no queda detras de la ventana
++ Seguir mision: el cartel ya no aparece y desaparece al caminar cerca de otros personajes
++ Pregunta secreta: "Ocultar el texto" ahora lo oculta
++ Monstruos: ya no quedan trabados al volver a su lugar despues de perseguirte lejos
++ Aviso de recoleccion: solo les sale a los Recolectores
++ Pantalla en negro: cuando las ventanas del juego quedaban corridas, ahora se reparan solas
++ Cerrar el juego: arreglado un error que podia hacerlo caer al salir
++ Ingreso: arreglado el mapa que quedaba encima de la pantalla de conexion
 Version 1.1.54
 + Guerra: el boton del cartel (IR A ATACAR / DEFENDER) ahora te lleva a la guerra, igual que /GUERRA.
 + Guerra: ya no hace falta estar enlistado para participar.
