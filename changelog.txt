@@ -1,3 +1,7 @@
+Version 1.1.63
++ Hechizos: menos lanzamientos perdidos por la conexion; si uno no sale por el intervalo, ahora siempre te avisa y la cruz se acomoda
++ Remover Paralisis: avisa cuando no hace efecto
+
 Version 1.1.62
 + Cierres inesperados: arreglado uno por falta de memoria al jugar un rato
 
