@@ -1,3 +1,6 @@
+Version 1.1.62
++ Cierres inesperados: arreglado uno por falta de memoria al jugar un rato
+
 Version 1.1.61
 + Resolucion: nueva opcion 1280x720 en Opciones > Pantalla; se cambia en el momento y podes volver a 800x600 cuando quieras
 + Vista 1280x720: se ve mas mapa alrededor, pero tu alcance es el mismo; fuera de el no ves jugadores ni criaturas ni podes atacarlos
