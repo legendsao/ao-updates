@@ -36,7 +36,7 @@ Version 1.1.61
 + Dios Erebros: nuevos efectos para sus hechizos y su ataque en area; de la oscuridad se levanta el Terror, con garras y fauces
 + Misiones: cada recompensa en su renglon
 + Comercio: botones Comprar y Vender separados, como en el Legends original
-+ Contenedor de Almas y cristales: se abren con la tecla Usar, ya no con doble clic
++ Contenedor de Almas: se abre con la tecla Usar, ya no con doble clic
 + Crear personaje: tilde verde o cruz roja y el fondo se oscurece
 + Auto entrenar: sigue en segundo plano contra la criatura que estabas apuntando
 + Inmovilizar: las criaturas grandes quedan atrapadas por raices
