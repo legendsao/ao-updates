@@ -1,3 +1,6 @@
+Version 1.1.64
++ Zona de duelos y desafio 1vs1: arenas nuevas
+
 Version 1.1.63
 + Hechizos: menos lanzamientos perdidos por la conexion; si uno no sale por el intervalo, ahora siempre te avisa y la cruz se acomoda
 + Remover Paralisis: avisa cuando no hace efecto
