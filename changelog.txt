@@ -1,3 +1,13 @@
+Version 1.1.66
++ Jinete de la Niebla: mucho más rápido, golpea y lanza hechizos sin parar y embiste más seguido; aura nueva
++ Dioses: lanzan hechizos con menos insistencia y sus ataques de zona son más fuertes y seguidos
++ Dungeons: Atlantis, la Cámara de Poseidón, las Catacumbas y la Pirámide se ven más iluminadas
++ Nobleza: hechizos dorados más intensos y con bordes limpios
++ Vista 1280x720: niebla suave fuera de tu alcance; los personajes se funden al entrar y salir
++ Rendimiento: la niebla exige menos a la PC
++ Gráficos: se quitaron píxeles sueltos en armaduras, mantos, armas, escudos y cascos
++ Facciones y armaduras de enanos y gnomos: nombres y defensa corregidos
+
 Version 1.1.64
 + Zona de duelos y desafio 1vs1: arenas nuevas
 
